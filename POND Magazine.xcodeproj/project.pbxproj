@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969881C49D9DB004E3CC4 /* AppDelegate.swift */; };
+		4479698B1C49D9DB004E3CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479698A1C49D9DB004E3CC4 /* ViewController.swift */; };
+		4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4479698C1C49D9DB004E3CC4 /* Main.storyboard */; };
+		447969901C49D9DB004E3CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4479698F1C49D9DB004E3CC4 /* Assets.xcassets */; };
+		447969931C49D9DB004E3CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447969911C49D9DB004E3CC4 /* LaunchScreen.storyboard */; };
+		4479699E1C49D9DC004E3CC4 /* POND_MagazineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479699D1C49D9DC004E3CC4 /* POND_MagazineTests.swift */; };
+		447969A91C49D9DC004E3CC4 /* POND_MagazineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969A81C49D9DC004E3CC4 /* POND_MagazineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4479699A1C49D9DC004E3CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4479697D1C49D9DB004E3CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447969841C49D9DB004E3CC4;
+			remoteInfo = "POND Magazine";
+		};
+		447969A51C49D9DC004E3CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4479697D1C49D9DB004E3CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447969841C49D9DB004E3CC4;
+			remoteInfo = "POND Magazine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		447969851C49D9DB004E3CC4 /* POND Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POND Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		447969881C49D9DB004E3CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4479698A1C49D9DB004E3CC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4479698D1C49D9DB004E3CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4479698F1C49D9DB004E3CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		447969921C49D9DB004E3CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		447969941C49D9DB004E3CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447969991C49D9DC004E3CC4 /* POND MagazineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POND MagazineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4479699D1C49D9DC004E3CC4 /* POND_MagazineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POND_MagazineTests.swift; sourceTree = "<group>"; };
+		4479699F1C49D9DC004E3CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447969A41C49D9DC004E3CC4 /* POND MagazineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POND MagazineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		447969A81C49D9DC004E3CC4 /* POND_MagazineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POND_MagazineUITests.swift; sourceTree = "<group>"; };
+		447969AA1C49D9DC004E3CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		447969821C49D9DB004E3CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969961C49D9DC004E3CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969A11C49D9DC004E3CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4479697C1C49D9DB004E3CC4 = {
+			isa = PBXGroup;
+			children = (
+				447969871C49D9DB004E3CC4 /* POND Magazine */,
+				4479699C1C49D9DC004E3CC4 /* POND MagazineTests */,
+				447969A71C49D9DC004E3CC4 /* POND MagazineUITests */,
+				447969861C49D9DB004E3CC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		447969861C49D9DB004E3CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				447969851C49D9DB004E3CC4 /* POND Magazine.app */,
+				447969991C49D9DC004E3CC4 /* POND MagazineTests.xctest */,
+				447969A41C49D9DC004E3CC4 /* POND MagazineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		447969871C49D9DB004E3CC4 /* POND Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				447969881C49D9DB004E3CC4 /* AppDelegate.swift */,
+				4479698A1C49D9DB004E3CC4 /* ViewController.swift */,
+				4479698C1C49D9DB004E3CC4 /* Main.storyboard */,
+				4479698F1C49D9DB004E3CC4 /* Assets.xcassets */,
+				447969911C49D9DB004E3CC4 /* LaunchScreen.storyboard */,
+				447969941C49D9DB004E3CC4 /* Info.plist */,
+			);
+			path = "POND Magazine";
+			sourceTree = "<group>";
+		};
+		4479699C1C49D9DC004E3CC4 /* POND MagazineTests */ = {
+			isa = PBXGroup;
+			children = (
+				4479699D1C49D9DC004E3CC4 /* POND_MagazineTests.swift */,
+				4479699F1C49D9DC004E3CC4 /* Info.plist */,
+			);
+			path = "POND MagazineTests";
+			sourceTree = "<group>";
+		};
+		447969A71C49D9DC004E3CC4 /* POND MagazineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				447969A81C49D9DC004E3CC4 /* POND_MagazineUITests.swift */,
+				447969AA1C49D9DC004E3CC4 /* Info.plist */,
+			);
+			path = "POND MagazineUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		447969841C49D9DB004E3CC4 /* POND Magazine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447969AD1C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND Magazine" */;
+			buildPhases = (
+				447969811C49D9DB004E3CC4 /* Sources */,
+				447969821C49D9DB004E3CC4 /* Frameworks */,
+				447969831C49D9DB004E3CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "POND Magazine";
+			productName = "POND Magazine";
+			productReference = 447969851C49D9DB004E3CC4 /* POND Magazine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		447969981C49D9DC004E3CC4 /* POND MagazineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447969B01C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineTests" */;
+			buildPhases = (
+				447969951C49D9DC004E3CC4 /* Sources */,
+				447969961C49D9DC004E3CC4 /* Frameworks */,
+				447969971C49D9DC004E3CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4479699B1C49D9DC004E3CC4 /* PBXTargetDependency */,
+			);
+			name = "POND MagazineTests";
+			productName = "POND MagazineTests";
+			productReference = 447969991C49D9DC004E3CC4 /* POND MagazineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		447969A31C49D9DC004E3CC4 /* POND MagazineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447969B31C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineUITests" */;
+			buildPhases = (
+				447969A01C49D9DC004E3CC4 /* Sources */,
+				447969A11C49D9DC004E3CC4 /* Frameworks */,
+				447969A21C49D9DC004E3CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447969A61C49D9DC004E3CC4 /* PBXTargetDependency */,
+			);
+			name = "POND MagazineUITests";
+			productName = "POND MagazineUITests";
+			productReference = 447969A41C49D9DC004E3CC4 /* POND MagazineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4479697D1C49D9DB004E3CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = PONDMAG;
+				TargetAttributes = {
+					447969841C49D9DB004E3CC4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C6S8TXUUFB;
+					};
+					447969981C49D9DC004E3CC4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C6S8TXUUFB;
+						TestTargetID = 447969841C49D9DB004E3CC4;
+					};
+					447969A31C49D9DC004E3CC4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C6S8TXUUFB;
+						TestTargetID = 447969841C49D9DB004E3CC4;
+					};
+				};
+			};
+			buildConfigurationList = 447969801C49D9DB004E3CC4 /* Build configuration list for PBXProject "POND Magazine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4479697C1C49D9DB004E3CC4;
+			productRefGroup = 447969861C49D9DB004E3CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				447969841C49D9DB004E3CC4 /* POND Magazine */,
+				447969981C49D9DC004E3CC4 /* POND MagazineTests */,
+				447969A31C49D9DC004E3CC4 /* POND MagazineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		447969831C49D9DB004E3CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447969931C49D9DB004E3CC4 /* LaunchScreen.storyboard in Resources */,
+				447969901C49D9DB004E3CC4 /* Assets.xcassets in Resources */,
+				4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969971C49D9DC004E3CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969A21C49D9DC004E3CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		447969811C49D9DB004E3CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4479698B1C49D9DB004E3CC4 /* ViewController.swift in Sources */,
+				447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969951C49D9DC004E3CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4479699E1C49D9DC004E3CC4 /* POND_MagazineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447969A01C49D9DC004E3CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447969A91C49D9DC004E3CC4 /* POND_MagazineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4479699B1C49D9DC004E3CC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447969841C49D9DB004E3CC4 /* POND Magazine */;
+			targetProxy = 4479699A1C49D9DC004E3CC4 /* PBXContainerItemProxy */;
+		};
+		447969A61C49D9DC004E3CC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447969841C49D9DB004E3CC4 /* POND Magazine */;
+			targetProxy = 447969A51C49D9DC004E3CC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4479698C1C49D9DB004E3CC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4479698D1C49D9DB004E3CC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		447969911C49D9DB004E3CC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447969921C49D9DB004E3CC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		447969AB1C49D9DC004E3CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		447969AC1C49D9DC004E3CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		447969AE1C49D9DC004E3CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "POND Magazine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-Magazine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		447969AF1C49D9DC004E3CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "POND Magazine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-Magazine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		447969B11C49D9DC004E3CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "POND MagazineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-MagazineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POND Magazine.app/POND Magazine";
+			};
+			name = Debug;
+		};
+		447969B21C49D9DC004E3CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "POND MagazineTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-MagazineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POND Magazine.app/POND Magazine";
+			};
+			name = Release;
+		};
+		447969B41C49D9DC004E3CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "POND MagazineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-MagazineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "POND Magazine";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		447969B51C49D9DC004E3CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "POND MagazineUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-MagazineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "POND Magazine";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447969801C49D9DB004E3CC4 /* Build configuration list for PBXProject "POND Magazine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447969AB1C49D9DC004E3CC4 /* Debug */,
+				447969AC1C49D9DC004E3CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447969AD1C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND Magazine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447969AE1C49D9DC004E3CC4 /* Debug */,
+				447969AF1C49D9DC004E3CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		447969B01C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447969B11C49D9DC004E3CC4 /* Debug */,
+				447969B21C49D9DC004E3CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		447969B31C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447969B41C49D9DC004E3CC4 /* Debug */,
+				447969B51C49D9DC004E3CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4479697D1C49D9DB004E3CC4 /* Project object */;
+}
