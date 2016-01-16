@@ -11,21 +11,28 @@ import UIKit
 class FeaturedViewController: UIViewController {
    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var webView: UIWebView!
+    var URLPath = "http://www.pond-mag.com"
+    
+    func loadURL(){
+        let requestURL = NSURL(string: URLPath)
+        let request = NSURLRequest(URL: requestURL!)
+        webView.loadRequest(request)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if revealViewController() != nil {
-            //            revealViewController().rearViewRevealWidth = 62
+            //revealViewController().rearViewRevealWidth = 62
             menuButton.target = revealViewController()
             menuButton.action = "revealToggle:"
             
             revealViewController().rightViewRevealWidth = 150
-            //extraButton.target = revealViewController()
-            //extraButton.action = "rightRevealToggle:"
             
-           // view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
+            loadURL()
             
         }
     }
