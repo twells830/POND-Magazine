@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441033671C4D5EF10013C6DB /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033661C4D5EF10013C6DB /* FashionViewController.swift */; };
+		441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033681C4D69FE0013C6DB /* MusicViewController.swift */; };
+		4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336A1C4D6BF40013C6DB /* ArtViewController.swift */; };
+		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
 		447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969881C49D9DB004E3CC4 /* AppDelegate.swift */; };
 		4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479698A1C49D9DB004E3CC4 /* MenuController.swift */; };
 		4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4479698C1C49D9DB004E3CC4 /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441033661C4D5EF10013C6DB /* FashionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
+		441033681C4D69FE0013C6DB /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		4410336A1C4D6BF40013C6DB /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
+		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
 		447969851C49D9DB004E3CC4 /* POND Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POND Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447969881C49D9DB004E3CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4479698A1C49D9DB004E3CC4 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 			children = (
 				447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */,
 				4479698A1C49D9DB004E3CC4 /* MenuController.swift */,
+				441033661C4D5EF10013C6DB /* FashionViewController.swift */,
+				441033681C4D69FE0013C6DB /* MusicViewController.swift */,
+				4410336A1C4D6BF40013C6DB /* ArtViewController.swift */,
+				4410336C1C4D6C090013C6DB /* CultureViewController.swift */,
 			);
 			name = "Supporting Files";
 			path = "POND Magazine";
@@ -286,10 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */,
+				4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */,
+				441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */,
 				4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */,
 				447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */,
 				447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */,
 				447969BA1C49DA34004E3CC4 /* SWRevealViewController.m in Sources */,
+				441033671C4D5EF10013C6DB /* FashionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +535,7 @@
 				447969AF1C49D9DC004E3CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		447969B01C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +544,7 @@
 				447969B21C49D9DC004E3CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		447969B31C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND MagazineUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +553,7 @@
 				447969B51C49D9DC004E3CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

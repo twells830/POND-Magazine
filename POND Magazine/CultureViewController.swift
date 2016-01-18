@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController {
-   
+class CultureViewController: UIViewController {
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var webView: UIWebView!
-    var URLPath = "http://www.pond-mag.com"
+    var URLPath = "http://www.pond-mag.com/new-page-4/"
     
     func loadURL(){
         let requestURL = NSURL(string: URLPath)
