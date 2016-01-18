@@ -11,14 +11,10 @@ import UIKit
 class FashionViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var webView: UIWebView!
-    var URLPath = "http://www.pond-mag.com/editorials-2/"
     
-    func loadURL(){
-        let requestURL = NSURL(string: URLPath)
-        let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
-    }
+    @IBOutlet weak var EditorialsThumb: UIImageView!
+
+    @IBOutlet weak var SpotlightThumb: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +27,6 @@ class FashionViewController: UIViewController {
             //revealViewController().rightViewRevealWidth = 200
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            loadURL()
             
         }
     }
