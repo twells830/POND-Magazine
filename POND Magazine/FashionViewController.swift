@@ -13,8 +13,6 @@ class FashionViewController: UIViewController, UIGestureRecognizerDelegate{
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var EditorialsThumb: UIImageView!
-
-    @IBOutlet weak var SpotlightThumb: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +26,19 @@ class FashionViewController: UIViewController, UIGestureRecognizerDelegate{
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
-            var UITapRecognizer = UITapGestureRecognizer(target: self, action: "tappedImage")
-            UITapRecognizer.delegate = self
-            EditorialsThumb.addGestureRecognizer(UITapRecognizer)
+            let tapGesture = UITapGestureRecognizer(target: self, action: "imageTapped:")
             
-            
+            // add it to the image view;
+            EditorialsThumb.addGestureRecognizer(tapGesture)
+            // make sure imageView can be interacted with by user
+            EditorialsThumb.userInteractionEnabled = true
+        }
+        
+        func imageTapped(gesture: UIGestureRecognizer) {
+            performSegueWithIdentifier("editorialPush", sender: self)
         }
     }
     
-    func tappedImage(sender: AnyObject){
-    
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

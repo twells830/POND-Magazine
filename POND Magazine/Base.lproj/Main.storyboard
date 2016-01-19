@@ -265,26 +265,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kag-TI-GOT">
-                                <rect key="frame" x="0.0" y="324" width="600" height="260"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Kag-TI-GOT" secondAttribute="height" multiplier="30:13" id="L1q-5q-CAE"/>
-                                    <constraint firstAttribute="width" secondItem="Kag-TI-GOT" secondAttribute="height" multiplier="50:23" id="SHw-tR-uw0"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="SHw-tR-uw0"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Dh2-UL-A5V" secondAttribute="trailing" constant="-20" id="LGF-kh-5CG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kag-TI-GOT" secondAttribute="trailing" constant="-20" id="X18-aZ-Nzt"/>
                             <constraint firstItem="Dh2-UL-A5V" firstAttribute="top" secondItem="ah0-Qw-Tlw" secondAttribute="bottom" id="nsq-QQ-cUt"/>
-                            <constraint firstItem="Kag-TI-GOT" firstAttribute="top" secondItem="Dh2-UL-A5V" secondAttribute="bottom" id="o3e-qK-KBM"/>
-                            <constraint firstItem="Kag-TI-GOT" firstAttribute="leading" secondItem="Zy6-kS-1Wz" secondAttribute="leadingMargin" constant="-20" id="oIj-Sm-NOK"/>
                             <constraint firstItem="Dh2-UL-A5V" firstAttribute="leading" secondItem="Zy6-kS-1Wz" secondAttribute="leadingMargin" constant="-20" id="qhc-f8-4Fz"/>
                         </constraints>
                     </view>
@@ -294,17 +279,13 @@
                     <connections>
                         <outlet property="EditorialsThumb" destination="Dh2-UL-A5V" id="rY3-b8-l9Q"/>
                         <outlet property="menuButton" destination="DaY-6h-NbO" id="68j-LL-OXl"/>
+                        <segue destination="Qj5-sO-ZEa" kind="show" identifier="editorialPush" customClass="SWRevealViewControllerSeguePushController" id="ZYR-bj-aQb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iej-p0-Hto" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="qMr-Pb-PZZ">
-                    <connections>
-                        <outlet property="delegate" destination="Dh2-UL-A5V" id="yFO-ov-xi4"/>
-                        <segue destination="Qj5-sO-ZEa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="j3D-cQ-adW"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer enabled="NO" id="qMr-Pb-PZZ"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="-308"/>
+            <point key="canvasLocation" x="2644" y="-325"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Be8-bt-cna">
@@ -492,26 +473,13 @@
                     <view key="view" contentMode="scaleToFill" id="M6i-Gi-H1h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gG-So-jSe">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="pe4-EO-2zS" firstAttribute="top" secondItem="2gG-So-jSe" secondAttribute="bottom" id="7Gx-4Z-9Tc"/>
-                            <constraint firstItem="2gG-So-jSe" firstAttribute="leading" secondItem="M6i-Gi-H1h" secondAttribute="leadingMargin" constant="-20" id="Sah-cB-kWk"/>
-                            <constraint firstItem="2gG-So-jSe" firstAttribute="top" secondItem="3ZI-QL-Aqk" secondAttribute="bottom" id="SeO-qf-bID"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2gG-So-jSe" secondAttribute="trailing" constant="-20" id="b4P-pY-Tqc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Music" id="fLC-yn-LFb">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="819-tc-bnV"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="819-tc-bnV" id="7hI-7E-2qu"/>
-                        <outlet property="webView" destination="2gG-So-jSe" id="jEw-hq-HxI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku4-La-3hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -521,9 +489,8 @@
     </scenes>
     <resources>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
-        <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MQW-oc-B7Q"/>
+        <segue reference="Bd1-v2-Xt3"/>
     </inferredMetricsTieBreakers>
 </document>
