@@ -252,29 +252,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-UL-A5V">
+                                <rect key="frame" x="0.0" y="64" width="600" height="260"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dh2-UL-A5V" secondAttribute="height" multiplier="30:13" id="nF3-q1-wPB"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBV-b5-GlO">
                                 <rect key="frame" x="255" y="440" width="91" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Editorials" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHq-C5-onz">
-                                <rect key="frame" x="255" y="180" width="90" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-UL-A5V">
-                                <rect key="frame" x="0.0" y="64" width="600" height="260"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kag-TI-GOT">
+                                <rect key="frame" x="0.0" y="324" width="600" height="260"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Dh2-UL-A5V" secondAttribute="height" multiplier="30:13" id="nF3-q1-wPB"/>
+                                    <constraint firstAttribute="width" secondItem="Kag-TI-GOT" secondAttribute="height" multiplier="30:13" id="L1q-5q-CAE"/>
+                                    <constraint firstAttribute="width" secondItem="Kag-TI-GOT" secondAttribute="height" multiplier="50:23" id="SHw-tR-uw0"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SHw-tR-uw0"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Dh2-UL-A5V" secondAttribute="trailing" constant="-20" id="LGF-kh-5CG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kag-TI-GOT" secondAttribute="trailing" constant="-20" id="X18-aZ-Nzt"/>
                             <constraint firstItem="Dh2-UL-A5V" firstAttribute="top" secondItem="ah0-Qw-Tlw" secondAttribute="bottom" id="nsq-QQ-cUt"/>
+                            <constraint firstItem="Kag-TI-GOT" firstAttribute="top" secondItem="Dh2-UL-A5V" secondAttribute="bottom" id="o3e-qK-KBM"/>
+                            <constraint firstItem="Kag-TI-GOT" firstAttribute="leading" secondItem="Zy6-kS-1Wz" secondAttribute="leadingMargin" constant="-20" id="oIj-Sm-NOK"/>
                             <constraint firstItem="Dh2-UL-A5V" firstAttribute="leading" secondItem="Zy6-kS-1Wz" secondAttribute="leadingMargin" constant="-20" id="qhc-f8-4Fz"/>
                         </constraints>
                     </view>
@@ -282,12 +292,19 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="DaY-6h-NbO"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="EditorialsThumb" destination="Dh2-UL-A5V" id="rY3-b8-l9Q"/>
                         <outlet property="menuButton" destination="DaY-6h-NbO" id="68j-LL-OXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iej-p0-Hto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qMr-Pb-PZZ">
+                    <connections>
+                        <outlet property="delegate" destination="Dh2-UL-A5V" id="yFO-ov-xi4"/>
+                        <segue destination="Qj5-sO-ZEa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="j3D-cQ-adW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2579" y="-370"/>
+            <point key="canvasLocation" x="2587" y="-308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Be8-bt-cna">
@@ -504,6 +521,7 @@
     </scenes>
     <resources>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
+        <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MQW-oc-B7Q"/>

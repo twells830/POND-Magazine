@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FashionViewController: UIViewController {
+class FashionViewController: UIViewController, UIGestureRecognizerDelegate{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
@@ -28,7 +28,16 @@ class FashionViewController: UIViewController {
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
+            var UITapRecognizer = UITapGestureRecognizer(target: self, action: "tappedImage")
+            UITapRecognizer.delegate = self
+            EditorialsThumb.addGestureRecognizer(UITapRecognizer)
+            
+            
         }
+    }
+    
+    func tappedImage(sender: AnyObject){
+    
     }
     
     override func didReceiveMemoryWarning() {
