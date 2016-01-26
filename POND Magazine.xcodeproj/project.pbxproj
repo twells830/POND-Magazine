@@ -22,6 +22,8 @@
 		447969A91C49D9DC004E3CC4 /* POND_MagazineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969A81C49D9DC004E3CC4 /* POND_MagazineUITests.swift */; };
 		447969BA1C49DA34004E3CC4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447969B91C49DA34004E3CC4 /* SWRevealViewController.m */; };
 		447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */; };
+		44D6679F1C56F0270054F8B4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6679E1C56F0270054F8B4 /* AboutViewController.swift */; };
+		44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		447969B81C49DA34004E3CC4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		447969B91C49DA34004E3CC4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		44D6679E1C56F0270054F8B4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 				441033681C4D69FE0013C6DB /* MusicViewController.swift */,
 				4410336A1C4D6BF40013C6DB /* ArtViewController.swift */,
 				4410336C1C4D6C090013C6DB /* CultureViewController.swift */,
+				44D6679E1C56F0270054F8B4 /* AboutViewController.swift */,
+				44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */,
 			);
 			name = "Supporting Files";
 			path = "POND Magazine";
@@ -317,8 +323,10 @@
 				4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */,
 				4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */,
 				441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */,
+				44D6679F1C56F0270054F8B4 /* AboutViewController.swift in Sources */,
 				4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */,
 				447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */,
+				44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */,
 				447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */,
 				447969BA1C49DA34004E3CC4 /* SWRevealViewController.m in Sources */,
 				441033671C4D5EF10013C6DB /* FashionViewController.swift in Sources */,
