@@ -553,12 +553,64 @@
                     <view key="view" contentMode="scaleToFill" id="w7N-5l-6zz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-q9-jlV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="600" id="2eq-U4-xyg"/>
+                                            <constraint firstAttribute="height" constant="536" id="FY6-PW-HES"/>
+                                        </constraints>
+                                        <mutableString key="text">An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
+
+EDITORS
+
+Editor-in-Chief Natalie Leonard // @nlen15 
+
+Managing Editor Dillon Gray //  @dillongrayy
+
+Features Editor David Weiner // @davidjweiner
+
+
+DIRECTORS
+
+Web Director Rachel Cabitt // @rachelcabittphotography
+
+Art Director Mary Kang // @marykangphoto
+
+Literary Director Katie Heins // @cougarfreak7
+
+Music Director Carl Pietrusinski // @car_roll519</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ixl-Cx-XqS" secondAttribute="bottom" id="6hl-aX-bGt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ixl-Cx-XqS" secondAttribute="trailing" id="A6M-ZQ-tdo"/>
+                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="leading" secondItem="vzW-q9-jlV" secondAttribute="leading" id="Ibp-d6-feB"/>
+                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="top" id="brr-bx-J8b"/>
+                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="centerX" secondItem="vzW-q9-jlV" secondAttribute="centerX" id="x4j-6Q-7Id"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vzW-q9-jlV" firstAttribute="top" secondItem="Gw1-fQ-jrx" secondAttribute="bottom" id="Vaq-hz-m1q"/>
+                            <constraint firstItem="HFT-NZ-wd7" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="bottom" id="e3F-G1-8J4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzW-q9-jlV" secondAttribute="trailing" constant="-20" id="fHy-82-r1s"/>
+                            <constraint firstItem="vzW-q9-jlV" firstAttribute="leading" secondItem="w7N-5l-6zz" secondAttribute="leadingMargin" constant="-20" id="vQ9-fK-M44"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="vpF-UU-LM8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ckx-dw-ja9"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="ScrollView" destination="vzW-q9-jlV" id="kCw-TI-mXB"/>
+                        <outlet property="aboutText" destination="ixl-Cx-XqS" id="874-ZC-WOa"/>
                         <outlet property="menuButton" destination="ckx-dw-ja9" id="Tta-fS-BxX"/>
                     </connections>
                 </viewController>

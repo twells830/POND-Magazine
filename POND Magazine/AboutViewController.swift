@@ -11,20 +11,25 @@ import UIKit
 class AboutViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var ScrollView: UIScrollView!
+    @IBOutlet weak var aboutText: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        aboutText.frame = CGRectMake(0, 0, 183, 21)
+        self.ScrollView.addSubview(aboutText)
+
+
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
             menuButton.target = revealViewController()
             menuButton.action = "revealToggle:"
             
+            
             //revealViewController().rightViewRevealWidth = 200
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            
         }
     }
     
