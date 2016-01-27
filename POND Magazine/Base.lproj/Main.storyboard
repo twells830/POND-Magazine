@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iet-6p-tmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2579" y="-1089"/>
+            <point key="canvasLocation" x="2539" y="-1121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Be8-bt-cna">
@@ -449,7 +449,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qh-Ys-HTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3387" y="-2082"/>
+            <point key="canvasLocation" x="3371" y="-3362"/>
         </scene>
         <!--Editorials-->
         <scene sceneID="FYp-qp-kWq">
@@ -473,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku4-La-3hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4615" y="-2082"/>
+            <point key="canvasLocation" x="4599" y="-3362"/>
         </scene>
         <!--About-->
         <scene sceneID="yW3-E6-YIx">
@@ -605,7 +605,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBY-yB-Ld9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3387" y="-1290"/>
+            <point key="canvasLocation" x="3371" y="-2570"/>
         </scene>
         <!--Spotlight-->
         <scene sceneID="mmi-wf-0tz">
@@ -629,7 +629,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd6-Tw-YUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4615" y="-1290"/>
+            <point key="canvasLocation" x="4599" y="-2570"/>
         </scene>
         <!--Music-->
         <scene sceneID="6VN-nM-jqc">
@@ -668,6 +668,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstAttribute="trailingMargin" secondItem="yBU-Jm-d6e" secondAttribute="trailing" constant="-8" id="gMw-p2-ZeN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="X3h-no-vA4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ogP-rB-LC5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Q1J-O0-iya">
                                         <rect key="frame" x="0.0" y="264" width="600" height="200"/>
@@ -695,6 +698,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstItem="PIB-Mb-zLH" firstAttribute="centerY" secondItem="0B0-Qw-GBn" secondAttribute="centerY" id="xUs-h4-3FA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sPi-aO-K7S" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="nV4-NM-tWR"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="AIt-ZN-JY4">
                                         <rect key="frame" x="0.0" y="464" width="600" height="200"/>
@@ -722,6 +728,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstAttribute="trailingMargin" secondItem="TgF-w9-gs8" secondAttribute="trailing" constant="-8" id="wrk-5y-7F0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0Ce-cM-lAN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gNT-WW-TBb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -781,6 +790,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstItem="Ua9-G2-d9f" firstAttribute="top" secondItem="mBp-bp-KUE" secondAttribute="topMargin" constant="-8" id="uZt-1K-qmN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lKX-BR-kmz" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Mxz-Os-MbB"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="9Zt-qX-EDm">
                                         <rect key="frame" x="0.0" y="264" width="600" height="200"/>
@@ -808,6 +820,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstItem="9Zr-6E-cCb" firstAttribute="centerX" secondItem="hId-Sh-PS2" secondAttribute="centerX" id="gRI-4v-NI2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nEl-Gr-w4a" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4gW-Sq-vcM"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="YSh-lV-U8j">
                                         <rect key="frame" x="0.0" y="464" width="600" height="200"/>
@@ -835,6 +850,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Tya-9Q-MhU" secondAttribute="bottom" constant="-8" id="hjJ-3L-dHe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gE8-by-tnF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="DnA-iX-xTI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -894,6 +912,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstAttribute="bottomMargin" secondItem="LST-1S-tqh" secondAttribute="bottom" constant="-8" id="ghO-yj-S5r"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3TJ-Q2-d3p" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Jnj-tG-rc7"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="fOA-Mt-pTL">
                                         <rect key="frame" x="0.0" y="264" width="600" height="200"/>
@@ -921,6 +942,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <constraint firstItem="be9-4t-nJb" firstAttribute="top" secondItem="QWx-la-iyg" secondAttribute="topMargin" constant="-8" id="xw1-8X-rWs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Tu3-VD-9JF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="YAg-fL-TH8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -942,6 +966,326 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQB-Gh-V4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2522" y="1869"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Ee-EF-r24">
+            <objects>
+                <navigationController id="3TJ-Q2-d3p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ley-vT-XQA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="40z-1a-nN7" kind="relationship" relationship="rootViewController" id="pNq-3j-b3C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyB-xK-UFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3659" y="3430"/>
+        </scene>
+        <!--Entertainment-->
+        <scene sceneID="qbk-1s-WTN">
+            <objects>
+                <viewController id="40z-1a-nN7" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUc-qZ-tG4"/>
+                        <viewControllerLayoutGuide type="bottom" id="E4A-DC-99z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OYj-4q-yxu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Entertainment" id="kRC-3Q-lsp">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="kxo-hp-uC8"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="kxo-hp-uC8" id="8Nf-py-Msv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLl-dr-d4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4863" y="3430"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="32j-kz-4nV">
+            <objects>
+                <navigationController id="Tu3-VD-9JF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AfM-cn-mKT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qrr-Ea-l8l" kind="relationship" relationship="rootViewController" id="RGB-tT-CAg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwD-z7-nNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3635" y="4222"/>
+        </scene>
+        <!--Lit & Zines-->
+        <scene sceneID="geo-RW-ghU">
+            <objects>
+                <viewController id="qrr-Ea-l8l" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="79t-Mo-Aa7"/>
+                        <viewControllerLayoutGuide type="bottom" id="wD3-3W-8fy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OHO-1U-hlG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lit &amp; Zines" id="tuJ-iM-jcv">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="MUK-xE-2ra"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="MUK-xE-2ra" id="9K7-Fz-nQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0X-Je-WAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4863" y="4222"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fm6-4Z-jcO">
+            <objects>
+                <navigationController id="X3h-no-vA4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D5S-gJ-Qbt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sbR-gV-ne6" kind="relationship" relationship="rootViewController" id="KQ7-jk-Vx0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-9o-4by" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3395" y="-1685"/>
+        </scene>
+        <!--Interviews-->
+        <scene sceneID="Ew2-fG-UKB">
+            <objects>
+                <viewController id="sbR-gV-ne6" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3bu-em-heV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fch-H1-cQR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbI-VT-YSb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interviews" id="SWa-Nn-Ud7">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="fLT-KV-9uO"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="fLT-KV-9uO" id="CfC-7h-LjO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLQ-fJ-wRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="-1685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sra-qd-eMk">
+            <objects>
+                <navigationController id="sPi-aO-K7S" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7aN-uT-0Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vaV-oa-hGZ" kind="relationship" relationship="rootViewController" id="7YH-qg-vnx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0E-w0-8WT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3395" y="-893"/>
+        </scene>
+        <!--Releases-->
+        <scene sceneID="aJ1-8p-BMk">
+            <objects>
+                <viewController id="vaV-oa-hGZ" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cGr-HC-QEJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwa-tk-fh2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qi9-pM-s1g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Releases" id="5jX-mq-JWQ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="KOG-F4-Egp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="KOG-F4-Egp" id="yDN-Ly-q7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qh-fD-YKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="-893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XRo-kj-FOf">
+            <objects>
+                <navigationController id="0Ce-cM-lAN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9eO-kV-tg6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jq3-zO-0ay" kind="relationship" relationship="rootViewController" id="KYc-HC-W5d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfY-9P-IXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3395" y="-61"/>
+        </scene>
+        <!--Reviews-->
+        <scene sceneID="cVf-Xy-21c">
+            <objects>
+                <viewController id="jq3-zO-0ay" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AF9-d8-0pc"/>
+                        <viewControllerLayoutGuide type="bottom" id="J42-G4-6X9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5u-Pr-6FV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reviews" id="b0u-Yg-DN8">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="eT6-dE-HQN"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="eT6-dE-HQN" id="Hk0-2F-1zs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWh-9P-jGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="-61"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="veu-AR-SkD">
+            <objects>
+                <navigationController id="gE8-by-tnF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iaO-R0-ddx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f69-sX-2Wi" kind="relationship" relationship="rootViewController" id="CC6-dE-zKK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhS-n3-2Lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3483" y="2230"/>
+        </scene>
+        <!--Blog-->
+        <scene sceneID="aRd-Fi-jY9">
+            <objects>
+                <viewController id="f69-sX-2Wi" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abV-Gm-Bq7"/>
+                        <viewControllerLayoutGuide type="bottom" id="TwW-nf-u5j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9eL-Xk-ak6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blog" id="2Br-kb-8QP">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="1rt-0M-JSU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="1rt-0M-JSU" id="Pdr-V6-6iA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXp-uj-U0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4711" y="2230"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i7P-Uw-is1">
+            <objects>
+                <navigationController id="lKX-BR-kmz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5l-nu-aRq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v9y-SV-Ccm" kind="relationship" relationship="rootViewController" id="Bml-bH-Uh4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOA-vx-Muo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="702"/>
+        </scene>
+        <!--Photography-->
+        <scene sceneID="DKn-TQ-W3Z">
+            <objects>
+                <viewController id="v9y-SV-Ccm" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UST-4h-R3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wjm-3r-9WF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yVD-Lq-0d9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photography" id="KC6-Oi-eqI">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Ys3-Ns-7eh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Ys3-Ns-7eh" id="qqs-Td-ejC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-hK-gPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4615" y="702"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FmE-Qc-gRM">
+            <objects>
+                <navigationController id="nEl-Gr-w4a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xhw-Kc-p4a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cp8-EM-Zy1" kind="relationship" relationship="rootViewController" id="1z1-E5-2f5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdK-j4-0iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="1494"/>
+        </scene>
+        <!--Featured Artists-->
+        <scene sceneID="H1G-gz-u8d">
+            <objects>
+                <viewController id="cp8-EM-Zy1" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wY8-Hi-8ev"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fkz-1r-L0Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hWc-rz-CsT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Featured Artists" id="SH8-Oy-1OQ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="QPw-HY-GaI"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="QPw-HY-GaI" id="OdX-5u-F19"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3v-mC-MZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4615" y="1494"/>
         </scene>
     </scenes>
     <resources>
