@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -58,7 +57,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="B5w-Pd-JUI">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="B5w-Pd-JUI">
                                         <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B5w-Pd-JUI" id="PZE-WS-suW">
@@ -236,7 +235,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Sup-z8-JCm" kind="relationship" relationship="rootViewController" id="Yxb-Cu-oye"/>
+                        <segue destination="YI6-b0-uIT" kind="relationship" relationship="rootViewController" id="aAz-PJ-LPE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsN-3K-YbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,53 +279,6 @@
             </objects>
             <point key="canvasLocation" x="2579" y="-1089"/>
         </scene>
-        <!--Fashion-->
-        <scene sceneID="8nq-Bp-mqD">
-            <objects>
-                <viewController id="Sup-z8-JCm" customClass="FashionViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ah0-Qw-Tlw"/>
-                        <viewControllerLayoutGuide type="bottom" id="lCZ-ad-7lC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Zy6-kS-1Wz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dh2-UL-A5V">
-                                <rect key="frame" x="0.0" y="64" width="600" height="260"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Dh2-UL-A5V" secondAttribute="height" multiplier="30:13" id="nF3-q1-wPB"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBV-b5-GlO">
-                                <rect key="frame" x="255" y="440" width="91" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Dh2-UL-A5V" secondAttribute="trailing" constant="-20" id="LGF-kh-5CG"/>
-                            <constraint firstItem="Dh2-UL-A5V" firstAttribute="top" secondItem="ah0-Qw-Tlw" secondAttribute="bottom" id="nsq-QQ-cUt"/>
-                            <constraint firstItem="Dh2-UL-A5V" firstAttribute="leading" secondItem="Zy6-kS-1Wz" secondAttribute="leadingMargin" constant="-20" id="qhc-f8-4Fz"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Fashion" id="h9H-nK-XIP">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="DaY-6h-NbO"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="EditorialsThumb" destination="Dh2-UL-A5V" id="rY3-b8-l9Q"/>
-                        <outlet property="menuButton" destination="DaY-6h-NbO" id="68j-LL-OXl"/>
-                        <segue destination="Qj5-sO-ZEa" kind="show" identifier="editorialPush" customClass="SWRevealViewControllerSeguePushController" id="ZYR-bj-aQb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iej-p0-Hto" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer enabled="NO" id="qMr-Pb-PZZ"/>
-            </objects>
-            <point key="canvasLocation" x="2644" y="-325"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Be8-bt-cna">
             <objects>
@@ -342,6 +294,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aE5-Sv-wKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1455" y="351"/>
+        </scene>
+        <!--Fashion-->
+        <scene sceneID="k03-Up-JUQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PD4-Kd-6oV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="YI6-b0-uIT" customClass="FashionViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="htO-EE-qOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="rGc-2t-ElP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="2qp-mp-adY">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qp-mp-adY" id="RbH-7r-bdE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-ue-iwM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editorials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-gY-dMO">
+                                                    <rect key="frame" x="230" y="79" width="141" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                    <color key="textColor" red="0.23948469065656564" green="0.23948469065656564" blue="0.23948469065656564" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="c9D-ue-iwM" secondAttribute="bottom" constant="-8" id="MbX-ZL-3jW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="c9D-ue-iwM" secondAttribute="trailing" constant="-8" id="Qy6-BE-GaK"/>
+                                                <constraint firstItem="4PI-gY-dMO" firstAttribute="centerX" secondItem="RbH-7r-bdE" secondAttribute="centerX" id="Sze-JF-tYa"/>
+                                                <constraint firstItem="c9D-ue-iwM" firstAttribute="top" secondItem="RbH-7r-bdE" secondAttribute="topMargin" constant="-8" id="mQN-dJ-drC"/>
+                                                <constraint firstItem="c9D-ue-iwM" firstAttribute="leading" secondItem="RbH-7r-bdE" secondAttribute="leadingMargin" constant="-8" id="qOa-0J-BP8"/>
+                                                <constraint firstItem="4PI-gY-dMO" firstAttribute="centerY" secondItem="RbH-7r-bdE" secondAttribute="centerY" id="t9v-nl-kil"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Qj5-sO-ZEa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="frv-a3-9zk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="rEk-Vu-goo">
+                                        <rect key="frame" x="0.0" y="264" width="600" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEk-Vu-goo" id="777-QV-vLG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-pK-AA3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-qy-8LW">
+                                                    <rect key="frame" x="231" y="79" width="139" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                    <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hjO-pK-AA3" firstAttribute="leading" secondItem="777-QV-vLG" secondAttribute="leadingMargin" constant="-8" id="4NH-Hd-FeC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hjO-pK-AA3" secondAttribute="bottom" constant="-8" id="75g-3o-4Bo"/>
+                                                <constraint firstItem="YMe-qy-8LW" firstAttribute="centerY" secondItem="777-QV-vLG" secondAttribute="centerY" id="BGp-dy-4um"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hjO-pK-AA3" secondAttribute="trailing" constant="-8" id="LOm-hU-lng"/>
+                                                <constraint firstItem="hjO-pK-AA3" firstAttribute="top" secondItem="777-QV-vLG" secondAttribute="topMargin" constant="-8" id="TFa-jn-WH9"/>
+                                                <constraint firstItem="YMe-qy-8LW" firstAttribute="centerX" secondItem="777-QV-vLG" secondAttribute="centerX" id="vsv-B0-vSO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cbh-oW-z2j" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="GHW-e6-VeX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="YI6-b0-uIT" id="Ugc-aB-iR6"/>
+                            <outlet property="delegate" destination="YI6-b0-uIT" id="sid-gq-HE0"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Fashion" id="eV7-KA-0Wh">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="G5g-rM-Kyk"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="menuButton" destination="G5g-rM-Kyk" id="HUi-9f-7Zb"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2557" y="-370"/>
         </scene>
         <!--Music-->
         <scene sceneID="5Sq-LA-IYU">
@@ -516,12 +560,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qh-Ys-HTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3491" y="-658"/>
+            <point key="canvasLocation" x="3387" y="-2082"/>
         </scene>
-        <!--Music-->
+        <!--Editorials-->
         <scene sceneID="FYp-qp-kWq">
             <objects>
-                <viewController id="Eil-um-sNY" customClass="MusicViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Eil-um-sNY" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ZI-QL-Aqk"/>
                         <viewControllerLayoutGuide type="bottom" id="pe4-EO-2zS"/>
@@ -531,16 +575,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Music" id="fLC-yn-LFb">
+                    <navigationItem key="navigationItem" title="Editorials" id="fLC-yn-LFb">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="819-tc-bnV"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="819-tc-bnV" id="7hI-7E-2qu"/>
+                        <outlet property="menuButton" destination="819-tc-bnV" id="ew1-sL-BQv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku4-La-3hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4615" y="-658"/>
+            <point key="canvasLocation" x="4615" y="-2082"/>
         </scene>
         <!--About-->
         <scene sceneID="yW3-E6-YIx">
@@ -563,7 +607,7 @@
                                             <constraint firstAttribute="width" constant="600" id="2eq-U4-xyg"/>
                                             <constraint firstAttribute="height" constant="536" id="FY6-PW-HES"/>
                                         </constraints>
-                                        <mutableString key="text">An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
+                                        <string key="text">An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
 
 EDITORS
 
@@ -582,7 +626,7 @@ Art Director Mary Kang // @marykangphoto
 
 Literary Director Katie Heins // @cougarfreak7
 
-Music Director Carl Pietrusinski // @car_roll519</mutableString>
+Music Director Carl Pietrusinski // @car_roll519</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -658,9 +702,50 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
             </objects>
             <point key="canvasLocation" x="2467" y="3430"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IfL-N9-Tqz">
+            <objects>
+                <navigationController id="cbh-oW-z2j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wlN-Ah-NSd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s4F-oy-GQg" kind="relationship" relationship="rootViewController" id="Ixb-CO-WJP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBY-yB-Ld9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="-1290"/>
+        </scene>
+        <!--Spotlight-->
+        <scene sceneID="mmi-wf-0tz">
+            <objects>
+                <viewController id="s4F-oy-GQg" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WUL-Hr-DPa"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Zl-XW-0AP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lKn-Fr-PnG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Spotlight" id="GUw-ie-ulG">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="ov6-56-dUT"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="ov6-56-dUT" id="bC6-qk-uZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sd6-Tw-YUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4615" y="-1290"/>
+        </scene>
     </scenes>
     <resources>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
+        <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MQW-oc-B7Q"/>
