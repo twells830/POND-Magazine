@@ -8,17 +8,9 @@
 
 import UIKit
 
-class CultureViewController: UIViewController {
+class CultureViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var webView: UIWebView!
-    var URLPath = "http://www.pond-mag.com/new-page-4/"
-    
-    func loadURL(){
-        let requestURL = NSURL(string: URLPath)
-        let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +24,6 @@ class CultureViewController: UIViewController {
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
-            loadURL()
             
         }
     }
