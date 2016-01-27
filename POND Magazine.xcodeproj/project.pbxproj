@@ -11,8 +11,6 @@
 		441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033681C4D69FE0013C6DB /* MusicViewController.swift */; };
 		4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336A1C4D6BF40013C6DB /* ArtViewController.swift */; };
 		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
-		444B0E621C4D83510094F28F /* SpotlightThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 444B0E601C4D83510094F28F /* SpotlightThumb.jpg */; };
-		444B0E631C4D83510094F28F /* EditorialsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 444B0E611C4D83510094F28F /* EditorialsThumb.jpg */; };
 		447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969881C49D9DB004E3CC4 /* AppDelegate.swift */; };
 		4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479698A1C49D9DB004E3CC4 /* MenuController.swift */; };
 		4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4479698C1C49D9DB004E3CC4 /* Main.storyboard */; };
@@ -26,15 +24,17 @@
 		44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */; };
 		44D667A31C5874440054F8B4 /* EditorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A21C5874440054F8B4 /* EditorialsViewController.swift */; };
 		44D667A51C5875860054F8B4 /* SpotlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A41C5875860054F8B4 /* SpotlightViewController.swift */; };
-		44D667AF1C5883020054F8B4 /* BlogThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667A61C5883020054F8B4 /* BlogThumb.jpg */; };
-		44D667B01C5883020054F8B4 /* EntertainmentThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667A71C5883020054F8B4 /* EntertainmentThumb.jpg */; };
-		44D667B11C5883020054F8B4 /* FeaturedArtistsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667A81C5883020054F8B4 /* FeaturedArtistsThumb.jpg */; };
-		44D667B21C5883020054F8B4 /* InterviewsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667A91C5883020054F8B4 /* InterviewsThumb.jpg */; };
-		44D667B31C5883020054F8B4 /* LitZineThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667AA1C5883020054F8B4 /* LitZineThumb.jpg */; };
-		44D667B41C5883020054F8B4 /* PhotographyThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667AB1C5883020054F8B4 /* PhotographyThumb.jpg */; };
-		44D667B51C5883020054F8B4 /* PlaylistsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667AC1C5883020054F8B4 /* PlaylistsThumb.jpg */; };
-		44D667B61C5883020054F8B4 /* ReleasesThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667AD1C5883020054F8B4 /* ReleasesThumb.jpg */; };
-		44D667B71C5883020054F8B4 /* ReviewsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667AE1C5883020054F8B4 /* ReviewsThumb.jpg */; };
+		44D667C31C5894720054F8B4 /* BlogThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667B81C5894720054F8B4 /* BlogThumb.jpg */; };
+		44D667C41C5894720054F8B4 /* EditorialsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667B91C5894720054F8B4 /* EditorialsThumb.jpg */; };
+		44D667C51C5894720054F8B4 /* EntertainmentThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BA1C5894720054F8B4 /* EntertainmentThumb.jpg */; };
+		44D667C61C5894720054F8B4 /* FeaturedArtistsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BB1C5894720054F8B4 /* FeaturedArtistsThumb.jpg */; };
+		44D667C71C5894720054F8B4 /* InterviewsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BC1C5894720054F8B4 /* InterviewsThumb.jpg */; };
+		44D667C81C5894720054F8B4 /* LitZineThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BD1C5894720054F8B4 /* LitZineThumb.jpg */; };
+		44D667C91C5894720054F8B4 /* PhotographyThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BE1C5894720054F8B4 /* PhotographyThumb.jpg */; };
+		44D667CA1C5894720054F8B4 /* PlaylistsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667BF1C5894720054F8B4 /* PlaylistsThumb.jpg */; };
+		44D667CB1C5894720054F8B4 /* ReleasesThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667C01C5894720054F8B4 /* ReleasesThumb.jpg */; };
+		44D667CC1C5894720054F8B4 /* ReviewsThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667C11C5894720054F8B4 /* ReviewsThumb.jpg */; };
+		44D667CD1C5894720054F8B4 /* SpotlightThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D667C21C5894720054F8B4 /* SpotlightThumb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,6 @@
 		441033681C4D69FE0013C6DB /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		4410336A1C4D6BF40013C6DB /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
-		444B0E601C4D83510094F28F /* SpotlightThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SpotlightThumb.jpg; sourceTree = "<group>"; };
-		444B0E611C4D83510094F28F /* EditorialsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EditorialsThumb.jpg; sourceTree = "<group>"; };
 		447969851C49D9DB004E3CC4 /* POND Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POND Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447969881C49D9DB004E3CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4479698A1C49D9DB004E3CC4 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -82,15 +80,17 @@
 		44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
 		44D667A21C5874440054F8B4 /* EditorialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorialsViewController.swift; sourceTree = "<group>"; };
 		44D667A41C5875860054F8B4 /* SpotlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightViewController.swift; sourceTree = "<group>"; };
-		44D667A61C5883020054F8B4 /* BlogThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlogThumb.jpg; sourceTree = "<group>"; };
-		44D667A71C5883020054F8B4 /* EntertainmentThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EntertainmentThumb.jpg; sourceTree = "<group>"; };
-		44D667A81C5883020054F8B4 /* FeaturedArtistsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FeaturedArtistsThumb.jpg; sourceTree = "<group>"; };
-		44D667A91C5883020054F8B4 /* InterviewsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InterviewsThumb.jpg; sourceTree = "<group>"; };
-		44D667AA1C5883020054F8B4 /* LitZineThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LitZineThumb.jpg; sourceTree = "<group>"; };
-		44D667AB1C5883020054F8B4 /* PhotographyThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhotographyThumb.jpg; sourceTree = "<group>"; };
-		44D667AC1C5883020054F8B4 /* PlaylistsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PlaylistsThumb.jpg; sourceTree = "<group>"; };
-		44D667AD1C5883020054F8B4 /* ReleasesThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ReleasesThumb.jpg; sourceTree = "<group>"; };
-		44D667AE1C5883020054F8B4 /* ReviewsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ReviewsThumb.jpg; sourceTree = "<group>"; };
+		44D667B81C5894720054F8B4 /* BlogThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BlogThumb.jpg; path = Images/BlogThumb.jpg; sourceTree = "<group>"; };
+		44D667B91C5894720054F8B4 /* EditorialsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = EditorialsThumb.jpg; path = Images/EditorialsThumb.jpg; sourceTree = "<group>"; };
+		44D667BA1C5894720054F8B4 /* EntertainmentThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = EntertainmentThumb.jpg; path = Images/EntertainmentThumb.jpg; sourceTree = "<group>"; };
+		44D667BB1C5894720054F8B4 /* FeaturedArtistsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FeaturedArtistsThumb.jpg; path = Images/FeaturedArtistsThumb.jpg; sourceTree = "<group>"; };
+		44D667BC1C5894720054F8B4 /* InterviewsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = InterviewsThumb.jpg; path = Images/InterviewsThumb.jpg; sourceTree = "<group>"; };
+		44D667BD1C5894720054F8B4 /* LitZineThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LitZineThumb.jpg; path = Images/LitZineThumb.jpg; sourceTree = "<group>"; };
+		44D667BE1C5894720054F8B4 /* PhotographyThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PhotographyThumb.jpg; path = Images/PhotographyThumb.jpg; sourceTree = "<group>"; };
+		44D667BF1C5894720054F8B4 /* PlaylistsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PlaylistsThumb.jpg; path = Images/PlaylistsThumb.jpg; sourceTree = "<group>"; };
+		44D667C01C5894720054F8B4 /* ReleasesThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ReleasesThumb.jpg; path = Images/ReleasesThumb.jpg; sourceTree = "<group>"; };
+		44D667C11C5894720054F8B4 /* ReviewsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ReviewsThumb.jpg; path = Images/ReviewsThumb.jpg; sourceTree = "<group>"; };
+		44D667C21C5894720054F8B4 /* SpotlightThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SpotlightThumb.jpg; path = Images/SpotlightThumb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,17 +121,17 @@
 		444B0E5F1C4D83410094F28F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				444B0E601C4D83510094F28F /* SpotlightThumb.jpg */,
-				444B0E611C4D83510094F28F /* EditorialsThumb.jpg */,
-				44D667A61C5883020054F8B4 /* BlogThumb.jpg */,
-				44D667A71C5883020054F8B4 /* EntertainmentThumb.jpg */,
-				44D667A81C5883020054F8B4 /* FeaturedArtistsThumb.jpg */,
-				44D667A91C5883020054F8B4 /* InterviewsThumb.jpg */,
-				44D667AA1C5883020054F8B4 /* LitZineThumb.jpg */,
-				44D667AB1C5883020054F8B4 /* PhotographyThumb.jpg */,
-				44D667AC1C5883020054F8B4 /* PlaylistsThumb.jpg */,
-				44D667AD1C5883020054F8B4 /* ReleasesThumb.jpg */,
-				44D667AE1C5883020054F8B4 /* ReviewsThumb.jpg */,
+				44D667B81C5894720054F8B4 /* BlogThumb.jpg */,
+				44D667B91C5894720054F8B4 /* EditorialsThumb.jpg */,
+				44D667BA1C5894720054F8B4 /* EntertainmentThumb.jpg */,
+				44D667BB1C5894720054F8B4 /* FeaturedArtistsThumb.jpg */,
+				44D667BC1C5894720054F8B4 /* InterviewsThumb.jpg */,
+				44D667BD1C5894720054F8B4 /* LitZineThumb.jpg */,
+				44D667BE1C5894720054F8B4 /* PhotographyThumb.jpg */,
+				44D667BF1C5894720054F8B4 /* PlaylistsThumb.jpg */,
+				44D667C01C5894720054F8B4 /* ReleasesThumb.jpg */,
+				44D667C11C5894720054F8B4 /* ReviewsThumb.jpg */,
+				44D667C21C5894720054F8B4 /* SpotlightThumb.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -324,20 +324,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D667B31C5883020054F8B4 /* LitZineThumb.jpg in Resources */,
-				44D667B21C5883020054F8B4 /* InterviewsThumb.jpg in Resources */,
-				44D667AF1C5883020054F8B4 /* BlogThumb.jpg in Resources */,
-				44D667B11C5883020054F8B4 /* FeaturedArtistsThumb.jpg in Resources */,
-				44D667B41C5883020054F8B4 /* PhotographyThumb.jpg in Resources */,
+				44D667CB1C5894720054F8B4 /* ReleasesThumb.jpg in Resources */,
+				44D667CD1C5894720054F8B4 /* SpotlightThumb.jpg in Resources */,
+				44D667C91C5894720054F8B4 /* PhotographyThumb.jpg in Resources */,
+				44D667CA1C5894720054F8B4 /* PlaylistsThumb.jpg in Resources */,
+				44D667C31C5894720054F8B4 /* BlogThumb.jpg in Resources */,
+				44D667C61C5894720054F8B4 /* FeaturedArtistsThumb.jpg in Resources */,
+				44D667CC1C5894720054F8B4 /* ReviewsThumb.jpg in Resources */,
+				44D667C81C5894720054F8B4 /* LitZineThumb.jpg in Resources */,
+				44D667C71C5894720054F8B4 /* InterviewsThumb.jpg in Resources */,
+				44D667C51C5894720054F8B4 /* EntertainmentThumb.jpg in Resources */,
 				447969931C49D9DB004E3CC4 /* LaunchScreen.storyboard in Resources */,
 				447969901C49D9DB004E3CC4 /* Assets.xcassets in Resources */,
+				44D667C41C5894720054F8B4 /* EditorialsThumb.jpg in Resources */,
 				4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */,
-				44D667B71C5883020054F8B4 /* ReviewsThumb.jpg in Resources */,
-				444B0E631C4D83510094F28F /* EditorialsThumb.jpg in Resources */,
-				44D667B01C5883020054F8B4 /* EntertainmentThumb.jpg in Resources */,
-				44D667B51C5883020054F8B4 /* PlaylistsThumb.jpg in Resources */,
-				444B0E621C4D83510094F28F /* SpotlightThumb.jpg in Resources */,
-				44D667B61C5883020054F8B4 /* ReleasesThumb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
