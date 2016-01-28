@@ -490,13 +490,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-q9-jlV">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="600" id="2eq-U4-xyg"/>
-                                            <constraint firstAttribute="height" constant="536" id="FY6-PW-HES"/>
-                                        </constraints>
-                                        <string key="text">An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
+                                        <mutableString key="text">POND Magazine is...
+
+An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
 
 EDITORS
 
@@ -515,27 +513,27 @@ Art Director Mary Kang // @marykangphoto
 
 Literary Director Katie Heins // @cougarfreak7
 
-Music Director Carl Pietrusinski // @car_roll519</string>
+Music Director Carl Pietrusinski // @car_roll519</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ixl-Cx-XqS" secondAttribute="bottom" id="6hl-aX-bGt"/>
-                                    <constraint firstAttribute="trailing" secondItem="ixl-Cx-XqS" secondAttribute="trailing" id="A6M-ZQ-tdo"/>
-                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="leading" secondItem="vzW-q9-jlV" secondAttribute="leading" id="Ibp-d6-feB"/>
-                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="top" id="brr-bx-J8b"/>
-                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="centerX" secondItem="vzW-q9-jlV" secondAttribute="centerX" id="x4j-6Q-7Id"/>
+                                    <constraint firstAttribute="trailing" secondItem="ixl-Cx-XqS" secondAttribute="trailing" id="GVR-rd-ifA"/>
+                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="leading" secondItem="vzW-q9-jlV" secondAttribute="leading" id="a2m-l8-Brq"/>
+                                    <constraint firstItem="ixl-Cx-XqS" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="top" id="aLc-ks-IAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ixl-Cx-XqS" secondAttribute="bottom" id="mts-ed-ivY"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vzW-q9-jlV" firstAttribute="top" secondItem="Gw1-fQ-jrx" secondAttribute="bottom" id="Vaq-hz-m1q"/>
-                            <constraint firstItem="HFT-NZ-wd7" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="bottom" id="e3F-G1-8J4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vzW-q9-jlV" secondAttribute="trailing" constant="-20" id="fHy-82-r1s"/>
-                            <constraint firstItem="vzW-q9-jlV" firstAttribute="leading" secondItem="w7N-5l-6zz" secondAttribute="leadingMargin" constant="-20" id="vQ9-fK-M44"/>
+                            <constraint firstItem="vzW-q9-jlV" firstAttribute="leading" secondItem="w7N-5l-6zz" secondAttribute="leadingMargin" constant="-20" id="7Eh-tY-xDs"/>
+                            <constraint firstItem="HFT-NZ-wd7" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="bottom" id="Ali-x1-5v8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzW-q9-jlV" secondAttribute="trailing" constant="-20" id="PSe-ap-xB4"/>
+                            <constraint firstItem="vzW-q9-jlV" firstAttribute="top" secondItem="Gw1-fQ-jrx" secondAttribute="bottom" id="hUv-Qp-6hx"/>
+                            <constraint firstItem="ixl-Cx-XqS" firstAttribute="width" secondItem="w7N-5l-6zz" secondAttribute="width" id="v7w-8P-2eR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="vpF-UU-LM8">
@@ -1301,6 +1299,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MQW-oc-B7Q"/>
+        <segue reference="Bd1-v2-Xt3"/>
     </inferredMetricsTieBreakers>
 </document>
