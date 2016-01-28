@@ -268,7 +268,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="POND" id="dIB-mL-9kh">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Omf-vE-LVx"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="Omf-vE-LVx">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="Omf-vE-LVx" id="hW4-PA-t1W"/>
@@ -376,7 +378,9 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Fashion" id="eV7-KA-0Wh">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="G5g-rM-Kyk"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="G5g-rM-Kyk">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -490,9 +494,9 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-q9-jlV">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                                        <mutableString key="text">POND Magazine is...
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                        <string key="text">POND Magazine is...
 
 An online publication of thoughts, music, and art all collaboratively compiled and curated by a group of college students living on complete opposite ends of the world. 
 
@@ -513,7 +517,7 @@ Art Director Mary Kang // @marykangphoto
 
 Literary Director Katie Heins // @cougarfreak7
 
-Music Director Carl Pietrusinski // @car_roll519</mutableString>
+Music Director Carl Pietrusinski // @car_roll519</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -537,7 +541,9 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="vpF-UU-LM8">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="ckx-dw-ja9"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="ckx-dw-ja9">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ScrollView" destination="vzW-q9-jlV" id="kCw-TI-mXB"/>
@@ -579,7 +585,9 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Submissions" id="H4G-Hs-bF4">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="2uZ-d7-qM9"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="2uZ-d7-qM9">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="2uZ-d7-qM9" id="9iq-T4-trW"/>
@@ -740,7 +748,9 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Music" id="S9H-Dp-I6n">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="2U8-xQ-JaW"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="2U8-xQ-JaW">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -862,7 +872,9 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Art" id="mP6-Dh-L2a">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="rPc-Qn-C6R"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="rPc-Qn-C6R">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -954,7 +966,9 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Culture" id="uiE-w1-abE">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Qet-kr-u4E"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="Qet-kr-u4E">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1293,6 +1307,7 @@ Music Director Carl Pietrusinski // @car_roll519</mutableString>
         <image name="FeaturedArtistsThumb.jpg" width="500" height="332"/>
         <image name="InterviewsThumb.jpg" width="1000" height="750"/>
         <image name="LitZineThumb.jpg" width="1000" height="616"/>
+        <image name="Menu" width="22" height="22"/>
         <image name="PhotographyThumb.jpg" width="500" height="750"/>
         <image name="ReleasesThumb.jpg" width="1000" height="663"/>
         <image name="ReviewsThumb.jpg" width="1000" height="668"/>
