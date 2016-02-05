@@ -1,0 +1,6 @@
+framework module Pods_POND_Magazine {
+  umbrella header "Pods-POND Magazine-umbrella.h"
+
+  export *
+  module * { export * }
+}

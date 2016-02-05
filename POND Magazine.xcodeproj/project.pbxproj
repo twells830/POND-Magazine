@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24557016C70DF51B3E9B087E /* Pods_POND_Magazine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEC5824F8AF985C830FBE5A /* Pods_POND_Magazine.framework */; };
 		441033671C4D5EF10013C6DB /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033661C4D5EF10013C6DB /* FashionViewController.swift */; };
 		441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033681C4D69FE0013C6DB /* MusicViewController.swift */; };
 		4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336A1C4D6BF40013C6DB /* ArtViewController.swift */; };
 		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
+		441C92141C65446600CA76A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 441C92131C65446600CA76A2 /* Podfile */; };
 		4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307B1C6435EF00DDEF86 /* Spotify.framework */; };
 		4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307E1C643D0C00DDEF86 /* AVFoundation.framework */; };
 		446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446630801C643D1500DDEF86 /* SystemConfiguration.framework */; };
@@ -62,6 +64,7 @@
 		441033681C4D69FE0013C6DB /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		4410336A1C4D6BF40013C6DB /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
+		441C92131C65446600CA76A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		4466307B1C6435EF00DDEF86 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		4466307E1C643D0C00DDEF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		446630801C643D1500DDEF86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,9 @@
 		44D667C01C5894720054F8B4 /* ReleasesThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ReleasesThumb.jpg; path = Images/ReleasesThumb.jpg; sourceTree = "<group>"; };
 		44D667C11C5894720054F8B4 /* ReviewsThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ReviewsThumb.jpg; path = Images/ReviewsThumb.jpg; sourceTree = "<group>"; };
 		44D667C21C5894720054F8B4 /* SpotlightThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SpotlightThumb.jpg; path = Images/SpotlightThumb.jpg; sourceTree = "<group>"; };
+		8DEC5824F8AF985C830FBE5A /* Pods_POND_Magazine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POND_Magazine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAC46FDE8592B4D370EC02B /* Pods-POND Magazine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POND Magazine.release.xcconfig"; path = "Pods/Target Support Files/Pods-POND Magazine/Pods-POND Magazine.release.xcconfig"; sourceTree = "<group>"; };
+		C936C708717DE0005B407C2D /* Pods-POND Magazine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POND Magazine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POND Magazine/Pods-POND Magazine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 				446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */,
 				4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */,
 				4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */,
+				24557016C70DF51B3E9B087E /* Pods_POND_Magazine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +158,7 @@
 				446630801C643D1500DDEF86 /* SystemConfiguration.framework */,
 				4466307E1C643D0C00DDEF86 /* AVFoundation.framework */,
 				4466307B1C6435EF00DDEF86 /* Spotify.framework */,
+				8DEC5824F8AF985C830FBE5A /* Pods_POND_Magazine.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 		4479697C1C49D9DB004E3CC4 = {
 			isa = PBXGroup;
 			children = (
+				441C92131C65446600CA76A2 /* Podfile */,
 				4466307A1C6435C900DDEF86 /* Frameworks */,
 				444B0E5F1C4D83410094F28F /* Images */,
 				447969871C49D9DB004E3CC4 /* POND Magazine */,
@@ -165,6 +174,7 @@
 				4479699C1C49D9DC004E3CC4 /* POND MagazineTests */,
 				447969A71C49D9DC004E3CC4 /* POND MagazineUITests */,
 				447969861C49D9DB004E3CC4 /* Products */,
+				51256A17E6EC37B8E9CA9F61 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +247,15 @@
 			path = "POND Magazine";
 			sourceTree = "<group>";
 		};
+		51256A17E6EC37B8E9CA9F61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C936C708717DE0005B407C2D /* Pods-POND Magazine.debug.xcconfig */,
+				9FAC46FDE8592B4D370EC02B /* Pods-POND Magazine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 447969AD1C49D9DC004E3CC4 /* Build configuration list for PBXNativeTarget "POND Magazine" */;
 			buildPhases = (
+				3AFEB9454F240FB628AC518B /* Check Pods Manifest.lock */,
 				447969811C49D9DB004E3CC4 /* Sources */,
 				447969821C49D9DB004E3CC4 /* Frameworks */,
 				447969831C49D9DB004E3CC4 /* Resources */,
+				CE9397584C7FBE95580E4EFF /* Embed Pods Frameworks */,
+				39C2035C58C982B086889A37 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441C92141C65446600CA76A2 /* Podfile in Resources */,
 				44D667CB1C5894720054F8B4 /* ReleasesThumb.jpg in Resources */,
 				44D667CD1C5894720054F8B4 /* SpotlightThumb.jpg in Resources */,
 				44D667C91C5894720054F8B4 /* PhotographyThumb.jpg in Resources */,
@@ -376,6 +399,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C2035C58C982B086889A37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-POND Magazine/Pods-POND Magazine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AFEB9454F240FB628AC518B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9397584C7FBE95580E4EFF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-POND Magazine/Pods-POND Magazine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		447969811C49D9DB004E3CC4 /* Sources */ = {
@@ -531,6 +602,7 @@
 		};
 		447969AE1C49D9DC004E3CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C936C708717DE0005B407C2D /* Pods-POND Magazine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -551,6 +623,7 @@
 		};
 		447969AF1C49D9DC004E3CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAC46FDE8592B4D370EC02B /* Pods-POND Magazine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
