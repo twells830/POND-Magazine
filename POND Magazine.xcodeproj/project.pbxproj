@@ -11,6 +11,9 @@
 		441033691C4D69FE0013C6DB /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441033681C4D69FE0013C6DB /* MusicViewController.swift */; };
 		4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336A1C4D6BF40013C6DB /* ArtViewController.swift */; };
 		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
+		4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307B1C6435EF00DDEF86 /* Spotify.framework */; };
+		4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307E1C643D0C00DDEF86 /* AVFoundation.framework */; };
+		446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446630801C643D1500DDEF86 /* SystemConfiguration.framework */; };
 		447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969881C49D9DB004E3CC4 /* AppDelegate.swift */; };
 		4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479698A1C49D9DB004E3CC4 /* MenuController.swift */; };
 		4479698E1C49D9DB004E3CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4479698C1C49D9DB004E3CC4 /* Main.storyboard */; };
@@ -59,6 +62,9 @@
 		441033681C4D69FE0013C6DB /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		4410336A1C4D6BF40013C6DB /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
+		4466307B1C6435EF00DDEF86 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		4466307E1C643D0C00DDEF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		446630801C643D1500DDEF86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		447969851C49D9DB004E3CC4 /* POND Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POND Magazine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447969881C49D9DB004E3CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4479698A1C49D9DB004E3CC4 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */,
+				4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */,
+				4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +145,20 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		4466307A1C6435C900DDEF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446630801C643D1500DDEF86 /* SystemConfiguration.framework */,
+				4466307E1C643D0C00DDEF86 /* AVFoundation.framework */,
+				4466307B1C6435EF00DDEF86 /* Spotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4479697C1C49D9DB004E3CC4 = {
 			isa = PBXGroup;
 			children = (
+				4466307A1C6435C900DDEF86 /* Frameworks */,
 				444B0E5F1C4D83410094F28F /* Images */,
 				447969871C49D9DB004E3CC4 /* POND Magazine */,
 				447969BB1C49DA78004E3CC4 /* Supporting Files */,
@@ -514,8 +534,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "POND Magazine/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-Magazine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "POND Magazine/POND Magazine-Bridging-Header.h";
@@ -528,8 +554,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "POND Magazine/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PONDMAG.POND-Magazine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "POND Magazine/POND Magazine-Bridging-Header.h";
