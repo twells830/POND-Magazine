@@ -13,6 +13,7 @@
 		4410336B1C4D6BF40013C6DB /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336A1C4D6BF40013C6DB /* ArtViewController.swift */; };
 		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
 		441C92141C65446600CA76A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 441C92131C65446600CA76A2 /* Podfile */; };
+		441C921C1C65765700CA76A2 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */; };
 		4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307B1C6435EF00DDEF86 /* Spotify.framework */; };
 		4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307E1C643D0C00DDEF86 /* AVFoundation.framework */; };
 		446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446630801C643D1500DDEF86 /* SystemConfiguration.framework */; };
@@ -65,6 +66,7 @@
 		4410336A1C4D6BF40013C6DB /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
 		441C92131C65446600CA76A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		4466307B1C6435EF00DDEF86 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		4466307E1C643D0C00DDEF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		446630801C643D1500DDEF86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				447969B61C49DA04004E3CC4 /* SWRevealViewController */,
+				447969B71C49DA32004E3CC4 /* POND Magazine-Bridging-Header.h */,
 				447969881C49D9DB004E3CC4 /* AppDelegate.swift */,
 				4479698C1C49D9DB004E3CC4 /* Main.storyboard */,
 				4479698F1C49D9DB004E3CC4 /* Assets.xcassets */,
@@ -224,7 +227,6 @@
 			children = (
 				447969B81C49DA34004E3CC4 /* SWRevealViewController.h */,
 				447969B91C49DA34004E3CC4 /* SWRevealViewController.m */,
-				447969B71C49DA32004E3CC4 /* POND Magazine-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
 			sourceTree = "<group>";
@@ -242,6 +244,7 @@
 				44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */,
 				44D667A21C5874440054F8B4 /* EditorialsViewController.swift */,
 				44D667A41C5875860054F8B4 /* SpotlightViewController.swift */,
+				441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */,
 			);
 			name = "Supporting Files";
 			path = "POND Magazine";
@@ -460,6 +463,7 @@
 				4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */,
 				44D667A51C5875860054F8B4 /* SpotlightViewController.swift in Sources */,
 				447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */,
+				441C921C1C65765700CA76A2 /* SpotifyLoginViewController.swift in Sources */,
 				44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */,
 				44D667A31C5874440054F8B4 /* EditorialsViewController.swift in Sources */,
 				447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */,
