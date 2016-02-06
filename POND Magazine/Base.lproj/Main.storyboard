@@ -247,7 +247,7 @@
             </objects>
             <point key="canvasLocation" x="509" y="1131"/>
         </scene>
-        <!--Spotify Login View Controller-->
+        <!--Playlists-->
         <scene sceneID="IRk-XM-Dsm">
             <objects>
                 <viewController id="Kn5-13-lK8" customClass="SpotifyLoginViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
@@ -273,9 +273,16 @@
                             <constraint firstItem="cAK-7R-HnT" firstAttribute="centerX" secondItem="hbH-5W-nJH" secondAttribute="centerX" id="1m4-Bu-czD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="g54-CV-Xbn"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Playlists" id="g54-CV-Xbn">
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="0du-ie-Ie8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="loginButton" destination="cAK-7R-HnT" id="DUG-Gn-Fhj"/>
+                        <outlet property="menuButton" destination="0du-ie-Ie8" id="izj-Gz-e7h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUe-on-fWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,23 @@ class SpotifyLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudi
     
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if revealViewController() != nil {
+            revealViewController().rearViewRevealWidth = 200
+            menuButton.target = revealViewController()
+            menuButton.action = "revealToggle:"
+            
+            //revealViewController().rightViewRevealWidth = 200
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
+    }
+    
     var player: SPTAudioStreamingController?
 
     let spotifyAuthenticator = SPTAuth.defaultInstance()
