@@ -62,7 +62,7 @@ FOUNDATION_EXPORT NSString * const SPTAudioStreamingMetadataTrackDuration DEPREC
 +(id)new __attribute__((unavailable("new not available, use alloc and initWithClientId")));
 
 /** Initialise a new `SPAudioStreamingController`.
- 
+
  @param clientId Your client id.
  @return Returns an initialised `SPAudioStreamingController` instance.
  */

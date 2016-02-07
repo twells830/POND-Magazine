@@ -9,15 +9,11 @@
 import UIKit
 
 
-class SpotifyLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudioStreamingPlaybackDelegate{
-
-    let clientID = "3f1b7c3568e34353ba38fe76a12d7bef"
-    let callbackURL = "pondMagazine://returnAfterLogin"
-    let kTokenSwapURL = "http://localhost:1234/swap"
-    let kTokenRefreshURL = "http://localhost:1234/refresh"
+class SpotifyLoginViewController: UIViewController, SPTAuthViewDelegate{
+    let kclientID = "3f1b7c3568e34353ba38fe76a12d7bef"
+    let kcallbackURL = "pondMagazine://returnAfterLogin"
     
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -35,61 +31,35 @@ class SpotifyLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudi
         }
     }
     
-    var player: SPTAudioStreamingController?
-
-    let spotifyAuthenticator = SPTAuth.defaultInstance()
-    
-    @IBAction func loginWithSpotify(sender: AnyObject) {
-        spotifyAuthenticator.clientID = clientID
-        spotifyAuthenticator.requestedScopes = [SPTAuthStreamingScope]
-        spotifyAuthenticator.redirectURL = NSURL(string: callbackURL)
-        spotifyAuthenticator.tokenSwapURL = NSURL(string: kTokenSwapURL)
-        spotifyAuthenticator.tokenRefreshURL = NSURL(string: kTokenRefreshURL)
+    @IBAction func loginSpotify(sender: AnyObject){
+        SPTAuth.defaultInstance().clientID = kclientID
+        SPTAuth.defaultInstance().redirectURL = NSURL(string: kcallbackURL)
+        SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope]
+        SPTAuth.defaultInstance().sessionUserDefaultsKey = "SpotifySession"
+        //SPTAuth.defaultInstance().tokenSwapURL = NSURL(string: ktokenSwapURL) //you will not need this initially, unless you want to refresh tokens
+       // SPTAuth.defaultInstance().tokenRefreshURL = NSURL(string: ktokenRefreshServiceURL)//you will not need this unless you want to refresh tokens
         
-        let spotifyAuthenticationViewController = SPTAuthViewController.authenticationViewController()
-        spotifyAuthenticationViewController.delegate = self
-        spotifyAuthenticationViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-        spotifyAuthenticationViewController.definesPresentationContext = true
-        presentViewController(spotifyAuthenticationViewController, animated: false, completion: nil)
+        let spotifyAuthViewController = SPTAuthViewController.authenticationViewController()
+        spotifyAuthViewController.delegate = self
+        spotifyAuthViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        spotifyAuthViewController.definesPresentationContext = true
+        presentViewController(spotifyAuthViewController, animated: false, completion: nil)
+        
     }
     
-    // SPTAuthViewDelegate protocol methods
     
     func authenticationViewController(authenticationViewController: SPTAuthViewController!, didLoginWithSession session: SPTSession!) {
-        setupSpotifyPlayer()
-        loginWithSpotifySession(session)
-    }
-    
-    func authenticationViewControllerDidCancelLogin(authenticationViewController: SPTAuthViewController!) {
-        print("login cancelled")
+        print("Logged In")
     }
     
     func authenticationViewController(authenticationViewController: SPTAuthViewController!, didFailToLogin error: NSError!) {
-        print("login failed")
+        print("Failed to Log In")
+        print(error)
+        authenticationViewController.clearCookies(nil)
     }
     
-    // SPTAudioStreamingPlaybackDelegate protocol methods
-    
-    private
-    
-    func setupSpotifyPlayer() {
-        player = SPTAudioStreamingController(clientId: spotifyAuthenticator.clientID) // can also use kClientID; they're the same value
-        player!.playbackDelegate = self
-        player!.diskCache = SPTDiskCache(capacity: 1024 * 1024 * 64)
-    }
-    
-    func loginWithSpotifySession(session: SPTSession) {
-        player!.loginWithSession(session, callback: { (error: NSError!) in
-            if error != nil {
-                print("Couldn't login with session: \(error)")
-                return
-            }
-            self.useLoggedInPermissions()
-        })
-    }
-    
-    func useLoggedInPermissions() {
-        let spotifyURI = "spotify:track:1WJk986df8mpqpktoktlce"
-        player!.playURIs([NSURL(string: spotifyURI)!], withOptions: nil, callback: nil)
+    func authenticationViewControllerDidCancelLogin(authenticationViewController: SPTAuthViewController!) {
+        print("User Canceled Log In")
+        authenticationViewController.clearCookies(nil)
     }
 }
