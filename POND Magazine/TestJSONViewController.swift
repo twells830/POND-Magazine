@@ -13,22 +13,18 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    let url = "http://www.pond-mag.com/spotlight/"
+    
     var json: [String: AnyObject]!
     
     var titles = [String]()
     
-    var names = [String]()
-
-    // = = = = = = =
     @IBOutlet weak var tableView: UITableView!
-
-    // = = = = = = =
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //using the core data code to test output
-        title = "\"The List\""
         tableView.registerClass(UITableViewCell.self,
             forCellReuseIdentifier: "Cell")
         //==== = = = = = = = =
@@ -60,7 +56,7 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
             }
             */
             //self.test(self.json)
-            self.fillTable(self.json)
+            self.fillTable()
         }
         
         //menu code
@@ -77,7 +73,7 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
     }
     
     //PLAYING WITH PASSING THE JSON VARIABLE AROUND
-    func fillTable(json: [String: AnyObject]){
+    func fillTable(){
     
         guard let list = listPage(json: self.json) else {
             print("Error initializing object")
@@ -85,13 +81,18 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
         }
         
         let bodyCount = list.count! - 1
+        
         for(var i = 0; i < bodyCount; i++){
-            guard let item = list.results?.body![i].title?.text else {
-                print("No such item")
-                return
-            }
             
-            self.titles.append(item)
+            let itemURL = list.results?.body![i].url
+            if(itemURL == self.url){
+                guard let item = list.results?.body![i].title?.text else {
+                    print("No such item")
+                    return
+                }
+            
+                self.titles.append(item)
+            }
         }
         self.tableView.reloadData()
         
