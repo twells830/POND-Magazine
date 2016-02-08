@@ -10,44 +10,18 @@ import Foundation
 
 class TestJSONViewController: UIViewController, UITableViewDataSource{
 
-    @IBOutlet weak var menuButton: UIButton!
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     var json: [String: AnyObject]!
+    
+    var titles = [String]()
+    
+    var names = [String]()
 
     // = = = = = = =
     @IBOutlet weak var tableView: UITableView!
 
-    @IBAction func addName(sender: AnyObject) {
-        
-        let alert = UIAlertController(title: "New Name",
-            message: "Add a new name",
-            preferredStyle: .Alert)
-        
-        let saveAction = UIAlertAction(title: "Save",
-            style: .Default,
-            handler: { (action:UIAlertAction) -> Void in
-                
-                let textField = alert.textFields!.first
-                self.names.append(textField!.text!)
-                self.tableView.reloadData()
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel",
-            style: .Default) { (action: UIAlertAction) -> Void in
-        }
-        
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField) -> Void in
-        }
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        presentViewController(alert,
-            animated: true,
-            completion: nil)
-    }
-    var names = [String]()
     // = = = = = = =
     
     override func viewDidLoad() {
@@ -69,22 +43,24 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
                 print(error)
             }
             
-          /*  // 2
-            guard let list = listPage(json: self.json) else {
+           // 2
+           /* guard let list = listPage(json: self.json) else {
                 print("Error initializing object")
+                return
             }
             
-            // 3 this cycles through every title in the body
-            var bodyCount = list.count! - 1
+            // 3 this cycles through every title in the body and puts them in titles array
+            let bodyCount = list.count! - 1
             for(var i = 0; i < bodyCount; i++){
-                guard let firstItem = list.results?.body![i].title?.text else {
+                guard let item = list.results?.body![i].title?.text else {
                     print("No such item")
+                    return
                 }
-                print(firstItem)
-            }*/
-            
-            self.test(self.json)
-            
+                self.titles.append(item)
+            }
+            */
+            //self.test(self.json)
+            self.fillTable(self.json)
         }
         
         //menu code
@@ -101,19 +77,29 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
     }
     
     //PLAYING WITH PASSING THE JSON VARIABLE AROUND
-    func test(json: [String: AnyObject]){
+    func fillTable(json: [String: AnyObject]){
     
-        guard let list = listPage(json: json) else{
-            print("error here")
+        guard let list = listPage(json: self.json) else {
+            print("Error initializing object")
+            return
         }
         
+        let bodyCount = list.count! - 1
+        for(var i = 0; i < bodyCount; i++){
+            guard let item = list.results?.body![i].title?.text else {
+                print("No such item")
+                return
+            }
+            
+            self.titles.append(item)
+        }
+        self.tableView.reloadData()
         
-        print(list)
     }
     // MARK: UITableViewDataSource
     func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return names.count
+            return titles.count
     }
     
     func tableView(tableView: UITableView,
@@ -123,7 +109,7 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
             let cell =
             tableView.dequeueReusableCellWithIdentifier("Cell")
             
-            cell!.textLabel!.text = names[indexPath.row]
+            cell!.textLabel!.text = titles[indexPath.row]
             
             return cell!
     }
