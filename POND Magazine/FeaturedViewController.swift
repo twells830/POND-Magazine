@@ -11,14 +11,14 @@ import UIKit
 class FeaturedViewController: UIViewController {
    
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var webView: UIWebView!
+    //@IBOutlet weak var webView: UIWebView!
     var URLPath = "http://www.pond-mag.com"
     
-    func loadURL(){
-        let requestURL = NSURL(string: URLPath)
-        let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
-    }
+    //func loadURL(){
+        //let requestURL = NSURL(string: URLPath)
+        //let request = NSURLRequest(URL: requestURL!)
+        //webView.loadRequest(request)
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class FeaturedViewController: UIViewController {
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
-            loadURL()
+            //loadURL()
             
         }
     }
