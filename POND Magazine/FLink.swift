@@ -13,12 +13,12 @@ public struct FLink: Decodable {
     
     // 1
     public let href: String?
-    public let text: String?
+    public let subTitle: String?
     
     // 2
     public init?(json: JSON) {
         href = "href" <~~ json
-        text = "text" <~~ json
+        subTitle = "text" <~~ json
         
     }
 }

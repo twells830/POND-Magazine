@@ -12,9 +12,9 @@ import Gloss
 public struct articleImage: Decodable {
     
     // 1
-    public let src: String?
+    public let imgSrc: String?
     // 2
     public init?(json: JSON) {
-        src = "src" <~~ json
+        imgSrc = "src" <~~ json
     }
 }
