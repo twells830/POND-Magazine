@@ -12,7 +12,7 @@ public struct bItem: Decodable {
     
     // 1
     public let title: articleTitle?
-    public let subTitle: FLink?
+    public let subTitle: String?
     public let image: articleImage?
     public let index: Int?
     public let url: String?

@@ -17,13 +17,9 @@
         <attribute name="thisVer" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="list" inverseEntity="Item" syncable="YES"/>
     </entity>
-    <entity name="Person" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
     <elements>
-        <element name="Person" positionX="-45" positionY="0" width="128" height="60"/>
-        <element name="ListPage" positionX="45" positionY="-229" width="128" height="103"/>
-        <element name="Item" positionX="205" positionY="-63" width="128" height="133"/>
         <element name="BItem" positionX="205" positionY="131" width="128" height="58"/>
+        <element name="Item" positionX="205" positionY="-63" width="128" height="133"/>
+        <element name="ListPage" positionX="45" positionY="-229" width="128" height="103"/>
     </elements>
 </model>

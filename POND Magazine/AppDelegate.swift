@@ -13,13 +13,89 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var json: [String: AnyObject]!
     
+    //objects
+    //fill these in and then save them all to coredata
+    //then in indiviudal viewcontrollers create arrays based on urls and display items based on those arrays
+    //(or make those arrays here? (to get all the overhead done at once?))
+    var item: NSManagedObject! //for featured item since there should only be one
+    var bItem: [NSManagedObject]! //for all the rest of the body items
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        
+            DataManager.getTopAppsDataFromItunesWithSuccess { (data) -> Void in
+                // 1
+                do {
+                    //self because json isn't passed to the viewDidLoad
+                    self.json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+                } catch {
+                    print(error)
+                }
+            }
+        
+        //might not need a relationship since we access all the data directly and the
+        //parent child relationship never really matters since its not a complex data model
+        
+        //make sure to save all the list info
+            let list = listPage(json: self.json),
+                newData = list!.newData,
+                thisVer = list!.thisVer,
+                count = list!.count
+        
+            let bodyCount = count! - 1
+        
+        
+        
+        
+        
+            //body loop
+            for(var i = 0; i < bodyCount; i++){
+                
+                let itemHref = list!.results?.body![i].title?.href,
+                    itemTitle = list!.results?.body![i].title?.text,
+                    itemUrl = list!.results?.body![i].url,
+                    itemIndex = list!.results?.body![i].index,
+                    itemSubTitle = list!.results?.body![i].subTitle,
+                    itemImgSrc = list!.results?.body![i].image?.imgSrc
+                
+                
+                //1 might not need this cause I'm already in the app delgate
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let managedContext = appDelegate.managedObjectContext
+                
+                //2 create new object from BItem
+                let entity =  NSEntityDescription.entityForName("BItem", inManagedObjectContext:managedContext)
+                let newItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                
+                //3 fill the new object with the current values
+                newItem.setValue(itemHref, forKey: "href")
+                newItem.setValue(itemTitle, forKey: "title")
+                newItem.setValue(itemUrl, forKey: "url")
+                newItem.setValue(itemIndex, forKey: "index")
+                newItem.setValue(itemSubTitle, forKey: "subTitle")
+                newItem.setValue(itemImgSrc, forKey: "imgSrc")
+
+                
+                do {
+                    // 4 save and add the object to records
+                    try managedContext.save()
+                    
+                    //5 add to the above array(<- is it necessary to be in an array if it's getting saved?)
+                    bItem.append(newItem)
+                } catch let error as NSError  {
+                    print("Could not save \(error), \(error.userInfo)")
+                }
+                
+            }
+        
+        
         return true
     }
-    
+
+
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
