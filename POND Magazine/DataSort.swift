@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 let editorialsURL = "http://www.pond-mag.com/editorials-2/"
 let spotlightURL = "http://www.pond-mag.com/spotlight/"
 let interviewsURL = "http://www.pond-mag.com/interviews/"
@@ -18,13 +18,15 @@ let featuredArtistsURL = "http://www.pond-mag.com/featured-artists/"
 //let blogURL = "" not collecting blog
 let entertainmentURL = "http://www.pond-mag.com/new-page-4/"
 let litZinesURL = "http://www.pond-mag.com/literature-/"
+*/
+var rowNum = 0
 
-
-var json: [String: AnyObject]!
+var titles = [String]()
+var images = [UIImageView]()
 
 class DataSort{
-
-    class func getEditorialsURL() -> String{
+    
+    /*class func getEditorialsURL() -> String{
         return editorialsURL;
     }
     class func getSpotlightURL() -> String{
@@ -51,8 +53,19 @@ class DataSort{
     class func getLitZinesURL() -> String{
         return litZinesURL;
     }
+    */
     
-    /*(maybe use something with the titles so you could wrap all the subview controllers 
+    class func getRowNum() -> Int{
+        return rowNum
+    }
+    
+    class func getTitles() -> [String]{
+        return titles
+    }
+    class func getImages() -> [UIImageView]{
+        return images
+    }
+    /*(maybe use something with the titles so you could wrap all the subview controllers
     into one since they're all gonna be pretty similar)*/
     
     
@@ -65,16 +78,35 @@ class DataSort{
     
 
     
+    
+    /*
+    !!!!!!!!!
+    ewi2!ejx ew
+    XEHCR E
+    !
+    MIGHT HAVE TO SCRAP ALL THIS BULLSHIT AND JUST MOVE THIS BACK TO THE ORIGINAL VIEW CONTROLLER
+    !
+    !
+   !!!
+    */
 
     //then call this function to fill in the tables from the other indiviual view controllers
 
-    class func fillTable(url: String, tableView: UITableView,
-        var titles: [String]){
-        
+    class func fillTable(url: String){
+    
+        var JSON: [String: AnyObject]!
+
+        DataManager.getTopAppsDataFromItunesWithSuccess { (data) -> Void in
+            do {
+                //self because json isn't passed to the viewDidLoad
+                JSON = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
+            } catch {
+                print(error)
+            }
+        }
         //url - get string based on whatever view it's called from
         //tableview - connect to whatever view controller its in
-            
-        guard let list = listPage(json: json) else {
+            guard let list = listPage(json: JSON) else {
             print("Error initializing object")
             return
         }
@@ -85,6 +117,15 @@ class DataSort{
             
             let itemURL = list.results?.body![i].url
             if(itemURL == url){
+                rowNum++
+                let imageSrc = NSURL(string:(list.results?.body![i].image?.imgSrc)!)
+                let data = NSData(contentsOfURL: imageSrc!)
+                var imageView: UIImageView!
+                if data != nil{
+                    imageView.image = UIImage(data:data!)
+                    images.append(imageView)
+                }
+                
                 guard let item = list.results?.body![i].title?.text else {
                     print("No such item")
                     return
@@ -93,21 +134,5 @@ class DataSort{
                 titles.append(item)
             }
         }
-        tableView.reloadData()
-        
     }
-    
-    
-    func getData(){
-        DataManager.getTopAppsDataFromItunesWithSuccess { (data) -> Void in
-            do {
-                //self because json isn't passed to the viewDidLoad
-                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as?   [String: AnyObject]
-            } catch {
-                print(error)
-            }
-        }
-    }
-    
-    
 }

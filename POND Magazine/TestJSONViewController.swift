@@ -15,8 +15,6 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
     
     //add this to the top of every view controller with correct url
     let url = "http://www.pond-mag.com/spotlight/"
-    var json: [String: AnyObject]!
-    var titles = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,17 +26,11 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
             forCellReuseIdentifier: "Cell")
         //==== = = = = = = = =
         
-        //get json data
-        DataManager.getTopAppsDataFromItunesWithSuccess { (data) -> Void in
-            // 1
-            do {
-                //self because json isn't passed to the viewDidLoad
-                self.json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
-            } catch {
-                print(error)
-            }
-            self.fillTable()
-        }
+        
+        //should get all the data and set fill the table
+        DataSort.fillTable(self.url)
+        
+        tableView.reloadData()
         
         //menu code
         if revealViewController() != nil {
@@ -53,46 +45,20 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
         }
     }
     
-    //PLAYING WITH PASSING THE JSON VARIABLE AROUND
-    func fillTable(){
-    
-        guard let list = listPage(json: self.json) else {
-            print("Error initializing object")
-            return
-        }
-        
-        let bodyCount = list.count! - 1
-        
-        for(var i = 0; i < bodyCount; i++){
-            
-            let itemURL = list.results?.body![i].url
-            if(itemURL == self.url){
-                guard let item = list.results?.body![i].title?.text else {
-                    print("No such item")
-                    return
-                }
-            
-                self.titles.append(item)
-            }
-        }
-        self.tableView.reloadData()
-        
-    }
     // MARK: UITableViewDataSource
     func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return titles.count
+            return DataSort.getRowNum();
     }
     
     func tableView(tableView: UITableView,
         cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
             
-            let cell =
-            tableView.dequeueReusableCellWithIdentifier("Cell")
-            
-            cell!.textLabel!.text = titles[indexPath.row]
-            
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+                cell!.imageView?.image = DataSort.getImages()[indexPath.row].image
+                cell!.textLabel!.text = DataSort.getTitles()[indexPath.row]
+
             return cell!
     }
 }
