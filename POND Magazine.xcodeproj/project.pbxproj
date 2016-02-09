@@ -16,6 +16,7 @@
 		441C921C1C65765700CA76A2 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */; };
 		4421391B1C69334600286DE5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421391A1C69334500286DE5 /* DataManager.swift */; };
 		4421391D1C6933B900286DE5 /* TestJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421391C1C6933B900286DE5 /* TestJSONViewController.swift */; };
+		4421391F1C694EE600286DE5 /* DataSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421391E1C694EE600286DE5 /* DataSort.swift */; };
 		442579271C67100000B5EE64 /* POND-Magazine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442579251C67100000B5EE64 /* POND-Magazine.xcdatamodeld */; };
 		442579DC1C68374400B5EE64 /* articleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442579D51C68374400B5EE64 /* articleImage.swift */; };
 		442579DD1C68374400B5EE64 /* articleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442579D61C68374400B5EE64 /* articleTitle.swift */; };
@@ -80,6 +81,7 @@
 		441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		4421391A1C69334500286DE5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4421391C1C6933B900286DE5 /* TestJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestJSONViewController.swift; sourceTree = "<group>"; };
+		4421391E1C694EE600286DE5 /* DataSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSort.swift; sourceTree = "<group>"; };
 		442579261C67100000B5EE64 /* POND-Magazine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "POND-Magazine.xcdatamodel"; sourceTree = "<group>"; };
 		442579D51C68374400B5EE64 /* articleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = articleImage.swift; sourceTree = "<group>"; };
 		442579D61C68374400B5EE64 /* articleTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = articleTitle.swift; sourceTree = "<group>"; };
@@ -158,6 +160,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442139201C694EEF00286DE5 /* DataHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				4421391A1C69334500286DE5 /* DataManager.swift */,
+				4421391E1C694EE600286DE5 /* DataSort.swift */,
+			);
+			name = DataHandlers;
+			sourceTree = "<group>";
+		};
 		442579E41C68375900B5EE64 /* JSON Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,7 +283,7 @@
 		447969BB1C49DA78004E3CC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4421391A1C69334500286DE5 /* DataManager.swift */,
+				442139201C694EEF00286DE5 /* DataHandlers */,
 				447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */,
 				4479698A1C49D9DB004E3CC4 /* MenuController.swift */,
 				441033661C4D5EF10013C6DB /* FashionViewController.swift */,
@@ -505,6 +516,7 @@
 				442579DF1C68374400B5EE64 /* fItem.swift in Sources */,
 				4421391B1C69334600286DE5 /* DataManager.swift in Sources */,
 				442579DD1C68374400B5EE64 /* articleTitle.swift in Sources */,
+				4421391F1C694EE600286DE5 /* DataSort.swift in Sources */,
 				442579271C67100000B5EE64 /* POND-Magazine.xcdatamodeld in Sources */,
 				44D6679F1C56F0270054F8B4 /* AboutViewController.swift in Sources */,
 				4479698B1C49D9DB004E3CC4 /* MenuController.swift in Sources */,

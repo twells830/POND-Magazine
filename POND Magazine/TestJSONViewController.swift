@@ -13,10 +13,9 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    //add this to the top of every view controller with correct url
     let url = "http://www.pond-mag.com/spotlight/"
-    
     var json: [String: AnyObject]!
-    
     var titles = [String]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -38,24 +37,6 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
             } catch {
                 print(error)
             }
-            
-           // 2
-           /* guard let list = listPage(json: self.json) else {
-                print("Error initializing object")
-                return
-            }
-            
-            // 3 this cycles through every title in the body and puts them in titles array
-            let bodyCount = list.count! - 1
-            for(var i = 0; i < bodyCount; i++){
-                guard let item = list.results?.body![i].title?.text else {
-                    print("No such item")
-                    return
-                }
-                self.titles.append(item)
-            }
-            */
-            //self.test(self.json)
             self.fillTable()
         }
         
