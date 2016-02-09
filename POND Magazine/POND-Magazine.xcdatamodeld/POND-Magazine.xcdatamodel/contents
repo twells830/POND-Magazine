@@ -9,17 +9,15 @@
         <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListPage" inverseName="items" inverseEntity="ListPage" syncable="YES"/>
     </entity>
     <entity name="ListPage" syncable="YES">
         <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="newData" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="thisVer" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="list" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
         <element name="BItem" positionX="205" positionY="131" width="128" height="58"/>
-        <element name="Item" positionX="205" positionY="-63" width="128" height="133"/>
-        <element name="ListPage" positionX="45" positionY="-229" width="128" height="103"/>
+        <element name="Item" positionX="205" positionY="-63" width="128" height="118"/>
+        <element name="ListPage" positionX="45" positionY="-229" width="128" height="88"/>
     </elements>
 </model>

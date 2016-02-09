@@ -45,54 +45,115 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 thisVer = list!.thisVer,
                 count = list!.count
         
-            let bodyCount = count! - 1
         
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
         
+        let fetchRequest = NSFetchRequest(entityName: "ListPage")
         
-        
-        
-            //body loop
-            for(var i = 0; i < bodyCount; i++){
+        //3
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+           
+            let x = results[0] as! NSManagedObject
+            let currentCount = x.valueForKey("count") as? Int
+            
+            
+            if(currentCount == count){
+                return true
+            }else{
+                //put if statement here to check current count against the count already in the records
+                //if different then clear core data and add all of this below
+                deleteAllData("BItem")
+                deleteAllData("Item")
+                deleteAllData("ListPage")
+            
                 
-                let itemHref = list!.results?.body![i].title?.href,
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let managedContext = appDelegate.managedObjectContext
+                
+                
+                
+                // create new object from listPage
+                let entity =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
+                let newList = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                
+                //fill in the new object
+                newList.setValue(newData, forKey: "newData")
+                newList.setValue(thisVer, forKey: "thisVer")
+                newList.setValue(count, forKey: "count")
+                //add some code here to save this^^
+                
+                //add some code to create and save the featured item
+                
+                let bodyCount = count! - 1
+                
+                
+                //body loop
+                for(var i = 0; i < bodyCount; i++){
+                    
+                    let itemHref = list!.results?.body![i].title?.href,
                     itemTitle = list!.results?.body![i].title?.text,
                     itemUrl = list!.results?.body![i].url,
                     itemIndex = list!.results?.body![i].index,
                     itemSubTitle = list!.results?.body![i].subTitle,
                     itemImgSrc = list!.results?.body![i].image?.imgSrc
-                
-                
-                //1 might not need this cause I'm already in the app delgate
-                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                let managedContext = appDelegate.managedObjectContext
-                
-                //2 create new object from BItem
-                let entity =  NSEntityDescription.entityForName("BItem", inManagedObjectContext:managedContext)
-                let newItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-                
-                //3 fill the new object with the current values
-                newItem.setValue(itemHref, forKey: "href")
-                newItem.setValue(itemTitle, forKey: "title")
-                newItem.setValue(itemUrl, forKey: "url")
-                newItem.setValue(itemIndex, forKey: "index")
-                newItem.setValue(itemSubTitle, forKey: "subTitle")
-                newItem.setValue(itemImgSrc, forKey: "imgSrc")
-
-                
-                do {
-                    // 4 save and add the object to records
-                    try managedContext.save()
                     
-                    //5 add to the above array(<- is it necessary to be in an array if it's getting saved?)
-                    bItem.append(newItem)
-                } catch let error as NSError  {
-                    print("Could not save \(error), \(error.userInfo)")
+                    
+                    //1 might not need this cause I'm already in the app delgate
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedContext = appDelegate.managedObjectContext
+                    
+                    //2 create new object from BItem
+                    let entity =  NSEntityDescription.entityForName("BItem", inManagedObjectContext:managedContext)
+                    let newItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                    
+                    //3 fill the new object with the current values
+                    newItem.setValue(itemHref, forKey: "href")
+                    newItem.setValue(itemTitle, forKey: "title")
+                    newItem.setValue(itemUrl, forKey: "url")
+                    newItem.setValue(itemIndex, forKey: "index")
+                    newItem.setValue(itemSubTitle, forKey: "subTitle")
+                    newItem.setValue(itemImgSrc, forKey: "imgSrc")
+                    
+                    
+                    do {
+                        // 4 save and add the object to records
+                        try managedContext.save()
+                        
+                        //5 add to the above array(<- is it necessary to be in an array if it's getting saved?)
+                        bItem.append(newItem)
+                    } catch let error as NSError  {
+                        print("Could not save \(error), \(error.userInfo)")
+                    }
+                    
                 }
-                
             }
-        
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
         
         return true
+    }
+    
+    func deleteAllData(entity: String){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: entity)
+        fetchRequest.returnsObjectsAsFaults = false
+        
+        do
+        {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            for managedObject in results
+            {
+                let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+                managedContext.deleteObject(managedObjectData)
+            }
+        } catch let error as NSError {
+            print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
+        }
     }
 
 
