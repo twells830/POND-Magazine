@@ -29,7 +29,7 @@ class TestJSONViewController: UIViewController, UITableViewDataSource{
         //==== = = = = = = = =
         
         //get json data
-        DataManager.getTopAppsDataFromItunesWithSuccess { (data) -> Void in
+        DataManager.getPondDataWithSuccess { (data) -> Void in
             // 1
             do {
                 //self because json isn't passed to the viewDidLoad

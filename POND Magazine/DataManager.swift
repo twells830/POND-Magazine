@@ -41,7 +41,7 @@ public class DataManager {
     loadDataTask.resume()
   }
 
-  public class func getTopAppsDataFromItunesWithSuccess(success: ((pondData: NSData!) -> Void)) {
+  public class func getPondDataWithSuccess(success: ((pondData: NSData!) -> Void)) {
     //1 loadDataFromUrl sets the data to whatever it gets from passed url
     loadDataFromURL(NSURL(string: pondURL)!, completion:{(data, error) -> Void in
       //2
