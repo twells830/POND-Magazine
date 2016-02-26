@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //then in indiviudal viewcontrollers create arrays based on urls and display items based on those arrays
     //(or make those arrays here? (to get all the overhead done at once?))
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        var json: [String: AnyObject]!
+       /* var json: [String: AnyObject]!
 
             //GET ALL THE JSON
             DataManager.getPondDataWithSuccess { (data) -> Void in
@@ -131,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print("Could not fetch \(error), \(error.userInfo)")
                 }
 
-            }
+            }*/
         
         
         return true

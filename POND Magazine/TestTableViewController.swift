@@ -22,13 +22,10 @@ class TestTableViewController: UIViewController, UITableViewDataSource {
         title = "\"The List\""
         tableView.registerClass(UITableViewCell.self,
             forCellReuseIdentifier: "Cell")
-        
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
             menuButton.target = revealViewController()
             menuButton.action = "revealToggle:"
-            
-            //revealViewController().rightViewRevealWidth = 200
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
@@ -48,7 +45,7 @@ class TestTableViewController: UIViewController, UITableViewDataSource {
         
         //3
         do {
-            let results = try managedContext.executeFetchRequest(fetchRequest)
+            let results = try managedContext.executeFetchRequest(fetchRequest) //<--- fucks up right here
             people = results as! [NSManagedObject]
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
