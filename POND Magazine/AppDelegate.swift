@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //then in indiviudal viewcontrollers create arrays based on urls and display items based on those arrays
     //(or make those arrays here? (to get all the overhead done at once?))
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-       /* var json: [String: AnyObject]!
+       var json: [String: AnyObject]!
 
             //GET ALL THE JSON
             DataManager.getPondDataWithSuccess { (data) -> Void in
@@ -37,24 +37,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //MAKE A FETCH REQUEST TO LISTPAGE
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 let managedContext = appDelegate.managedObjectContext
-                let fetchRequest = NSFetchRequest(entityName: "ListPage")
+                let fetchRequest = NSFetchRequest(entityName: "ListPage") //maybe because there is nothing in ListPage on the first run??
+                
+                let error = NSErrorPointer()
+                let countCheck = managedContext.countForFetchRequest(fetchRequest, error: error)
+                
+                //check if array is empty
+                //if yes manually create a new list page object and fill it with default data
+                if(countCheck <= 0){
+                    print("results is empty");
+                    
+                    let entity =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
+                    let newList = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                    //FILL IN ENTITY
+                    newList.setValue(newData, forKey: "newData")
+                    newList.setValue(thisVer, forKey: "thisVer")
+                    newList.setValue(0, forKey: "count")
+                    //SAVE
+                    do {
+                        try managedContext.save()
+                    } catch let error as NSError  {
+                        print("Could not save \(error), \(error.userInfo)")
+                    }
+                    
+                }
                 
                 //TRY AND GET RESULTS OF FETCH
                 do {
-                    let results =
-                    try managedContext.executeFetchRequest(fetchRequest)
+                    let results = try managedContext.executeFetchRequest(fetchRequest)//does this return an array??
+                                                                                      //if not then you can't call a certain index
+
+                    
+            //what if it runs some code to get the list page first no matter what becuase it will always need to get the new count
+            //then if results = empty it will fill with new info??
                     
                     //GET THE NEW COUNT FROM SAVED LISTPAGE
-                    let x = results[0] as! NSManagedObject
+                    let x = results[0] as! NSManagedObject //<-- breaks right here
+                    /*
+                    Does this happen because results[0] doesn't exist yet?
+                    or is results not set properly?
+                    Why did results have to be at index 0??
+            
+                    */
+                    
                     let oldCount = x.valueForKey("count") as? Int
-                    //nothing is going to return here on the first run
-                    //what am i gonna do about that????
                     
                     //IF COUNTS EQUAL THEN JUST START THE APP CAUSE IT SHOULD ALREADY HAVE ALL THE DATA
                     if(oldCount == newCount){
-                        return
+                        print("count is equal")
+                        return //what is this gonna do here?
+                        
                     }else{
                         //ELSE CLEAR ALL THE OLD DATA
+                        print("gets inside else statement")
                         self.deleteAllData("BItem")
                         self.deleteAllData("Item")
                         self.deleteAllData("ListPage")
@@ -75,23 +110,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             print("Could not save \(error), \(error.userInfo)")
                         }
                         
-                        //CREATE A NEW ITEM ENTITY (FOR FEATURED ITEM)
-                        let appDelegate2 = UIApplication.sharedApplication().delegate as! AppDelegate
-                        let managedContext2 = appDelegate2.managedObjectContext
-                        let entity2 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext2)
-                        let newFeaturedItem = NSManagedObject(entity: entity2!, insertIntoManagedObjectContext: managedContext2)
-                        //FILL IN ENTITY
-                        newFeaturedItem.setValue(list!.results?.top![0].fLink?.href, forKey: "href")
-                        newFeaturedItem.setValue(list!.results?.top![0].fTitle, forKey: "Title")
-                        newFeaturedItem.setValue(list!.results?.top![0].url, forKey: "url")
-                        newFeaturedItem.setValue(list!.results?.top![0].index, forKey: "index")
-                        newFeaturedItem.setValue(list!.results?.top![0].fLink?.subTitle, forKey: "subTitle")
-                        //SAVE
-                        do {
-                            try managedContext2.save()
-                        } catch let error as NSError  {
-                            print("Could not save \(error), \(error.userInfo)")
-                        }
+                        
+                        
+            //CREATE A NEW ITEM ENTITY (FOR FEATURED ITEM)
+            let appDelegate2 = UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext2 = appDelegate2.managedObjectContext
+            let entity2 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext2)
+            let newFeaturedItem = NSManagedObject(entity: entity2!, insertIntoManagedObjectContext: managedContext2)
+            //FILL IN ENTITY
+            newFeaturedItem.setValue(list!.results?.top![0].fLink?.href, forKey: "href")
+            newFeaturedItem.setValue(list!.results?.top![0].fTitle, forKey: "Title")
+            newFeaturedItem.setValue(list!.results?.top![0].url, forKey: "url")
+            newFeaturedItem.setValue(list!.results?.top![0].index, forKey: "index")
+            newFeaturedItem.setValue(list!.results?.top![0].fLink?.subTitle, forKey: "subTitle")
+            //SAVE
+            do {
+                try managedContext2.save()
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+                        
+                        
                         
                         //SET COUNT - 1 (TO ACCOUNT FOR FEATURED ITEM NOT IN THIS ARRAY)
                         let bodyCount = newCount! - 1
@@ -118,7 +157,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             newItem.setValue(itemIndex, forKey: "index")
                             newItem.setValue(itemSubTitle, forKey: "subTitle")
                             newItem.setValue(itemImgSrc, forKey: "imgSrc")
-                            //SAVE
+                                                        //SAVE
                             do {
                                 try managedContext.save()
                             }catch let error as NSError  {
@@ -126,13 +165,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             }
                             
                         }
+                        
+                        
                     }
                 } catch let error as NSError {
                     print("Could not fetch \(error), \(error.userInfo)")
                 }
-
-            }*/
+            }
+        //print the count in ListPage Entity
+        //print all titles from Item entities
         
+        /*
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let fetchRequest1 = NSFetchRequest(entityName: "ListPage")
+        let fetchRequest2 = NSFetchRequest(entityName: "BItem")
+        
+        do{
+            let results1 = try managedContext.executeFetchRequest(fetchRequest1)
+            let x = results1[0] as! NSManagedObject //breaking here again ===== think its a problem with initializiation this
+                                                    // this was here just as a test so comment out and see if it fixes
+            let y = x.valueForKey("count") as? Int
+            print("ListPage count =  \(y)")
+            
+            let results2 = try managedContext.executeFetchRequest(fetchRequest2)
+            for(var i = 0; i < y!-1; i++){
+                let z = results2[i] as! NSManagedObject
+                let b = z.valueForKey("title") as? String
+                print(b)
+            }
+            
+        } catch let error as NSError{
+            print("Could not fetch \(error), \(error.userInfo)")
+        }*/
         
         return true
     }

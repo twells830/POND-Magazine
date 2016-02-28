@@ -1,61 +1,77 @@
 //
-//  ViewController.swift
-//  HitList
+//  TestJSONViewController.swift
+//  POND Magazine
 //
-//  Created by Pietro Rea on 7/5/15.
-//  Copyright © 2015 Razeware. All rights reserved.
+//  Created by Tanner Wells on 2/8/16.
+//  Copyright © 2016 PONDMAG. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CoreData
 
-class TestTableViewController: UIViewController, UITableViewDataSource {
+class TestTableViewController: UIViewController, UITableViewDataSource{
+    
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var tableView: UITableView!
+    let url = "http://www.pond-mag.com/editorials-2/" //change to correct view controller url
+    var titles = [String]()
     
-    var people = [NSManagedObject]()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\"The List\""
-        tableView.registerClass(UITableViewCell.self,
-            forCellReuseIdentifier: "Cell")
+        
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        self.fillTable()
+        
+        //menu code
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
             menuButton.target = revealViewController()
             menuButton.action = "revealToggle:"
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
         }
-
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    //PLAYING WITH PASSING THE JSON VARIABLE AROUND
+    func fillTable(){
         
-        //1
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
         let managedContext = appDelegate.managedObjectContext
+        let fetchRequest1 = NSFetchRequest(entityName: "ListPage")
+        let fetchRequest2 = NSFetchRequest(entityName: "BItem")
         
-        //2
-        let fetchRequest = NSFetchRequest(entityName: "Person")
-        
-        //3
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest) //<--- fucks up right here
-            people = results as! [NSManagedObject]
-        } catch let error as NSError {
+        do{
+            let results1 = try managedContext.executeFetchRequest(fetchRequest1)
+            let x = results1[0] as! NSManagedObject
+            let y = x.valueForKey("count") as? Int
+            print("ListPage count =  \(y)")
+            
+            let results2 = try managedContext.executeFetchRequest(fetchRequest2)
+            for(var i = 0; i < y!-1; i++){
+                let z = results2[i] as! NSManagedObject
+                let itemURL = z.valueForKey("url") as? String
+                if(itemURL == self.url){
+                    let b = z.valueForKey("title") as? String
+                    self.titles.append(b!)
+                }
+            }
+            
+        }catch let error as NSError{
             print("Could not fetch \(error), \(error.userInfo)")
         }
+        
+        self.tableView.reloadData()
+        
     }
-    
-    // MARK: UITableViewDataSource  ctrl drag the table view to the yellow circle
+    // MARK: UITableViewDataSource
     func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return people.count
+            return titles.count
     }
     
     func tableView(tableView: UITableView,
@@ -65,72 +81,8 @@ class TestTableViewController: UIViewController, UITableViewDataSource {
             let cell =
             tableView.dequeueReusableCellWithIdentifier("Cell")
             
-            let person = people[indexPath.row]
-            
-            cell!.textLabel!.text =
-                person.valueForKey("name") as? String
+            cell!.textLabel!.text = titles[indexPath.row]
             
             return cell!
     }
-    
-    //Implement the addName IBAction
-    @IBAction func addName(sender: AnyObject) {
-        
-        let alert = UIAlertController(title: "New Name",
-            message: "Add a new name",
-            preferredStyle: .Alert)
-        
-        let saveAction = UIAlertAction(title: "Save",
-            style: .Default,
-            handler: { (action:UIAlertAction) -> Void in
-                
-                let textField = alert.textFields!.first
-                self.saveName(textField!.text!)
-                self.tableView.reloadData()
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel",
-            style: .Default) { (action: UIAlertAction) -> Void in
-        }
-        
-        alert.addTextFieldWithConfigurationHandler {
-            (textField: UITextField) -> Void in
-        }
-        
-        alert.addAction(saveAction)
-        alert.addAction(cancelAction)
-        
-        presentViewController(alert,
-            animated: true,
-            completion: nil)
-    }
-    
-    func saveName(name: String) {
-        //1
-        let appDelegate =
-        UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        //2
-        let entity =  NSEntityDescription.entityForName("Person",
-            inManagedObjectContext:managedContext)
-        
-        let person = NSManagedObject(entity: entity!,
-            insertIntoManagedObjectContext: managedContext)
-        
-        //3
-        person.setValue(name, forKey: "name")
-        
-        //4
-        do {
-            try managedContext.save()
-            //5
-            people.append(person)
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-    }
-    
 }
-

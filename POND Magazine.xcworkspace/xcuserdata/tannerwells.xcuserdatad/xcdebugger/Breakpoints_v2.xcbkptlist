@@ -6,27 +6,187 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478202652.988741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478202653.926603"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478301332.094489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151091.72128"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478308076.037308"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "TestTableViewController"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478308076.037308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478308076.037308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478301332.094489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478301332.094489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478308076.037308"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478203293.468706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/ListViewController.swift"
+            timestampString = "478317562.827564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ListViewController"
             landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.menuButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  symbolName = "POND_Magazine.ListViewController.vTitle.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.223874"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317772.726493"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -37,11 +197,11 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.menuButton.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  symbolName = "POND_Magazine.ListViewController.vTitle.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.224068"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317772.726834"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -52,26 +212,26 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; POND_Magazine.TestTableViewController"
+                  symbolName = "POND_Magazine.ListViewController.init (POND_Magazine.ListViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; POND_Magazine.ListViewController"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.22426"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317772.727207"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "77">
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;POND_Magazine.TestTableViewController&gt;"
+                  symbolName = "POND_Magazine.ListViewController.init (POND_Magazine.ListViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;POND_Magazine.ListViewController&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.22444"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317772.727475"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -87,24 +247,24 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151093.54551"
+            filePath = "POND Magazine/ListViewController.swift"
+            timestampString = "478317574.238775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "TestTableViewController"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ListViewController"
             landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.tableView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  symbolName = "POND_Magazine.ListViewController.vTitle.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.225718"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317574.240309"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -115,11 +275,26 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.tableView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  symbolName = "POND_Magazine.ListViewController.vTitle.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.226103"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317574.24054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POND_Magazine.ListViewController.vTitle.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
+                  moduleName = "POND Magazine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317574.240796"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -130,31 +305,31 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; POND_Magazine.TestTableViewController"
+                  symbolName = "POND_Magazine.ListViewController.init (POND_Magazine.ListViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; POND_Magazine.ListViewController"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.226287"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317574.241011"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "148">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;POND_Magazine.TestTableViewController&gt;"
+                  symbolName = "POND_Magazine.ListViewController.init (POND_Magazine.ListViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;POND_Magazine.ListViewController&gt;"
                   moduleName = "POND Magazine"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.226471"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/ListViewController.swift"
+                  timestampString = "478317574.24121"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "92">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "37">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -162,254 +337,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151094.457117"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "TestTableViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.people.getter : Swift.Array&lt;__ObjC.NSManagedObject&gt;"
-                  moduleName = "POND Magazine"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.228154"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.people.setter : Swift.Array&lt;__ObjC.NSManagedObject&gt;"
-                  moduleName = "POND Magazine"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.228374"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; POND_Magazine.TestTableViewController"
-                  moduleName = "POND Magazine"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.228958"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "POND_Magazine.TestTableViewController.init (POND_Magazine.TestTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;POND_Magazine.TestTableViewController&gt;"
-                  moduleName = "POND Magazine"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/TestTableViewController.swift"
-                  timestampString = "478151157.229114"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "132">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "TestTableViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151542.186392"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151481.245724"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478322732.82121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151481.923127"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151483.278932"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151487.423188"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -419,29 +356,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151596.677935"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478322763.968347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "POND Magazine/TestTableViewController.swift"
-            timestampString = "478151615.212683"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478322764.759418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POND_Magazine.AppDelegate.application (POND_Magazine.AppDelegate)(__ObjC.UIApplication, didFinishLaunchingWithOptions : Swift.Optional&lt;Swift.Dictionary&lt;__ObjC.NSObject, Swift.AnyObject&gt;&gt;) -&gt; Swift.Bool"
+                  moduleName = "POND Magazine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/AppDelegate.swift"
+                  timestampString = "478323071.275899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "POND_Magazine.AppDelegate.(application (POND_Magazine.AppDelegate) -&gt; (__ObjC.UIApplication, didFinishLaunchingWithOptions : Swift.Optional&lt;Swift.Dictionary&lt;__ObjC.NSObject, Swift.AnyObject&gt;&gt;) -&gt; Swift.Bool).(closure #1)"
+                  moduleName = "POND Magazine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannerwells/Developer/POND%20Magazine/POND%20Magazine/AppDelegate.swift"
+                  timestampString = "478323071.276181"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "POND Magazine/AppDelegate.swift"
+            timestampString = "478323007.108159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

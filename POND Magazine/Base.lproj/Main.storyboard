@@ -324,7 +324,7 @@
         <!--POND-->
         <scene sceneID="4rO-uW-8VQ">
             <objects>
-                <viewController id="K4H-lL-vp1" customClass="FeaturedViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K4H-lL-vp1" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jcx-qF-GtT"/>
                         <viewControllerLayoutGuide type="bottom" id="NyH-Wf-02v"/>
@@ -336,6 +336,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aNZ-GY-3oK">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="K4H-lL-vp1" id="baU-Yd-rKk"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,6 +356,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="Omf-vE-LVx" id="hW4-PA-t1W"/>
+                        <outlet property="tableView" destination="aNZ-GY-3oK" id="UGq-QD-18f"/>
+                        <outlet property="vTitle" destination="dIB-mL-9kh" id="0kt-9f-ZnN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iet-6p-tmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -536,7 +541,7 @@
         <!--Editorials-->
         <scene sceneID="FYp-qp-kWq">
             <objects>
-                <viewController id="Eil-um-sNY" customClass="TestTableViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Eil-um-sNY" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ZI-QL-Aqk"/>
                         <viewControllerLayoutGuide type="bottom" id="pe4-EO-2zS"/>
@@ -549,7 +554,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="Eil-um-sNY" id="blQ-sA-Qn1"/>
+                                    <outlet property="dataSource" destination="Eil-um-sNY" id="cbJ-7H-PYT"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -563,15 +568,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Editorials" id="fLC-yn-LFb">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="819-tc-bnV"/>
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="WzX-Sa-H93">
-                            <connections>
-                                <action selector="addName:" destination="Eil-um-sNY" id="hoW-Xy-KF0"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="819-tc-bnV" id="ew1-sL-BQv"/>
                         <outlet property="tableView" destination="r7b-R3-JLE" id="Jbq-Dh-9TB"/>
+                        <outlet property="vTitle" destination="fLC-yn-LFb" id="uxC-QT-0FB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku4-La-3hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -715,7 +716,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Spotlight-->
         <scene sceneID="mmi-wf-0tz">
             <objects>
-                <viewController id="s4F-oy-GQg" customClass="TestJSONViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s4F-oy-GQg" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WUL-Hr-DPa"/>
                         <viewControllerLayoutGuide type="bottom" id="0Zl-XW-0AP"/>
@@ -725,19 +726,19 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lVR-rr-oyL">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="s4F-oy-GQg" id="fmC-fR-HUN"/>
+                                    <outlet property="dataSource" destination="s4F-oy-GQg" id="YVk-uZ-ire"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="lVR-rr-oyL" secondAttribute="trailing" constant="-20" id="7pz-id-BFC"/>
-                            <constraint firstItem="lVR-rr-oyL" firstAttribute="top" secondItem="WUL-Hr-DPa" secondAttribute="bottom" constant="-64" id="JRm-wl-KeE"/>
-                            <constraint firstItem="lVR-rr-oyL" firstAttribute="leading" secondItem="lKn-Fr-PnG" secondAttribute="leadingMargin" constant="-20" id="LMw-ws-OSs"/>
-                            <constraint firstItem="0Zl-XW-0AP" firstAttribute="top" secondItem="lVR-rr-oyL" secondAttribute="bottom" id="jAQ-Zn-GY4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lVR-rr-oyL" secondAttribute="trailing" constant="-20" id="GEo-li-zO7"/>
+                            <constraint firstItem="lVR-rr-oyL" firstAttribute="top" secondItem="WUL-Hr-DPa" secondAttribute="bottom" id="YIJ-JS-1OK"/>
+                            <constraint firstItem="0Zl-XW-0AP" firstAttribute="top" secondItem="lVR-rr-oyL" secondAttribute="bottom" id="obd-ey-Pbf"/>
+                            <constraint firstItem="lVR-rr-oyL" firstAttribute="leading" secondItem="lKn-Fr-PnG" secondAttribute="leadingMargin" constant="-20" id="vzQ-qs-oLR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Spotlight" id="GUw-ie-ulG">
@@ -746,6 +747,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <connections>
                         <outlet property="menuButton" destination="ov6-56-dUT" id="hoF-fd-TD4"/>
                         <outlet property="tableView" destination="lVR-rr-oyL" id="XaE-eq-KvV"/>
+                        <outlet property="vTitle" destination="GUw-ie-ulG" id="KaA-xp-dRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd6-Tw-YUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -947,36 +949,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             <segue destination="nEl-Gr-w4a" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4gW-Sq-vcM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="YSh-lV-U8j">
-                                        <rect key="frame" x="0.0" y="464" width="600" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YSh-lV-U8j" id="fCP-R7-edi">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlogThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tya-9Q-MhU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5w-Sm-g7D">
-                                                    <rect key="frame" x="265" y="79" width="70" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                    <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Tya-9Q-MhU" firstAttribute="leading" secondItem="fCP-R7-edi" secondAttribute="leadingMargin" constant="-8" id="DvS-8J-ddN"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Tya-9Q-MhU" secondAttribute="trailing" constant="-8" id="Hnn-cu-MTZ"/>
-                                                <constraint firstItem="Tya-9Q-MhU" firstAttribute="top" secondItem="fCP-R7-edi" secondAttribute="topMargin" constant="-8" id="NT1-hf-NjN"/>
-                                                <constraint firstItem="e5w-Sm-g7D" firstAttribute="centerX" secondItem="fCP-R7-edi" secondAttribute="centerX" id="Nws-Km-iRb"/>
-                                                <constraint firstItem="e5w-Sm-g7D" firstAttribute="centerY" secondItem="fCP-R7-edi" secondAttribute="centerY" id="aGM-iw-rOk"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Tya-9Q-MhU" secondAttribute="bottom" constant="-8" id="hjJ-3L-dHe"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="gE8-by-tnF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="DnA-iX-xTI"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1113,7 +1085,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Entertainment-->
         <scene sceneID="qbk-1s-WTN">
             <objects>
-                <viewController id="40z-1a-nN7" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="40z-1a-nN7" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZUc-qZ-tG4"/>
                         <viewControllerLayoutGuide type="bottom" id="E4A-DC-99z"/>
@@ -1121,13 +1093,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="OYj-4q-yxu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c88-Sr-Oyh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="40z-1a-nN7" id="FNQ-Ru-o3d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c88-Sr-Oyh" firstAttribute="leading" secondItem="OYj-4q-yxu" secondAttribute="leadingMargin" constant="-20" id="8TS-vh-LNt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c88-Sr-Oyh" secondAttribute="trailing" constant="-20" id="Gtf-2a-6Ow"/>
+                            <constraint firstItem="E4A-DC-99z" firstAttribute="top" secondItem="c88-Sr-Oyh" secondAttribute="bottom" id="dXW-c3-XEi"/>
+                            <constraint firstItem="c88-Sr-Oyh" firstAttribute="top" secondItem="ZUc-qZ-tG4" secondAttribute="bottom" id="tc6-Xm-g8K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Entertainment" id="kRC-3Q-lsp">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="kxo-hp-uC8"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="kxo-hp-uC8" id="8Nf-py-Msv"/>
+                        <outlet property="menuButton" destination="kxo-hp-uC8" id="9Oa-rr-wm5"/>
+                        <outlet property="tableView" destination="c88-Sr-Oyh" id="d7H-tx-Xts"/>
+                        <outlet property="vTitle" destination="kRC-3Q-lsp" id="6dg-z0-mXS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLl-dr-d4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1153,7 +1142,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Lit & Zines-->
         <scene sceneID="geo-RW-ghU">
             <objects>
-                <viewController id="qrr-Ea-l8l" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qrr-Ea-l8l" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="79t-Mo-Aa7"/>
                         <viewControllerLayoutGuide type="bottom" id="wD3-3W-8fy"/>
@@ -1161,13 +1150,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="OHO-1U-hlG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4r2-mg-JGV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qrr-Ea-l8l" id="0DN-iF-GXr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4r2-mg-JGV" firstAttribute="leading" secondItem="OHO-1U-hlG" secondAttribute="leadingMargin" constant="-20" id="Udc-co-uMn"/>
+                            <constraint firstItem="wD3-3W-8fy" firstAttribute="top" secondItem="4r2-mg-JGV" secondAttribute="bottom" id="b2S-ky-7QG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4r2-mg-JGV" secondAttribute="trailing" constant="-20" id="hJS-cU-km4"/>
+                            <constraint firstItem="4r2-mg-JGV" firstAttribute="top" secondItem="79t-Mo-Aa7" secondAttribute="bottom" id="v4q-ea-vbj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lit &amp; Zines" id="tuJ-iM-jcv">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="MUK-xE-2ra"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="MUK-xE-2ra" id="9K7-Fz-nQr"/>
+                        <outlet property="menuButton" destination="MUK-xE-2ra" id="5yD-LX-BiJ"/>
+                        <outlet property="tableView" destination="4r2-mg-JGV" id="YAH-xp-dkq"/>
+                        <outlet property="vTitle" destination="tuJ-iM-jcv" id="uDU-cd-LWQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0X-Je-WAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1193,7 +1199,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Interviews-->
         <scene sceneID="Ew2-fG-UKB">
             <objects>
-                <viewController id="sbR-gV-ne6" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sbR-gV-ne6" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bu-em-heV"/>
                         <viewControllerLayoutGuide type="bottom" id="fch-H1-cQR"/>
@@ -1201,13 +1207,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="dbI-VT-YSb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g0c-Ad-cOS">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sbR-gV-ne6" id="1gI-tz-ZWo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g0c-Ad-cOS" firstAttribute="top" secondItem="3bu-em-heV" secondAttribute="bottom" id="EWc-Xn-sGH"/>
+                            <constraint firstItem="fch-H1-cQR" firstAttribute="top" secondItem="g0c-Ad-cOS" secondAttribute="bottom" id="TCk-M1-x8n"/>
+                            <constraint firstItem="g0c-Ad-cOS" firstAttribute="leading" secondItem="dbI-VT-YSb" secondAttribute="leadingMargin" constant="-20" id="YT6-hA-IYJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g0c-Ad-cOS" secondAttribute="trailing" constant="-20" id="uy6-Vs-o94"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Interviews" id="SWa-Nn-Ud7">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="fLT-KV-9uO"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="fLT-KV-9uO" id="CfC-7h-LjO"/>
+                        <outlet property="menuButton" destination="fLT-KV-9uO" id="i4X-si-fHe"/>
+                        <outlet property="tableView" destination="g0c-Ad-cOS" id="fDm-FI-577"/>
+                        <outlet property="vTitle" destination="SWa-Nn-Ud7" id="wW0-jz-JvW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLQ-fJ-wRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1233,7 +1256,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Releases-->
         <scene sceneID="aJ1-8p-BMk">
             <objects>
-                <viewController id="vaV-oa-hGZ" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vaV-oa-hGZ" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cGr-HC-QEJ"/>
                         <viewControllerLayoutGuide type="bottom" id="lwa-tk-fh2"/>
@@ -1241,13 +1264,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="Qi9-pM-s1g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-td-Yes">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vaV-oa-hGZ" id="cav-1Q-vxs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0gI-td-Yes" firstAttribute="top" secondItem="cGr-HC-QEJ" secondAttribute="bottom" id="Dq1-tR-7as"/>
+                            <constraint firstItem="0gI-td-Yes" firstAttribute="leading" secondItem="Qi9-pM-s1g" secondAttribute="leadingMargin" constant="-20" id="c6u-2Z-0Qs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0gI-td-Yes" secondAttribute="trailing" constant="-20" id="nhW-hJ-ti1"/>
+                            <constraint firstItem="lwa-tk-fh2" firstAttribute="top" secondItem="0gI-td-Yes" secondAttribute="bottom" id="rKf-8J-nBO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Releases" id="5jX-mq-JWQ">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="KOG-F4-Egp"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="KOG-F4-Egp" id="yDN-Ly-q7q"/>
+                        <outlet property="menuButton" destination="KOG-F4-Egp" id="zta-rh-1oX"/>
+                        <outlet property="tableView" destination="0gI-td-Yes" id="l6f-uG-Kvl"/>
+                        <outlet property="vTitle" destination="5jX-mq-JWQ" id="mtO-61-OK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qh-fD-YKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1273,7 +1313,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Reviews-->
         <scene sceneID="cVf-Xy-21c">
             <objects>
-                <viewController id="jq3-zO-0ay" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jq3-zO-0ay" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AF9-d8-0pc"/>
                         <viewControllerLayoutGuide type="bottom" id="J42-G4-6X9"/>
@@ -1281,58 +1321,35 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="A5u-Pr-6FV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RPk-IR-xs2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jq3-zO-0ay" id="NzO-gt-Zv1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RPk-IR-xs2" firstAttribute="leading" secondItem="A5u-Pr-6FV" secondAttribute="leadingMargin" constant="-20" id="IAs-Km-5MS"/>
+                            <constraint firstItem="J42-G4-6X9" firstAttribute="top" secondItem="RPk-IR-xs2" secondAttribute="bottom" id="a1b-xP-D7u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RPk-IR-xs2" secondAttribute="trailing" constant="-20" id="e8g-sm-7ui"/>
+                            <constraint firstItem="RPk-IR-xs2" firstAttribute="top" secondItem="AF9-d8-0pc" secondAttribute="bottom" id="mdV-Xa-Z9L"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reviews" id="b0u-Yg-DN8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="eT6-dE-HQN"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="eT6-dE-HQN" id="Hk0-2F-1zs"/>
+                        <outlet property="menuButton" destination="eT6-dE-HQN" id="JIr-Sc-CoN"/>
+                        <outlet property="tableView" destination="RPk-IR-xs2" id="GMr-M0-hhT"/>
+                        <outlet property="vTitle" destination="b0u-Yg-DN8" id="UvD-RH-GIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWh-9P-jGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4623" y="-61"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="veu-AR-SkD">
-            <objects>
-                <navigationController id="gE8-by-tnF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iaO-R0-ddx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="f69-sX-2Wi" kind="relationship" relationship="rootViewController" id="CC6-dE-zKK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhS-n3-2Lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3483" y="2230"/>
-        </scene>
-        <!--Blog-->
-        <scene sceneID="aRd-Fi-jY9">
-            <objects>
-                <viewController id="f69-sX-2Wi" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="abV-Gm-Bq7"/>
-                        <viewControllerLayoutGuide type="bottom" id="TwW-nf-u5j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9eL-Xk-ak6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Blog" id="2Br-kb-8QP">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="1rt-0M-JSU"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="1rt-0M-JSU" id="Pdr-V6-6iA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nXp-uj-U0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4711" y="2230"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i7P-Uw-is1">
@@ -1353,7 +1370,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Photography-->
         <scene sceneID="DKn-TQ-W3Z">
             <objects>
-                <viewController id="v9y-SV-Ccm" customClass="EditorialsViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v9y-SV-Ccm" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UST-4h-R3A"/>
                         <viewControllerLayoutGuide type="bottom" id="Wjm-3r-9WF"/>
@@ -1361,13 +1378,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="yVD-Lq-0d9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A5z-Re-oG2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="v9y-SV-Ccm" id="YkT-ej-Ht1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A5z-Re-oG2" firstAttribute="leading" secondItem="yVD-Lq-0d9" secondAttribute="leadingMargin" constant="-20" id="G84-4i-MPc"/>
+                            <constraint firstItem="Wjm-3r-9WF" firstAttribute="top" secondItem="A5z-Re-oG2" secondAttribute="bottom" id="KtL-px-Sm1"/>
+                            <constraint firstItem="A5z-Re-oG2" firstAttribute="top" secondItem="UST-4h-R3A" secondAttribute="bottom" id="OGL-AF-Bt3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A5z-Re-oG2" secondAttribute="trailing" constant="-20" id="coH-NW-r8N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photography" id="KC6-Oi-eqI">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Ys3-Ns-7eh"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="Ys3-Ns-7eh" id="qqs-Td-ejC"/>
+                        <outlet property="menuButton" destination="Ys3-Ns-7eh" id="z1x-6G-jp9"/>
+                        <outlet property="tableView" destination="A5z-Re-oG2" id="low-1P-68Q"/>
+                        <outlet property="vTitle" destination="KC6-Oi-eqI" id="p0u-b3-yPQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-hK-gPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1393,7 +1427,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Featured Artists-->
         <scene sceneID="H1G-gz-u8d">
             <objects>
-                <viewController id="cp8-EM-Zy1" customClass="SpotlightViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cp8-EM-Zy1" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wY8-Hi-8ev"/>
                         <viewControllerLayoutGuide type="bottom" id="Fkz-1r-L0Q"/>
@@ -1401,13 +1435,30 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     <view key="view" contentMode="scaleToFill" id="hWc-rz-CsT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l1o-Xz-AI5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cp8-EM-Zy1" id="skR-lq-oFM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l1o-Xz-AI5" firstAttribute="leading" secondItem="hWc-rz-CsT" secondAttribute="leadingMargin" constant="-20" id="3b6-J0-JrM"/>
+                            <constraint firstItem="Fkz-1r-L0Q" firstAttribute="top" secondItem="l1o-Xz-AI5" secondAttribute="bottom" id="59S-6A-XWT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1o-Xz-AI5" secondAttribute="trailing" constant="-20" id="bAa-6f-JN2"/>
+                            <constraint firstItem="l1o-Xz-AI5" firstAttribute="top" secondItem="wY8-Hi-8ev" secondAttribute="bottom" id="xV8-TE-8DK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Featured Artists" id="SH8-Oy-1OQ">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="QPw-HY-GaI"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="QPw-HY-GaI" id="OdX-5u-F19"/>
+                        <outlet property="menuButton" destination="QPw-HY-GaI" id="4lL-MP-0zg"/>
+                        <outlet property="tableView" destination="l1o-Xz-AI5" id="SX9-hU-JWK"/>
+                        <outlet property="vTitle" destination="SH8-Oy-1OQ" id="7tl-HI-pbn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3v-mC-MZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1416,7 +1467,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         </scene>
     </scenes>
     <resources>
-        <image name="BlogThumb.jpg" width="1000" height="635"/>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
         <image name="EntertainmentThumb.jpg" width="589" height="399"/>
         <image name="FeaturedArtistsThumb.jpg" width="500" height="332"/>

@@ -21,7 +21,10 @@ public class DataManager {
       success(data: data)
     })
   }
- */ 
+ */
+    
+    //will have to change the code here after february to get it from test file untlil can find a way
+    //to write identical json to a webpage
   public class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
     let session = NSURLSession.sharedSession()
     

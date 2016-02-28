@@ -14,6 +14,8 @@
 		4410336D1C4D6C090013C6DB /* CultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4410336C1C4D6C090013C6DB /* CultureViewController.swift */; };
 		441C92141C65446600CA76A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 441C92131C65446600CA76A2 /* Podfile */; };
 		441C921C1C65765700CA76A2 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */; };
+		441ECA1D1C826DF700C3C98A /* InterviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441ECA1C1C826DF700C3C98A /* InterviewsViewController.swift */; };
+		441ECA1F1C82727200C3C98A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441ECA1E1C82727200C3C98A /* ListViewController.swift */; };
 		4421391B1C69334600286DE5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421391A1C69334500286DE5 /* DataManager.swift */; };
 		4421391D1C6933B900286DE5 /* TestJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4421391C1C6933B900286DE5 /* TestJSONViewController.swift */; };
 		442579271C67100000B5EE64 /* POND-Magazine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442579251C67100000B5EE64 /* POND-Magazine.xcdatamodeld */; };
@@ -36,7 +38,6 @@
 		4479699E1C49D9DC004E3CC4 /* POND_MagazineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479699D1C49D9DC004E3CC4 /* POND_MagazineTests.swift */; };
 		447969A91C49D9DC004E3CC4 /* POND_MagazineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969A81C49D9DC004E3CC4 /* POND_MagazineUITests.swift */; };
 		447969BA1C49DA34004E3CC4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447969B91C49DA34004E3CC4 /* SWRevealViewController.m */; };
-		447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */; };
 		44D6679F1C56F0270054F8B4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D6679E1C56F0270054F8B4 /* AboutViewController.swift */; };
 		44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */; };
 		44D667A31C5874440054F8B4 /* EditorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D667A21C5874440054F8B4 /* EditorialsViewController.swift */; };
@@ -78,6 +79,8 @@
 		4410336C1C4D6C090013C6DB /* CultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureViewController.swift; sourceTree = "<group>"; };
 		441C92131C65446600CA76A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		441C921B1C65765700CA76A2 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		441ECA1C1C826DF700C3C98A /* InterviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterviewsViewController.swift; sourceTree = "<group>"; };
+		441ECA1E1C82727200C3C98A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4421391A1C69334500286DE5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4421391C1C6933B900286DE5 /* TestJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestJSONViewController.swift; sourceTree = "<group>"; };
 		442579261C67100000B5EE64 /* POND-Magazine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "POND-Magazine.xcdatamodel"; sourceTree = "<group>"; };
@@ -108,7 +111,6 @@
 		447969B71C49DA32004E3CC4 /* POND Magazine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "POND Magazine-Bridging-Header.h"; sourceTree = "<group>"; };
 		447969B81C49DA34004E3CC4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		447969B91C49DA34004E3CC4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		44D6679E1C56F0270054F8B4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
 		44D667A21C5874440054F8B4 /* EditorialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorialsViewController.swift; sourceTree = "<group>"; };
@@ -281,8 +283,9 @@
 			isa = PBXGroup;
 			children = (
 				442139201C694EEF00286DE5 /* DataHandlers */,
-				447969C01C49ECBF004E3CC4 /* FeaturedViewController.swift */,
+				441ECA1E1C82727200C3C98A /* ListViewController.swift */,
 				4479698A1C49D9DB004E3CC4 /* MenuController.swift */,
+				441ECA1C1C826DF700C3C98A /* InterviewsViewController.swift */,
 				441033661C4D5EF10013C6DB /* FashionViewController.swift */,
 				441033681C4D69FE0013C6DB /* MusicViewController.swift */,
 				4410336A1C4D6BF40013C6DB /* ArtViewController.swift */,
@@ -521,13 +524,14 @@
 				442579E61C68389C00B5EE64 /* TestTableViewController.swift in Sources */,
 				447969891C49D9DB004E3CC4 /* AppDelegate.swift in Sources */,
 				441C921C1C65765700CA76A2 /* SpotifyLoginViewController.swift in Sources */,
+				441ECA1D1C826DF700C3C98A /* InterviewsViewController.swift in Sources */,
 				44D667A11C56F0960054F8B4 /* SubmissionsViewController.swift in Sources */,
 				442579DE1C68374400B5EE64 /* bItem.swift in Sources */,
 				442579E11C68374400B5EE64 /* listPage.swift in Sources */,
 				44D667A31C5874440054F8B4 /* EditorialsViewController.swift in Sources */,
-				447969C11C49ECBF004E3CC4 /* FeaturedViewController.swift in Sources */,
 				447969BA1C49DA34004E3CC4 /* SWRevealViewController.m in Sources */,
 				441033671C4D5EF10013C6DB /* FashionViewController.swift in Sources */,
+				441ECA1F1C82727200C3C98A /* ListViewController.swift in Sources */,
 				442579DC1C68374400B5EE64 /* articleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

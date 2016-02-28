@@ -9,12 +9,12 @@
 import Foundation
 import CoreData
 
-class TestJSONViewController: UIViewController, UITableViewDataSource{
+class InterviewsViewController: UIViewController, UITableViewDataSource{
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    let url = "http://www.pond-mag.com/spotlight/" //change to correct view controller url
+    let url = "http://www.pond-mag.com/interviews/" //change to correct view controller url
     var titles = [String]()
     
     @IBOutlet weak var tableView: UITableView!

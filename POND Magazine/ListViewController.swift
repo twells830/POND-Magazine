@@ -9,18 +9,70 @@
 import Foundation
 import CoreData
 
-class TestJSONViewController: UIViewController, UITableViewDataSource{
+class ListViewController: UIViewController, UITableViewDataSource{
     
+    @IBOutlet weak var vTitle: UINavigationItem!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    let url = "http://www.pond-mag.com/spotlight/" //change to correct view controller url
+    var url = " "
     var titles = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        url = "http://www.pond-mag.com/spotlight/"
+        url = "http://www.pond-mag.com/interviews/"
+        url = "http://www.pond-mag.com/releases/"
+        url = "http://www.pond-mag.com/reviews-1/"
+        url = "http://www.pond-mag.com/photography-1/"
+        url = "http://www.pond-mag.com/featured-artists/"
+        url = "http://www.pond-mag.com/new-page-4/"
+        url = "http://www.pond-mag.com/literature-/"
+        
+        switch(vTitle.title){
+        
+        case "POND"?:
+            url = "http://www.pond-mag.com/"
+            break
+        case "Editorials"?:
+            url = "http://www.pond-mag.com/editorials-2/"
+            break
+        case "Spotlight"?:
+            url = "http://www.pond-mag.com/spotlight/"
+            break
+        case "Interviews"?:
+            url = "http://www.pond-mag.com/interviews/"
+            break
+        case "Releases"?:
+            url = "http://www.pond-mag.com/releases/"
+            break
+        case "Reviews"?:
+            url = "http://www.pond-mag.com/reviews-1/"
+            break
+        case "Photography"?:
+            url = "http://www.pond-mag.com/photography-1/"
+            break
+        case "Featured Artists"?:
+            url = "http://www.pond-mag.com/featured-artists/"
+            break
+        case "Entertainment"?:
+            url = "http://www.pond-mag.com/new-page-4/"
+            break
+        case "Lit & Zines"?:
+            url = "http://www.pond-mag.com/literature-/"
+            break
+        default:
+            print("Switch Broke")
+        }
+        
+        /*if(vTitle.title == "POND"){
+            url = "http://www.pond-mag.com/";
+        }else if(vTitle.title == "Editorials"){
+            url = "http://www.pond-mag.com/editorials-2/"
+        }*/
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
