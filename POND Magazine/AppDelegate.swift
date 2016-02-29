@@ -16,6 +16,7 @@ var cont = false
 //which is fetches data while datamanager is still writing
 
 //!!Might have solved this with the timer in loadviewController
+// this ^ is just a quick fix look up how to fix the threading so that dataManager happens first
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -53,17 +54,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print("results is empty");
                     
                     
-                    let appDelegate1 = UIApplication.sharedApplication().delegate as! AppDelegate
-                    let managedContext1 = appDelegate1.managedObjectContext
-                    let entity1 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext1)
-                    let newList = NSManagedObject(entity: entity1!, insertIntoManagedObjectContext: managedContext1)
+                    //this could just use he above context because it's creating the same entity?
+                    //maybe cuts down on the threads and therefor some confusion in the programming
+                    /*let appDelegate1 = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedContext1 = appDelegate1.managedObjectContext*/
+                    let entity1 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
+                    let newList = NSManagedObject(entity: entity1!, insertIntoManagedObjectContext: managedContext)
                     //FILL IN ENTITY
                     newList.setValue(newData, forKey: "newData")
                     newList.setValue(thisVer, forKey: "thisVer")
                     newList.setValue(0, forKey: "count")
                     //SAVE
                     do {
-                        try managedContext1.save()
+                        try managedContext.save()
                     } catch let error as NSError  {
                         print("Could not save Initial List Page \(error), \(error.userInfo)")
                     }
@@ -82,8 +85,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     //IF COUNTS EQUAL THEN JUST START THE APP CAUSE IT SHOULD ALREADY HAVE ALL THE DATA
                     if(oldCount == newCount){
                         print("count is equal")
-                        return //what is this gonna do here?
-                        
                     }else{
                         //ELSE CLEAR ALL THE OLD DATA
                         print("gets inside else statement")
@@ -92,10 +93,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         self.deleteAllData("ListPage")
                         
                         //CREATE A NEW LISTPAGE ENTITY
-                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                        let managedContext = appDelegate.managedObjectContext
-                        let entity =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
-                        let newList = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                        /*let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        let managedContext = appDelegate.managedObjectContext*/
+                        let entity2 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
+                        let newList = NSManagedObject(entity: entity2!, insertIntoManagedObjectContext: managedContext)
                         //FILL IN ENTITY
                         newList.setValue(newData, forKey: "newData")
                         newList.setValue(thisVer, forKey: "thisVer")
@@ -110,10 +111,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         
                         
             //CREATE A NEW ITEM ENTITY (FOR FEATURED ITEM)
-            let appDelegate2 = UIApplication.sharedApplication().delegate as! AppDelegate
-            let managedContext2 = appDelegate2.managedObjectContext
-            let entity2 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext2)
-            let newFeaturedItem = NSManagedObject(entity: entity2!, insertIntoManagedObjectContext: managedContext2)
+            let appDelegate3 = UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext3 = appDelegate3.managedObjectContext
+            let entity3 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext3)
+            let newFeaturedItem = NSManagedObject(entity: entity3!, insertIntoManagedObjectContext: managedContext3)
             //FILL IN ENTITY
             newFeaturedItem.setValue(list!.results?.top![0].fLink?.href, forKey: "href")
             newFeaturedItem.setValue(list!.results?.top![0].fTitle, forKey: "Title")
@@ -122,7 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             newFeaturedItem.setValue(list!.results?.top![0].fLink?.subTitle, forKey: "subTitle")
             //SAVE
             do {
-                try managedContext2.save()
+                try managedContext3.save()
             } catch let error as NSError  {
                 print("Could not save Featured Item \(error), \(error.userInfo)")
             }
@@ -165,7 +166,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             print("imgSrc")
                             //SAVE
                             do {
-                                try managedContext.save()
+                                try managedContext4.save()
                                 print("saved")
                             }catch let error as NSError  {
                                 print("Could not save body item \(error), \(error.userInfo)")

@@ -13,7 +13,7 @@ class LoadViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        _ = NSTimer.scheduledTimerWithTimeInterval(9.0, target: self, selector: "timeToMoveOn", userInfo: nil, repeats: false)
+        _ = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: "timeToMoveOn", userInfo: nil, repeats: false)
     }
     
     func timeToMoveOn() {
