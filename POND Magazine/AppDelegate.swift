@@ -9,21 +9,26 @@
 import UIKit
 import CoreData
 
+var cont = false
+
+//DataManager runs in background
+//LoadViewController is in main and goes to featured page
+//which is fetches data while datamanager is still writing
+
+//!!Might have solved this with the timer in loadviewController
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    //then in indiviudal viewcontrollers create arrays based on urls and display items based on those arrays
-    //(or make those arrays here? (to get all the overhead done at once?))
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        var json: [String: AnyObject]!
-
+            print("before data manager")
             //GET ALL THE JSON
-            DataManager.getPondDataWithSuccess { (data) -> Void in
-                // 1
+            DataManager.getPondDataWithSuccess { (data) -> Void in //something is breaking up here
+                print("inside data manager")
                 do {
-                    //self because json isn't passed to the viewDidLoad
                     json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String: AnyObject]
                 } catch {
                     print(error)
@@ -37,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //MAKE A FETCH REQUEST TO LISTPAGE
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 let managedContext = appDelegate.managedObjectContext
-                let fetchRequest = NSFetchRequest(entityName: "ListPage") //maybe because there is nothing in ListPage on the first run??
+                let fetchRequest = NSFetchRequest(entityName: "ListPage")
                 
                 let error = NSErrorPointer()
                 let countCheck = managedContext.countForFetchRequest(fetchRequest, error: error)
@@ -47,38 +52,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if(countCheck <= 0){
                     print("results is empty");
                     
-                    let entity =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
-                    let newList = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                    
+                    let appDelegate1 = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedContext1 = appDelegate1.managedObjectContext
+                    let entity1 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext1)
+                    let newList = NSManagedObject(entity: entity1!, insertIntoManagedObjectContext: managedContext1)
                     //FILL IN ENTITY
                     newList.setValue(newData, forKey: "newData")
                     newList.setValue(thisVer, forKey: "thisVer")
                     newList.setValue(0, forKey: "count")
                     //SAVE
                     do {
-                        try managedContext.save()
+                        try managedContext1.save()
                     } catch let error as NSError  {
-                        print("Could not save \(error), \(error.userInfo)")
+                        print("Could not save Initial List Page \(error), \(error.userInfo)")
                     }
                     
                 }
                 
                 //TRY AND GET RESULTS OF FETCH
                 do {
-                    let results = try managedContext.executeFetchRequest(fetchRequest)//does this return an array??
-                                                                                      //if not then you can't call a certain index
-
-                    
-            //what if it runs some code to get the list page first no matter what becuase it will always need to get the new count
-            //then if results = empty it will fill with new info??
+                    let results = try managedContext.executeFetchRequest(fetchRequest)
                     
                     //GET THE NEW COUNT FROM SAVED LISTPAGE
-                    let x = results[0] as! NSManagedObject //<-- breaks right here
-                    /*
-                    Does this happen because results[0] doesn't exist yet?
-                    or is results not set properly?
-                    Why did results have to be at index 0??
-            
-                    */
+                    let x = results[0] as! NSManagedObject
                     
                     let oldCount = x.valueForKey("count") as? Int
                     
@@ -107,7 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         do {
                             try managedContext.save()
                         } catch let error as NSError  {
-                            print("Could not save \(error), \(error.userInfo)")
+                            print("Could not save ListPage \(error), \(error.userInfo)")
                         }
                         
                         
@@ -127,14 +124,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 try managedContext2.save()
             } catch let error as NSError  {
-                print("Could not save \(error), \(error.userInfo)")
+                print("Could not save Featured Item \(error), \(error.userInfo)")
             }
-                        
-                        
                         
                         //SET COUNT - 1 (TO ACCOUNT FOR FEATURED ITEM NOT IN THIS ARRAY)
                         let bodyCount = newCount! - 1
                         //LOOP TO SAVE ALL THE BODY ITEMS
+                        print(bodyCount)
                         for(var i = 0; i < bodyCount; i++){
                             
                             //GET ALL THE DATA FOR THE CURRENT JSON BODY ITEM
@@ -144,34 +140,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             itemIndex = list!.results?.body![i].index,
                             itemSubTitle = list!.results?.body![i].subTitle,
                             itemImgSrc = list!.results?.body![i].image?.imgSrc
-                            
+                            print("vars initialized")
+                        
+                            //not saving the data correctly everytime
                             //CREATE A NEW BITEM ENTITY
-                            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                            let managedContext = appDelegate.managedObjectContext
-                            let entity =  NSEntityDescription.entityForName("BItem", inManagedObjectContext:managedContext)
-                            let newItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+                            let appDelegate4 = UIApplication.sharedApplication().delegate as! AppDelegate
+                            let managedContext4 = appDelegate4.managedObjectContext
+                            let entity4 =  NSEntityDescription.entityForName("BItem", inManagedObjectContext:managedContext4)
+                            let newItem = NSManagedObject(entity: entity4!, insertIntoManagedObjectContext: managedContext4)
+                            print("new entity created")
                             //FILL IN ENTITY
+                            print(i)
                             newItem.setValue(itemHref, forKey: "href")
+                            print("href")
                             newItem.setValue(itemTitle, forKey: "title")
+                            print("title")
                             newItem.setValue(itemUrl, forKey: "url")
+                            print("url")
                             newItem.setValue(itemIndex, forKey: "index")
+                            print("index")
                             newItem.setValue(itemSubTitle, forKey: "subTitle")
+                            print("subTitle")
                             newItem.setValue(itemImgSrc, forKey: "imgSrc")
-                                                        //SAVE
+                            print("imgSrc")
+                            //SAVE
                             do {
                                 try managedContext.save()
+                                print("saved")
                             }catch let error as NSError  {
-                                print("Could not save \(error), \(error.userInfo)")
+                                print("Could not save body item \(error), \(error.userInfo)")
                             }
                             
                         }
-                        
+                        cont = true
                         
                     }
                 } catch let error as NSError {
                     print("Could not fetch \(error), \(error.userInfo)")
                 }
             }
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //print the count in ListPage Entity
         //print all titles from Item entities
         
@@ -202,6 +218,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    
+    
     //SHOULD CLEAR ALL RECORDS OF PASSED ENTITY FROM: STACKOVERFLOW
     func deleteAllData(entity: String){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -221,7 +239,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
         }
     }
-
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

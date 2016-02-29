@@ -92,6 +92,9 @@ class ListViewController: UIViewController, UITableViewDataSource{
     //PLAYING WITH PASSING THE JSON VARIABLE AROUND
     func fillTable(){
         
+        //the problem is it runs this while it's running the data manager in loadswithoptions
+        //have to find a way to make sure this happens after the datamanager is finished running
+        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let fetchRequest1 = NSFetchRequest(entityName: "ListPage")

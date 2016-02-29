@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
     <entity name="BItem" parentEntity="Item" syncable="YES">
-        <attribute name="imgSrc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgSrc" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
     </entity>
     <entity name="Item" syncable="YES">
-        <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="href" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
     </entity>
     <entity name="ListPage" syncable="YES">
         <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -16,8 +16,8 @@
         <attribute name="thisVer" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BItem" positionX="205" positionY="131" width="128" height="58"/>
-        <element name="Item" positionX="205" positionY="-63" width="128" height="118"/>
+        <element name="BItem" positionX="205" positionY="131" width="128" height="60"/>
+        <element name="Item" positionX="205" positionY="-63" width="128" height="120"/>
         <element name="ListPage" positionX="45" positionY="-229" width="128" height="88"/>
     </elements>
 </model>

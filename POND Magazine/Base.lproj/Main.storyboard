@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guV-gB-1zg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Load View Controller-->
+        <scene sceneID="fAA-Q8-kCJ">
+            <objects>
+                <viewController storyboardIdentifier="loadFinished" id="guV-gB-1zg" customClass="LoadViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="50M-FN-edu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Npr-dZ-u92"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dqE-Ze-boa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyG-S5-DHo">
+                                <rect key="frame" x="273" y="289" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loadFinished" id="FBB-EV-EIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN9-Qs-84t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1199" y="351"/>
+        </scene>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -383,7 +412,7 @@
         <!--Fashion-->
         <scene sceneID="k03-Up-JUQ">
             <objects>
-                <tableViewController id="YI6-b0-uIT" customClass="FashionViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YI6-b0-uIT" customClass="SubMenuController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="htO-EE-qOZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -571,7 +600,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="819-tc-bnV" id="ew1-sL-BQv"/>
-                        <outlet property="tableView" destination="r7b-R3-JLE" id="Jbq-Dh-9TB"/>
+                        <outlet property="tableView" destination="r7b-R3-JLE" id="bcR-Zm-QxV"/>
                         <outlet property="vTitle" destination="fLC-yn-LFb" id="uxC-QT-0FB"/>
                     </connections>
                 </viewController>
@@ -757,7 +786,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Music-->
         <scene sceneID="6VN-nM-jqc">
             <objects>
-                <tableViewController id="1sv-K7-BdG" customClass="MusicViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1sv-K7-BdG" customClass="SubMenuController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Rf-iO-DaX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -871,7 +900,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="2U8-xQ-JaW" id="wMi-bZ-EWs"/>
+                        <outlet property="menuButton" destination="2U8-xQ-JaW" id="kIO-DZ-xXd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWL-kN-CCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -881,7 +910,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Art-->
         <scene sceneID="I0t-QP-fcQ">
             <objects>
-                <tableViewController id="yn1-xA-gOJ" customClass="ArtViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="yn1-xA-gOJ" customClass="SubMenuController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bRY-au-Mkb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -965,7 +994,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="rPc-Qn-C6R" id="uME-tj-qxg"/>
+                        <outlet property="menuButton" destination="rPc-Qn-C6R" id="RdY-tR-6x6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJs-co-HW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -975,7 +1004,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Culture-->
         <scene sceneID="Nkn-UR-fJT">
             <objects>
-                <tableViewController id="Kbh-AT-YXu" customClass="CultureViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Kbh-AT-YXu" customClass="SubMenuController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HJD-8K-Qp0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1059,7 +1088,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="menuButton" destination="Qet-kr-u4E" id="4jD-0f-mVz"/>
+                        <outlet property="menuButton" destination="Qet-kr-u4E" id="0HW-hb-tO9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQB-Gh-V4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1480,6 +1509,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bd1-v2-Xt3"/>
+        <segue reference="MQW-oc-B7Q"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,6 +25,7 @@ public class DataManager {
     
     //will have to change the code here after february to get it from test file untlil can find a way
     //to write identical json to a webpage
+    
   public class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
     let session = NSURLSession.sharedSession()
     
@@ -50,6 +51,7 @@ public class DataManager {
       //2
       if let data = data {
         //3
+        print("just before success")
         success(pondData: data)
       }
     })
