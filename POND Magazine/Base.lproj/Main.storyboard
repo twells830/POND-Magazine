@@ -596,7 +596,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editorials" id="fLC-yn-LFb">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="819-tc-bnV"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="819-tc-bnV">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="819-tc-bnV" id="ew1-sL-BQv"/>
@@ -771,7 +773,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Spotlight" id="GUw-ie-ulG">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="ov6-56-dUT"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="ov6-56-dUT">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="ov6-56-dUT" id="hoF-fd-TD4"/>
@@ -1140,7 +1144,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Entertainment" id="kRC-3Q-lsp">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="kxo-hp-uC8"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="kxo-hp-uC8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="kxo-hp-uC8" id="9Oa-rr-wm5"/>
@@ -1197,7 +1203,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lit &amp; Zines" id="tuJ-iM-jcv">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="MUK-xE-2ra"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="MUK-xE-2ra">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="MUK-xE-2ra" id="5yD-LX-BiJ"/>
@@ -1254,7 +1262,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Interviews" id="SWa-Nn-Ud7">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="fLT-KV-9uO"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="fLT-KV-9uO">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="fLT-KV-9uO" id="i4X-si-fHe"/>
@@ -1311,7 +1321,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Releases" id="5jX-mq-JWQ">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="KOG-F4-Egp"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="KOG-F4-Egp">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="KOG-F4-Egp" id="zta-rh-1oX"/>
@@ -1368,7 +1380,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reviews" id="b0u-Yg-DN8">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="eT6-dE-HQN"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="eT6-dE-HQN">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="eT6-dE-HQN" id="JIr-Sc-CoN"/>
@@ -1425,7 +1439,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photography" id="KC6-Oi-eqI">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Ys3-Ns-7eh"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="Ys3-Ns-7eh">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="Ys3-Ns-7eh" id="z1x-6G-jp9"/>
@@ -1482,7 +1498,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Featured Artists" id="SH8-Oy-1OQ">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="QPw-HY-GaI"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="QPw-HY-GaI">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="QPw-HY-GaI" id="4lL-MP-0zg"/>
