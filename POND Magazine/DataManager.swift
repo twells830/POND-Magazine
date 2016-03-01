@@ -13,6 +13,9 @@ let pondURL = "https://www.kimonolabs.com/api/bum7mhvu?apikey=GeAWoH0mNefTT6k8GB
 
 public class DataManager {
   
+    //app is breaking because kimono is dead 
+    //switch it over to from file until the scraper is done
+    
  /* public class func getTopAppsDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
       let filePath = NSBundle.mainBundle().pathForResource("topapps", ofType:"json")
@@ -34,7 +37,7 @@ public class DataManager {
         completion(data: nil, error: responseError)
       } else if let httpResponse = response as? NSHTTPURLResponse {
         if httpResponse.statusCode != 200 {
-          let statusError = NSError(domain:"com.raywenderlich", code:httpResponse.statusCode, userInfo:[NSLocalizedDescriptionKey : "HTTP status code has unexpected value."])
+          let statusError = NSError(domain:"com.raywenderlich"/*change this*/, code:httpResponse.statusCode, userInfo:[NSLocalizedDescriptionKey : "HTTP status code has unexpected value."])
           completion(data: nil, error: statusError)
         } else {
           completion(data: data, error: nil)
