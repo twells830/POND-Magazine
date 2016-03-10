@@ -13,16 +13,14 @@ public struct listPage: Decodable {
     
     // 1
     public let count: Int?
-    public let newData: Bool?
-    public let thisVer: String?
-    public let results: Results?
+    public let ver: String?
+    public let items: [item]?
     
     // 2
     public init?(json: JSON) {
         count = "count" <~~ json
-        newData = "newdata" <~~ json
-        thisVer = "thisversionrun" <~~ json
-        results = "results" <~~ json
+        ver = "thisversionrun" <~~ json
+        items = "items" <~~ json
         
     }
 }

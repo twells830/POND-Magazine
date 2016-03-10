@@ -9,7 +9,7 @@
 import Foundation
 
 
-let pondURL = "https://www.kimonolabs.com/api/bum7mhvu?apikey=GeAWoH0mNefTT6k8GBjeOxYGsEp2P719"
+let pondURL = "https://pondscrape.herokuapp.com/"
 
 public class DataManager {
   
@@ -54,7 +54,6 @@ public class DataManager {
       //2
       if let data = data {
         //3
-        print("just before success")
         success(pondData: data)
       }
     })

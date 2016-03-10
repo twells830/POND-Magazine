@@ -23,14 +23,14 @@ class ListViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        url = "http://www.pond-mag.com/spotlight/"
+       /* url = "http://www.pond-mag.com/spotlight/"
         url = "http://www.pond-mag.com/interviews/"
         url = "http://www.pond-mag.com/releases/"
         url = "http://www.pond-mag.com/reviews-1/"
         url = "http://www.pond-mag.com/photography-1/"
         url = "http://www.pond-mag.com/featured-artists/"
         url = "http://www.pond-mag.com/new-page-4/"
-        url = "http://www.pond-mag.com/literature-/"
+        url = "http://www.pond-mag.com/literature-/" */
         
         switch(vTitle.title){
         
@@ -46,11 +46,8 @@ class ListViewController: UIViewController, UITableViewDataSource{
         case "Interviews"?:
             url = "http://www.pond-mag.com/interviews/"
             break
-        case "Releases"?:
-            url = "http://www.pond-mag.com/releases/"
-            break
-        case "Reviews"?:
-            url = "http://www.pond-mag.com/reviews-1/"
+        case "Diaries"?:
+            url = "http://www.pond-mag.com/diaries-1/"
             break
         case "Photography"?:
             url = "http://www.pond-mag.com/photography-1/"
@@ -58,21 +55,13 @@ class ListViewController: UIViewController, UITableViewDataSource{
         case "Featured Artists"?:
             url = "http://www.pond-mag.com/featured-artists/"
             break
-        case "Entertainment"?:
-            url = "http://www.pond-mag.com/new-page-4/"
-            break
-        case "Lit & Zines"?:
+        case "Culture"?:
             url = "http://www.pond-mag.com/literature-/"
             break
         default:
-            print("Switch Broke")
+            print("Switch Fail")
         }
         
-        /*if(vTitle.title == "POND"){
-            url = "http://www.pond-mag.com/";
-        }else if(vTitle.title == "Editorials"){
-            url = "http://www.pond-mag.com/editorials-2/"
-        }*/
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
@@ -98,7 +87,7 @@ class ListViewController: UIViewController, UITableViewDataSource{
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let fetchRequest1 = NSFetchRequest(entityName: "ListPage")
-        let fetchRequest2 = NSFetchRequest(entityName: "BItem")
+        let fetchRequest2 = NSFetchRequest(entityName: "Item")
         
         do{
             let results1 = try managedContext.executeFetchRequest(fetchRequest1)

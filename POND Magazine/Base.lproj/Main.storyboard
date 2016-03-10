@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guV-gB-1zg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guV-gB-1zg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -17,14 +17,6 @@
                     <view key="view" contentMode="scaleToFill" id="dqE-Ze-boa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyG-S5-DHo">
-                                <rect key="frame" x="273" y="289" width="48" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -512,12 +504,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Kbh-AT-YXu" kind="relationship" relationship="rootViewController" id="Shq-jW-A85"/>
+                        <segue destination="qrr-Ea-l8l" kind="relationship" relationship="rootViewController" id="nqb-xP-fw7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXh-EX-AVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455" y="1898"/>
+            <point key="canvasLocation" x="1503" y="1918"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A2x-0W-s8r">
@@ -825,7 +817,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="X3h-no-vA4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ogP-rB-LC5"/>
+                                            <segue destination="0Ce-cM-lAN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="zVj-fY-fJB"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Q1J-O0-iya">
@@ -838,8 +830,8 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReleasesThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-fl-HGb">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Releases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Mb-zLH">
-                                                    <rect key="frame" x="231" y="79" width="139" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diaries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Mb-zLH">
+                                                    <rect key="frame" x="247" y="79" width="106" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                     <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -855,37 +847,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sPi-aO-K7S" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="nV4-NM-tWR"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="AIt-ZN-JY4">
-                                        <rect key="frame" x="0.0" y="464" width="600" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AIt-ZN-JY4" id="VFD-NR-ZoE">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReviewsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TgF-w9-gs8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvd-tN-kwc">
-                                                    <rect key="frame" x="236" y="79" width="129" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                    <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="TgF-w9-gs8" secondAttribute="bottom" constant="-8" id="DeY-yq-epG"/>
-                                                <constraint firstItem="TgF-w9-gs8" firstAttribute="top" secondItem="VFD-NR-ZoE" secondAttribute="topMargin" constant="-8" id="GTI-cT-ko1"/>
-                                                <constraint firstItem="cvd-tN-kwc" firstAttribute="centerY" secondItem="VFD-NR-ZoE" secondAttribute="centerY" id="ZXC-os-p8b"/>
-                                                <constraint firstItem="cvd-tN-kwc" firstAttribute="centerX" secondItem="VFD-NR-ZoE" secondAttribute="centerX" id="fkH-D0-jSD"/>
-                                                <constraint firstItem="TgF-w9-gs8" firstAttribute="leading" secondItem="VFD-NR-ZoE" secondAttribute="leadingMargin" constant="-8" id="ghB-3l-zS2"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="TgF-w9-gs8" secondAttribute="trailing" constant="-8" id="wrk-5y-7F0"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="0Ce-cM-lAN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gNT-WW-TBb"/>
+                                            <segue destination="X3h-no-vA4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="T3h-T1-ubB"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1006,178 +968,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
             <point key="canvasLocation" x="2546" y="1115"/>
         </scene>
         <!--Culture-->
-        <scene sceneID="Nkn-UR-fJT">
-            <objects>
-                <tableViewController id="Kbh-AT-YXu" customClass="SubMenuController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HJD-8K-Qp0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Fok-XK-8jp">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="v9t-1i-ZyI">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v9t-1i-ZyI" id="L5P-of-Bdb">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EntertainmentThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LST-1S-tqh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li9-xL-prK">
-                                                    <rect key="frame" x="192" y="79" width="216" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                    <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="li9-xL-prK" firstAttribute="centerX" secondItem="L5P-of-Bdb" secondAttribute="centerX" id="7x6-oC-vMA"/>
-                                                <constraint firstItem="LST-1S-tqh" firstAttribute="leading" secondItem="L5P-of-Bdb" secondAttribute="leadingMargin" constant="-8" id="GCk-xh-CHI"/>
-                                                <constraint firstItem="li9-xL-prK" firstAttribute="centerY" secondItem="L5P-of-Bdb" secondAttribute="centerY" id="NH4-D8-MDz"/>
-                                                <constraint firstItem="LST-1S-tqh" firstAttribute="top" secondItem="L5P-of-Bdb" secondAttribute="topMargin" constant="-8" id="Prg-Ug-Qse"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="LST-1S-tqh" secondAttribute="trailing" constant="-8" id="Uew-GV-6HR"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LST-1S-tqh" secondAttribute="bottom" constant="-8" id="ghO-yj-S5r"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="3TJ-Q2-d3p" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Jnj-tG-rc7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="fOA-Mt-pTL">
-                                        <rect key="frame" x="0.0" y="264" width="600" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fOA-Mt-pTL" id="QWx-la-iyg">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LitZineThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="be9-4t-nJb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lit &amp; Zines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLq-kh-71T">
-                                                    <rect key="frame" x="218" y="79" width="165" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                    <color key="textColor" red="0.2394846907" green="0.2394846907" blue="0.2394846907" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="be9-4t-nJb" firstAttribute="leading" secondItem="QWx-la-iyg" secondAttribute="leadingMargin" constant="-8" id="JJx-Js-s7j"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="be9-4t-nJb" secondAttribute="trailing" constant="-8" id="NwY-xd-fgo"/>
-                                                <constraint firstItem="LLq-kh-71T" firstAttribute="centerY" secondItem="QWx-la-iyg" secondAttribute="centerY" id="r7Z-lL-Vao"/>
-                                                <constraint firstItem="LLq-kh-71T" firstAttribute="centerX" secondItem="QWx-la-iyg" secondAttribute="centerX" id="u1j-Yq-kz2"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="be9-4t-nJb" secondAttribute="bottom" constant="-8" id="xIe-zP-h4z"/>
-                                                <constraint firstItem="be9-4t-nJb" firstAttribute="top" secondItem="QWx-la-iyg" secondAttribute="topMargin" constant="-8" id="xw1-8X-rWs"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Tu3-VD-9JF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="YAg-fL-TH8"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="Kbh-AT-YXu" id="YyV-nA-cMn"/>
-                            <outlet property="delegate" destination="Kbh-AT-YXu" id="CPD-e0-QDf"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Culture" id="uiE-w1-abE">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="Qet-kr-u4E">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="menuButton" destination="Qet-kr-u4E" id="0HW-hb-tO9"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qQB-Gh-V4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2522" y="1869"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8Ee-EF-r24">
-            <objects>
-                <navigationController id="3TJ-Q2-d3p" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ley-vT-XQA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="40z-1a-nN7" kind="relationship" relationship="rootViewController" id="pNq-3j-b3C"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pyB-xK-UFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3659" y="3430"/>
-        </scene>
-        <!--Entertainment-->
-        <scene sceneID="qbk-1s-WTN">
-            <objects>
-                <viewController id="40z-1a-nN7" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZUc-qZ-tG4"/>
-                        <viewControllerLayoutGuide type="bottom" id="E4A-DC-99z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OYj-4q-yxu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c88-Sr-Oyh">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="40z-1a-nN7" id="FNQ-Ru-o3d"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="c88-Sr-Oyh" firstAttribute="leading" secondItem="OYj-4q-yxu" secondAttribute="leadingMargin" constant="-20" id="8TS-vh-LNt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="c88-Sr-Oyh" secondAttribute="trailing" constant="-20" id="Gtf-2a-6Ow"/>
-                            <constraint firstItem="E4A-DC-99z" firstAttribute="top" secondItem="c88-Sr-Oyh" secondAttribute="bottom" id="dXW-c3-XEi"/>
-                            <constraint firstItem="c88-Sr-Oyh" firstAttribute="top" secondItem="ZUc-qZ-tG4" secondAttribute="bottom" id="tc6-Xm-g8K"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Entertainment" id="kRC-3Q-lsp">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="kxo-hp-uC8">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="kxo-hp-uC8" id="9Oa-rr-wm5"/>
-                        <outlet property="tableView" destination="c88-Sr-Oyh" id="d7H-tx-Xts"/>
-                        <outlet property="vTitle" destination="kRC-3Q-lsp" id="6dg-z0-mXS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iLl-dr-d4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4863" y="3430"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="32j-kz-4nV">
-            <objects>
-                <navigationController id="Tu3-VD-9JF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AfM-cn-mKT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="qrr-Ea-l8l" kind="relationship" relationship="rootViewController" id="RGB-tT-CAg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rwD-z7-nNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3635" y="4222"/>
-        </scene>
-        <!--Lit & Zines-->
         <scene sceneID="geo-RW-ghU">
             <objects>
-                <viewController id="qrr-Ea-l8l" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Culture" id="qrr-Ea-l8l" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="79t-Mo-Aa7"/>
                         <viewControllerLayoutGuide type="bottom" id="wD3-3W-8fy"/>
@@ -1202,7 +995,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstItem="4r2-mg-JGV" firstAttribute="top" secondItem="79t-Mo-Aa7" secondAttribute="bottom" id="v4q-ea-vbj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lit &amp; Zines" id="tuJ-iM-jcv">
+                    <navigationItem key="navigationItem" title="Culture" id="tuJ-iM-jcv">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="MUK-xE-2ra">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -1215,7 +1008,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0X-Je-WAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4863" y="4222"/>
+            <point key="canvasLocation" x="2467" y="1890"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fm6-4Z-jcO">
@@ -1231,9 +1024,9 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-9o-4by" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3395" y="-1685"/>
+            <point key="canvasLocation" x="3507" y="-805"/>
         </scene>
-        <!--Interviews-->
+        <!--Diaries-->
         <scene sceneID="Ew2-fG-UKB">
             <objects>
                 <viewController id="sbR-gV-ne6" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
@@ -1261,7 +1054,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstAttribute="trailingMargin" secondItem="g0c-Ad-cOS" secondAttribute="trailing" constant="-20" id="uy6-Vs-o94"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Interviews" id="SWa-Nn-Ud7">
+                    <navigationItem key="navigationItem" title="Diaries" id="SWa-Nn-Ud7">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="fLT-KV-9uO">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -1274,66 +1067,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLQ-fJ-wRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4623" y="-1685"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sra-qd-eMk">
-            <objects>
-                <navigationController id="sPi-aO-K7S" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7aN-uT-0Kb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="vaV-oa-hGZ" kind="relationship" relationship="rootViewController" id="7YH-qg-vnx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w0E-w0-8WT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3395" y="-893"/>
-        </scene>
-        <!--Releases-->
-        <scene sceneID="aJ1-8p-BMk">
-            <objects>
-                <viewController id="vaV-oa-hGZ" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cGr-HC-QEJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="lwa-tk-fh2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qi9-pM-s1g">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-td-Yes">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vaV-oa-hGZ" id="cav-1Q-vxs"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0gI-td-Yes" firstAttribute="top" secondItem="cGr-HC-QEJ" secondAttribute="bottom" id="Dq1-tR-7as"/>
-                            <constraint firstItem="0gI-td-Yes" firstAttribute="leading" secondItem="Qi9-pM-s1g" secondAttribute="leadingMargin" constant="-20" id="c6u-2Z-0Qs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0gI-td-Yes" secondAttribute="trailing" constant="-20" id="nhW-hJ-ti1"/>
-                            <constraint firstItem="lwa-tk-fh2" firstAttribute="top" secondItem="0gI-td-Yes" secondAttribute="bottom" id="rKf-8J-nBO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Releases" id="5jX-mq-JWQ">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="KOG-F4-Egp">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="KOG-F4-Egp" id="zta-rh-1oX"/>
-                        <outlet property="tableView" destination="0gI-td-Yes" id="l6f-uG-Kvl"/>
-                        <outlet property="vTitle" destination="5jX-mq-JWQ" id="mtO-61-OK0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qh-fD-YKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4623" y="-893"/>
+            <point key="canvasLocation" x="4631" y="-829"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XRo-kj-FOf">
@@ -1351,10 +1085,10 @@ Music Director Carl Pietrusinski // @car_roll519</string>
             </objects>
             <point key="canvasLocation" x="3395" y="-61"/>
         </scene>
-        <!--Reviews-->
+        <!--Interviews-->
         <scene sceneID="cVf-Xy-21c">
             <objects>
-                <viewController id="jq3-zO-0ay" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Interviews" id="jq3-zO-0ay" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AF9-d8-0pc"/>
                         <viewControllerLayoutGuide type="bottom" id="J42-G4-6X9"/>
@@ -1379,7 +1113,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstItem="RPk-IR-xs2" firstAttribute="top" secondItem="AF9-d8-0pc" secondAttribute="bottom" id="mdV-Xa-Z9L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reviews" id="b0u-Yg-DN8">
+                    <navigationItem key="navigationItem" title="Interviews" id="b0u-Yg-DN8">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="eT6-dE-HQN">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -1515,18 +1249,15 @@ Music Director Carl Pietrusinski // @car_roll519</string>
     </scenes>
     <resources>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
-        <image name="EntertainmentThumb.jpg" width="589" height="399"/>
         <image name="FeaturedArtistsThumb.jpg" width="500" height="332"/>
         <image name="InterviewsThumb.jpg" width="1000" height="750"/>
-        <image name="LitZineThumb.jpg" width="1000" height="616"/>
         <image name="LoginButton" width="488" height="88"/>
         <image name="Menu" width="22" height="22"/>
         <image name="PhotographyThumb.jpg" width="500" height="750"/>
         <image name="ReleasesThumb.jpg" width="1000" height="663"/>
-        <image name="ReviewsThumb.jpg" width="1000" height="668"/>
         <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MQW-oc-B7Q"/>
+        <segue reference="Bd1-v2-Xt3"/>
     </inferredMetricsTieBreakers>
 </document>
