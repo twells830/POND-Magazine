@@ -9,7 +9,21 @@
 import Foundation
 import CoreData
 
-class ListViewController: UIViewController, UITableViewDataSource{
+extension UIImageView {
+    public func imageFromUrl(urlString: String) {
+        if let url = NSURL(string: urlString) {
+            let request = NSURLRequest(URL: url)
+            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+                (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+                if let imageData = data as NSData? {
+                    self.image = UIImage(data: imageData)
+                }
+            }
+        }
+    }
+}
+
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var vTitle: UINavigationItem!
     
@@ -17,12 +31,17 @@ class ListViewController: UIViewController, UITableViewDataSource{
     
     var url = " "
     var titles = [String]()
+    var images = [UIImageView]()
+    var articleURLs = [String]()
     
     @IBOutlet weak var tableView: UITableView!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
        /* url = "http://www.pond-mag.com/spotlight/"
         url = "http://www.pond-mag.com/interviews/"
         url = "http://www.pond-mag.com/releases/"
@@ -96,12 +115,24 @@ class ListViewController: UIViewController, UITableViewDataSource{
             print("ListPage count =  \(y)")
             
             let results2 = try managedContext.executeFetchRequest(fetchRequest2)
-            for(var i = 0; i < y!-1; i++){
+            for(var i = 0; i < y; i++){
                 let z = results2[i] as! NSManagedObject
                 let itemURL = z.valueForKey("url") as? String
                 if(itemURL == self.url){
                     let b = z.valueForKey("title") as? String
+                    let c = z.valueForKey("imageURL") as? String
+                    var d : String
+                    if(self.url == "http://www.pond-mag.com/"){
+                        d = (z.valueForKey("articleURL") as? String)!
+                    }else{
+                        d = "http://www.pond-mag.com" + (z.valueForKey("articleURL") as? String)!
+                    }
                     self.titles.append(b!)
+                    self.articleURLs.append(d)
+                    //self.imageURLs.append(c!)
+                    let imageView = UIImageView()
+                    imageView.imageFromUrl(c!)
+                    images.append(imageView)
                 }
             }
             
@@ -122,11 +153,28 @@ class ListViewController: UIViewController, UITableViewDataSource{
         cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
             
-            let cell =
-            tableView.dequeueReusableCellWithIdentifier("Cell")
+            tableView.rowHeight = 190
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
             
             cell!.textLabel!.text = titles[indexPath.row]
-            
+            //cell!.
+            let bgImg = images[indexPath.row]
+            bgImg.frame = cell!.frame
+            cell!.backgroundView = bgImg
+            //cell!.addSubview(bgImg)
+           // cell!.sendSubviewToBack(bgImg)
             return cell!
+            
+  
     }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let toURL = NSURL(string: self.articleURLs[indexPath.row])
+        let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        webV.loadRequest(NSURLRequest(URL: toURL!))
+        self.view.addSubview(webV)
+    }
+
 }

@@ -10,11 +10,10 @@ import Foundation
 import CoreData
 
 class LoadViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         
         var json: [String: AnyObject]!
         print("before data manager")
@@ -97,32 +96,11 @@ class LoadViewController: UIViewController {
                     }
                     
                     
-                    
-                    //CREATE A NEW ITEM ENTITY (FOR FEATURED ITEM)
-                    let appDelegate3 = UIApplication.sharedApplication().delegate as! AppDelegate
-                    let managedContext3 = appDelegate3.managedObjectContext
-                    let entity3 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext3)
-                    let newFeaturedItem = NSManagedObject(entity: entity3!, insertIntoManagedObjectContext: managedContext3)
-                    //FILL IN ENTITY
-                    newFeaturedItem.setValue(list!.items![0].title, forKey: "title")
-                    newFeaturedItem.setValue(list!.items![0].subTitle, forKey: "subTitle")
-                    newFeaturedItem.setValue(list!.items![0].imageURL, forKey: "imageURL")
-                    newFeaturedItem.setValue(list!.items![0].articleURL, forKey: "articleURL")
-                    newFeaturedItem.setValue(list!.items![0].url, forKey: "url")
-                    newFeaturedItem.setValue(list!.items![0].index, forKey: "index")
-                    newFeaturedItem.setValue(list!.items![0].featured, forKey: "featured")
-                    //SAVE
-                    do {
-                        try managedContext3.save()
-                    } catch let error as NSError  {
-                        print("Could not save Featured Item \(error), \(error.userInfo)")
-                    }
-                    
                     //SET COUNT - 1 (TO ACCOUNT FOR FEATURED ITEM NOT IN THIS ARRAY)
                     let bodyCount = newCount!
                     //LOOP TO SAVE ALL THE BODY ITEMS
                     print(bodyCount)
-                    for(var i = 1; i < bodyCount; i++){ //start at one to skip featured
+                    for(var i = 0; i < bodyCount; i++){ //start at one to skip featured
                         
                         //GET ALL THE DATA FOR THE CURRENT JSON BODY ITEM
                         let articleURL = list!.items![i].articleURL,

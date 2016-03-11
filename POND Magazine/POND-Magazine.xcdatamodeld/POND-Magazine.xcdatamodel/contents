@@ -3,6 +3,7 @@
     <entity name="Item" syncable="YES">
         <attribute name="articleURL" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
         <attribute name="featured" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="subTitle" optional="YES" attributeType="String" defaultValueString="xxx" syncable="YES"/>
@@ -14,7 +15,7 @@
         <attribute name="ver" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="205" positionY="-63" width="128" height="150"/>
+        <element name="Item" positionX="205" positionY="-63" width="128" height="165"/>
         <element name="ListPage" positionX="45" positionY="-229" width="128" height="75"/>
     </elements>
 </model>
