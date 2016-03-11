@@ -23,7 +23,7 @@ extension UIImageView {
     }
 }
 
-class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate{
     
     @IBOutlet weak var vTitle: UINavigationItem!
     
@@ -36,7 +36,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
-
+    var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,10 +170,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
         let toURL = NSURL(string: self.articleURLs[indexPath.row])
         let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         webV.loadRequest(NSURLRequest(URL: toURL!))
+        self.navigationController!.navigationBarHidden = true
+        self.navigationController!.hidesBarsOnSwipe = true
+        self.navigationController!.navigationBar.translucent = true
         self.view.addSubview(webV)
     }
 
