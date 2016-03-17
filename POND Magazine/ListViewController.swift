@@ -24,10 +24,11 @@ extension UIImageView {
 }
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate{
+
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var vTitle: UINavigationItem!
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     var url = " "
     var titles = [String]()
@@ -40,16 +41,16 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //menu code
+        if revealViewController() != nil {
+            revealViewController().rearViewRevealWidth = 200
+            menuButton.target = revealViewController()
+            menuButton.action = "revealToggle:"
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         tableView.delegate = self
-       /* url = "http://www.pond-mag.com/spotlight/"
-        url = "http://www.pond-mag.com/interviews/"
-        url = "http://www.pond-mag.com/releases/"
-        url = "http://www.pond-mag.com/reviews-1/"
-        url = "http://www.pond-mag.com/photography-1/"
-        url = "http://www.pond-mag.com/featured-artists/"
-        url = "http://www.pond-mag.com/new-page-4/"
-        url = "http://www.pond-mag.com/literature-/" */
         
         switch(vTitle.title){
         
@@ -86,15 +87,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         self.fillTable()
         
-        //menu code
-        if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = 200
-            menuButton.target = revealViewController()
-            menuButton.action = "revealToggle:"
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-        }
     }
     
     //PLAYING WITH PASSING THE JSON VARIABLE AROUND
@@ -158,12 +150,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
             
             cell!.textLabel!.text = titles[indexPath.row]
-            //cell!.
+            cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
+            //cell!.textLabel!.textColor = UIColor(red:0.22, green:0.22, blue:0.22, alpha:1.0)
+            //cell!.textLabel!.textColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1.0)
             let bgImg = images[indexPath.row]
             bgImg.frame = cell!.frame
+            bgImg.alpha = 0.65
+            //cell!.addSubview(filter)
             cell!.backgroundView = bgImg
-            //cell!.addSubview(bgImg)
-           // cell!.sendSubviewToBack(bgImg)
             return cell!
             
   
@@ -171,6 +165,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let toURL = NSURL(string: self.articleURLs[indexPath.row])
+        //do parsing of article in here
         let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         webV.loadRequest(NSURLRequest(URL: toURL!))
         self.navigationController!.navigationBarHidden = true
