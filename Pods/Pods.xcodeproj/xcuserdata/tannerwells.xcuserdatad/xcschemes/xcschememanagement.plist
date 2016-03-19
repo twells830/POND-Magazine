@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-POND Magazine.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6996E54C47F78BA071719DCFB4B046AD</key>
+		<key>46B57C790F07E2DD2EAE3E503AFD830C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6312CAD7E18804AD5E11308495CFD52</key>
 		<dict>
 			<key>primary</key>
 			<true/>

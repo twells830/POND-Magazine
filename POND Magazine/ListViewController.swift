@@ -41,6 +41,10 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.automaticallyAdjustsScrollViewInsets = false
+
+        
         //menu code
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
@@ -155,7 +159,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //cell!.textLabel!.textColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1.0)
             let bgImg = images[indexPath.row]
             bgImg.frame = cell!.frame
-            bgImg.alpha = 0.65
+            bgImg.alpha = 0.70
             //cell!.addSubview(filter)
             cell!.backgroundView = bgImg
             return cell!
@@ -165,13 +169,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let toURL = NSURL(string: self.articleURLs[indexPath.row])
-        //do parsing of article in here
         let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         webV.loadRequest(NSURLRequest(URL: toURL!))
         self.navigationController!.navigationBarHidden = true
         self.navigationController!.hidesBarsOnSwipe = true
         self.navigationController!.navigationBar.translucent = true
         self.view.addSubview(webV)
+        
+        //parse article here
     }
 
 }

@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079D423BB02379097C94371EED61A30F /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CADA7F2D74E41CD69244DF97A140A157 /* Gloss-dummy.m */; };
-		3C793940E15B7CDE8E791635A5D72290 /* Pods-POND Magazine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B91133589D97936CD99641D043C5EC /* Pods-POND Magazine-dummy.m */; };
+		079D423BB02379097C94371EED61A30F /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0899FB22A1E5CF311E500146A360AD59 /* Gloss-dummy.m */; };
+		2BD30577E7D147524479E43C0F5721E2 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB96ECA071B50E69F7931A170F97F2 /* CSS.swift */; };
+		33AFFE0825E74D085585A5444E3A05EC /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA950CF0446A167A93D7EC8225D381D /* Kanna-dummy.m */; };
+		35ADF00ABB5F3B1B2E11BCCD52C3D8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		395EB90F99C1B4455D5473D35CC5BD5E /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B45364F317D00A0885558B90BD539C /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AC764172309B499AAC3FA74EF13FEB1 /* Pods-POND Magazine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 399932B1954FD355CE6D3E05DBC240AF /* Pods-POND Magazine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C9EE49A1DDB378987680CA65C0F9359 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		6A511BFCF938FA5666883D32D6A7EF9E /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E1C345EE1A94B9A027DFAAE8C1450F /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74E994B73A1857E0BA3817F9020ECBEB /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C90CAFA39858733349B50B275A9CD5B /* Encoder.swift */; };
-		8F86E67969A062F67329CDAD9FE2D53A /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8122777988701C92FAB4B9A214FC0F /* Gloss.swift */; };
-		9805CAA76685A4A380429713D2FF8977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A584CFF03448E431D5F0135C12A16D1F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572EE3A3E8B8385A7202DA6E491FACB /* Operators.swift */; };
-		B416B7CAF1C48163C18D3EF420D4CECE /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFDAA775125E7A87B252696F343E9D8 /* Decoder.swift */; };
-		EB233A9A4A59091F1BEA1A0CB5F15553 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20750035FC50F760DF1CEF2345980521 /* Dictionary.swift */; };
-		FFE48EBA1FF35DE53AD37D1A46D26B25 /* Pods-POND Magazine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 399932B1954FD355CE6D3E05DBC240AF /* Pods-POND Magazine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5705D790F72EB6F75990B3326D375EDD /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA305B4AB0F80E1A1C539A850E8CC53 /* Kanna.swift */; };
+		64F4546C4CD18BB14FA0098B55FECA50 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91910BDA89F03926EC31937C743007 /* libxmlHTMLDocument.swift */; };
+		6A511BFCF938FA5666883D32D6A7EF9E /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FE24A828CA02A0F29734C1AC8A6930 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74E994B73A1857E0BA3817F9020ECBEB /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517EB1E677A01B6B99F625E44E79FD4 /* Encoder.swift */; };
+		86F428F3ED56C2679D23D617D12CA30D /* Pods-POND Magazine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B91133589D97936CD99641D043C5EC /* Pods-POND Magazine-dummy.m */; };
+		8D70044694BD80CAE717B97F512ED800 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8993B2FC005062FF32B87FB828D442B /* libxmlHTMLNode.swift */; };
+		8F86E67969A062F67329CDAD9FE2D53A /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C9840BF6ADB2E846B049E3B720D2A /* Gloss.swift */; };
+		9B6713274378B30AEDB42E37B58BD088 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B487AD966CEA92F65AD2995AD0B29C2 /* libxmlParserOption.swift */; };
+		9F8D915EE193AAD4CE4ADE191DA28A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A584CFF03448E431D5F0135C12A16D1F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F13C89DFDFB10313150C451D2CD527 /* Operators.swift */; };
+		B416B7CAF1C48163C18D3EF420D4CECE /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80617D0BDD7A15A6755EC9ABE5F2C0C5 /* Decoder.swift */; };
+		EB233A9A4A59091F1BEA1A0CB5F15553 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD5878960A4BF52D01DC58A56B873E /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E60AA53F9E59908CE34676FDBBB5A2C /* PBXContainerItemProxy */ = {
+		0006E051C30DA3A18280167B6F80B6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6312CAD7E18804AD5E11308495CFD52;
+			remoteInfo = Kanna;
+		};
+		C5B1CF8F4B63968EFE075A7355138A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -31,39 +46,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0572EE3A3E8B8385A7202DA6E491FACB /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Gloss/Operators.swift; sourceTree = "<group>"; };
-		0E8122777988701C92FAB4B9A214FC0F /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss/Gloss.swift; sourceTree = "<group>"; };
-		179DCD8C16036259FD35A9C2333A8B8E /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
-		20750035FC50F760DF1CEF2345980521 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Gloss/Dictionary.swift; sourceTree = "<group>"; };
+		0899FB22A1E5CF311E500146A360AD59 /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		1B487AD966CEA92F65AD2995AD0B29C2 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Source/libxml/libxmlParserOption.swift; sourceTree = "<group>"; };
+		1DA9293DD29D7EF571C1050D8B7A6C2C /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		21AB96ECA071B50E69F7931A170F97F2 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Source/CSS.swift; sourceTree = "<group>"; };
+		2517EB1E677A01B6B99F625E44E79FD4 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Gloss/Encoder.swift; sourceTree = "<group>"; };
+		2CDD5878960A4BF52D01DC58A56B873E /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Gloss/Dictionary.swift; sourceTree = "<group>"; };
 		381C7FF10616489AA719D246CBEE6BDE /* Pods-POND Magazine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-POND Magazine.release.xcconfig"; sourceTree = "<group>"; };
 		399932B1954FD355CE6D3E05DBC240AF /* Pods-POND Magazine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-POND Magazine-umbrella.h"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		478EE5C429FDAF96AD7F436552361F23 /* Pods-POND Magazine-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-POND Magazine-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5361906BD935737B4FA08E505F28A824 /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
-		55E1C345EE1A94B9A027DFAAE8C1450F /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
 		5A41EADA7A30B9B680421149AB965489 /* Pods-POND Magazine-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-POND Magazine-frameworks.sh"; sourceTree = "<group>"; };
-		5C90CAFA39858733349B50B275A9CD5B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Gloss/Encoder.swift; sourceTree = "<group>"; };
+		5BA305B4AB0F80E1A1C539A850E8CC53 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Source/Kanna.swift; sourceTree = "<group>"; };
+		61B45364F317D00A0885558B90BD539C /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		632F88BAB24AC33FE0743433BADEDBD8 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697FE477EAB0749716F07174ECED3E73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DAEBFD4700B9392AC956899B3B45F0D /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F08E0032D563E7CB6C6103265F24D4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FFDAA775125E7A87B252696F343E9D8 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Gloss/Decoder.swift; sourceTree = "<group>"; };
-		96A2AD6C731D0C909D5FF8358368EB48 /* Pods_POND_Magazine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POND_Magazine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		698C9840BF6ADB2E846B049E3B720D2A /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss/Gloss.swift; sourceTree = "<group>"; };
+		6B848A0F31F3A591D71A34827FF3C73A /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
+		80617D0BDD7A15A6755EC9ABE5F2C0C5 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Gloss/Decoder.swift; sourceTree = "<group>"; };
 		A015F530EC0CC3A732C1899267C4138A /* Pods-POND Magazine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-POND Magazine.debug.xcconfig"; sourceTree = "<group>"; };
+		A2F13C89DFDFB10313150C451D2CD527 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Gloss/Operators.swift; sourceTree = "<group>"; };
 		A4FCE3D8D557535E35E07119509FA168 /* Pods-POND Magazine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-POND Magazine.modulemap"; sourceTree = "<group>"; };
+		A556A5398E7D22E515A6D0FEC7267335 /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
+		B8E0FCACD2658ACCB2E7B43F84DCDDA7 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC91910BDA89F03926EC31937C743007 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Source/libxml/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
 		C1D3EFB1560C2876B688379DC932A883 /* Pods-POND Magazine-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-POND Magazine-resources.sh"; sourceTree = "<group>"; };
-		CADA7F2D74E41CD69244DF97A140A157 /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		C82D76CB472603F365C2156EAB13813F /* Pods_POND_Magazine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POND_Magazine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FA86ABF83C28F7050A60F26E7D2757 /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Gloss.modulemap; sourceTree = "<group>"; };
+		CADD696C0EF2BF7408CACE147B9EB391 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98A61F38048405DC7304671F016FA1B /* Pods-POND Magazine-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-POND Magazine-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0A86808FD627EFB7DAC03829E05299B /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Gloss.modulemap; sourceTree = "<group>"; };
+		DE9678E02B2AD14C365C452E62AA8921 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B1A0F46F0CA790E9D42862F4F47E9E /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		E883B47FD704C033CBEA5F26F6C25916 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
+		EFA950CF0446A167A93D7EC8225D381D /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
 		F2B91133589D97936CD99641D043C5EC /* Pods-POND Magazine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-POND Magazine-dummy.m"; sourceTree = "<group>"; };
+		F7FE24A828CA02A0F29734C1AC8A6930 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
+		F8993B2FC005062FF32B87FB828D442B /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Source/libxml/libxmlHTMLNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E04CE08B3080CA4AC382EFD2946E6183 /* Frameworks */ = {
+		0A32373445577DEEC12E5252B3EF0E4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9805CAA76685A4A380429713D2FF8977 /* Foundation.framework in Frameworks */,
+				9F8D915EE193AAD4CE4ADE191DA28A6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9F068807738504C99BB65AA119D2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35ADF00ABB5F3B1B2E11BCCD52C3D8F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +131,17 @@
 			path = "Target Support Files/Pods-POND Magazine";
 			sourceTree = "<group>";
 		};
-		2DD52B717BD7AE8D1F6348E686C43776 /* Pods */ = {
+		275F710530130151D4A21990AB254976 /* Kanna */ = {
 			isa = PBXGroup;
 			children = (
-				75C4279565CF932EE7F38BE32EDDF9D1 /* Gloss */,
+				21AB96ECA071B50E69F7931A170F97F2 /* CSS.swift */,
+				5BA305B4AB0F80E1A1C539A850E8CC53 /* Kanna.swift */,
+				BC91910BDA89F03926EC31937C743007 /* libxmlHTMLDocument.swift */,
+				F8993B2FC005062FF32B87FB828D442B /* libxmlHTMLNode.swift */,
+				1B487AD966CEA92F65AD2995AD0B29C2 /* libxmlParserOption.swift */,
+				A2E449B2D8FAF0FBCC9F57584F85A025 /* Support Files */,
 			);
-			name = Pods;
+			path = Kanna;
 			sourceTree = "<group>";
 		};
 		2E0005BA1505139E70B245B38D68302B /* Targets Support Files */ = {
@@ -112,17 +152,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		75C4279565CF932EE7F38BE32EDDF9D1 /* Gloss */ = {
+		7551380525174B1A8C652B38CC8601A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8FFDAA775125E7A87B252696F343E9D8 /* Decoder.swift */,
-				20750035FC50F760DF1CEF2345980521 /* Dictionary.swift */,
-				5C90CAFA39858733349B50B275A9CD5B /* Encoder.swift */,
-				0E8122777988701C92FAB4B9A214FC0F /* Gloss.swift */,
-				0572EE3A3E8B8385A7202DA6E491FACB /* Operators.swift */,
-				BC7FE04F14722916B099B2960EDF4FB4 /* Support Files */,
+				BE6DA1E91E624836BCDC1DB240DB38AE /* Gloss */,
+				275F710530130151D4A21990AB254976 /* Kanna */,
 			);
-			path = Gloss;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76E32F966C4A68975E597CFD4E041920 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8FA86ABF83C28F7050A60F26E7D2757 /* Gloss.modulemap */,
+				E883B47FD704C033CBEA5F26F6C25916 /* Gloss.xcconfig */,
+				0899FB22A1E5CF311E500146A360AD59 /* Gloss-dummy.m */,
+				A556A5398E7D22E515A6D0FEC7267335 /* Gloss-prefix.pch */,
+				F7FE24A828CA02A0F29734C1AC8A6930 /* Gloss-umbrella.h */,
+				CADD696C0EF2BF7408CACE147B9EB391 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gloss";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -130,17 +180,32 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				2DD52B717BD7AE8D1F6348E686C43776 /* Pods */,
-				8509A865785581CA85D7D7F579B7E805 /* Products */,
+				7551380525174B1A8C652B38CC8601A7 /* Pods */,
+				A34153E2B5C0085A6AF1B8EE4EC26205 /* Products */,
 				2E0005BA1505139E70B245B38D68302B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8509A865785581CA85D7D7F579B7E805 /* Products */ = {
+		A2E449B2D8FAF0FBCC9F57584F85A025 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DAEBFD4700B9392AC956899B3B45F0D /* Gloss.framework */,
-				96A2AD6C731D0C909D5FF8358368EB48 /* Pods_POND_Magazine.framework */,
+				DE9678E02B2AD14C365C452E62AA8921 /* Info.plist */,
+				6B848A0F31F3A591D71A34827FF3C73A /* Kanna.modulemap */,
+				E2B1A0F46F0CA790E9D42862F4F47E9E /* Kanna.xcconfig */,
+				EFA950CF0446A167A93D7EC8225D381D /* Kanna-dummy.m */,
+				1DA9293DD29D7EF571C1050D8B7A6C2C /* Kanna-prefix.pch */,
+				61B45364F317D00A0885558B90BD539C /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
+			sourceTree = "<group>";
+		};
+		A34153E2B5C0085A6AF1B8EE4EC26205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0FCACD2658ACCB2E7B43F84DCDDA7 /* Gloss.framework */,
+				632F88BAB24AC33FE0743433BADEDBD8 /* Kanna.framework */,
+				C82D76CB472603F365C2156EAB13813F /* Pods_POND_Magazine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,18 +218,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC7FE04F14722916B099B2960EDF4FB4 /* Support Files */ = {
+		BE6DA1E91E624836BCDC1DB240DB38AE /* Gloss */ = {
 			isa = PBXGroup;
 			children = (
-				F0A86808FD627EFB7DAC03829E05299B /* Gloss.modulemap */,
-				179DCD8C16036259FD35A9C2333A8B8E /* Gloss.xcconfig */,
-				CADA7F2D74E41CD69244DF97A140A157 /* Gloss-dummy.m */,
-				5361906BD935737B4FA08E505F28A824 /* Gloss-prefix.pch */,
-				55E1C345EE1A94B9A027DFAAE8C1450F /* Gloss-umbrella.h */,
-				8F08E0032D563E7CB6C6103265F24D4A /* Info.plist */,
+				80617D0BDD7A15A6755EC9ABE5F2C0C5 /* Decoder.swift */,
+				2CDD5878960A4BF52D01DC58A56B873E /* Dictionary.swift */,
+				2517EB1E677A01B6B99F625E44E79FD4 /* Encoder.swift */,
+				698C9840BF6ADB2E846B049E3B720D2A /* Gloss.swift */,
+				A2F13C89DFDFB10313150C451D2CD527 /* Operators.swift */,
+				76E32F966C4A68975E597CFD4E041920 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Gloss";
+			path = Gloss;
 			sourceTree = "<group>";
 		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
@@ -178,6 +242,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1BFDCA6A99CEF27E60A4984B62B2D198 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395EB90F99C1B4455D5473D35CC5BD5E /* Kanna-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332E673BDDDBBBBE1D58DE67EA7DD9F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC764172309B499AAC3FA74EF13FEB1 /* Pods-POND Magazine-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC7F6CF02A40629B1062701283914AF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,33 +266,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A308519267939ED83E15BA0B2B03913D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFE48EBA1FF35DE53AD37D1A46D26B25 /* Pods-POND Magazine-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6996E54C47F78BA071719DCFB4B046AD /* Pods-POND Magazine */ = {
+		46B57C790F07E2DD2EAE3E503AFD830C /* Pods-POND Magazine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82F3D34CBD866E3391431B08A15AE4A5 /* Build configuration list for PBXNativeTarget "Pods-POND Magazine" */;
+			buildConfigurationList = 50EBEFAD96929ADEC2AEFF4E59F5A927 /* Build configuration list for PBXNativeTarget "Pods-POND Magazine" */;
 			buildPhases = (
-				E8B56A82F0A0C37122C45AC0AF588356 /* Sources */,
-				E04CE08B3080CA4AC382EFD2946E6183 /* Frameworks */,
-				A308519267939ED83E15BA0B2B03913D /* Headers */,
+				77CC556DA2863C4CF16F5EB9906218DD /* Sources */,
+				13F9F068807738504C99BB65AA119D2F /* Frameworks */,
+				332E673BDDDBBBBE1D58DE67EA7DD9F7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				285EFEC9F1340ED70D3374F1454552CF /* PBXTargetDependency */,
+				F2C99502A037C1766DFB193081FCFF58 /* PBXTargetDependency */,
+				5D8E0D8B052A87B8AFDDE704EA7A6159 /* PBXTargetDependency */,
 			);
 			name = "Pods-POND Magazine";
 			productName = "Pods-POND Magazine";
-			productReference = 96A2AD6C731D0C909D5FF8358368EB48 /* Pods_POND_Magazine.framework */;
+			productReference = C82D76CB472603F365C2156EAB13813F /* Pods_POND_Magazine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6312CAD7E18804AD5E11308495CFD52 /* Kanna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1992C45AE207CB55A07F55BA14D559 /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildPhases = (
+				D9E85B0825EF5C9D935B377B7618188A /* Sources */,
+				0A32373445577DEEC12E5252B3EF0E4F /* Frameworks */,
+				1BFDCA6A99CEF27E60A4984B62B2D198 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = 632F88BAB24AC33FE0743433BADEDBD8 /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD730667634D830EEAC62832CCCBB290 /* Gloss */ = {
@@ -229,7 +319,7 @@
 			);
 			name = Gloss;
 			productName = Gloss;
-			productReference = 6DAEBFD4700B9392AC956899B3B45F0D /* Gloss.framework */;
+			productReference = B8E0FCACD2658ACCB2E7B43F84DCDDA7 /* Gloss.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -249,17 +339,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 8509A865785581CA85D7D7F579B7E805 /* Products */;
+			productRefGroup = A34153E2B5C0085A6AF1B8EE4EC26205 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD730667634D830EEAC62832CCCBB290 /* Gloss */,
-				6996E54C47F78BA071719DCFB4B046AD /* Pods-POND Magazine */,
+				B6312CAD7E18804AD5E11308495CFD52 /* Kanna */,
+				46B57C790F07E2DD2EAE3E503AFD830C /* Pods-POND Magazine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77CC556DA2863C4CF16F5EB9906218DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F428F3ED56C2679D23D617D12CA30D /* Pods-POND Magazine-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E85B0825EF5C9D935B377B7618188A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD30577E7D147524479E43C0F5721E2 /* CSS.swift in Sources */,
+				33AFFE0825E74D085585A5444E3A05EC /* Kanna-dummy.m in Sources */,
+				5705D790F72EB6F75990B3326D375EDD /* Kanna.swift in Sources */,
+				64F4546C4CD18BB14FA0098B55FECA50 /* libxmlHTMLDocument.swift in Sources */,
+				8D70044694BD80CAE717B97F512ED800 /* libxmlHTMLNode.swift in Sources */,
+				9B6713274378B30AEDB42E37B58BD088 /* libxmlParserOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3C06E9B7BD100AB791FF26623926FD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,29 +385,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8B56A82F0A0C37122C45AC0AF588356 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C793940E15B7CDE8E791635A5D72290 /* Pods-POND Magazine-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		285EFEC9F1340ED70D3374F1454552CF /* PBXTargetDependency */ = {
+		5D8E0D8B052A87B8AFDDE704EA7A6159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna;
+			target = B6312CAD7E18804AD5E11308495CFD52 /* Kanna */;
+			targetProxy = 0006E051C30DA3A18280167B6F80B6E1 /* PBXContainerItemProxy */;
+		};
+		F2C99502A037C1766DFB193081FCFF58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Gloss;
 			target = FD730667634D830EEAC62832CCCBB290 /* Gloss */;
-			targetProxy = 6E60AA53F9E59908CE34676FDBBB5A2C /* PBXContainerItemProxy */;
+			targetProxy = C5B1CF8F4B63968EFE075A7355138A38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3127B70BAB9B629D6E30F4B984B516C3 /* Release */ = {
+		5D460BD5480AC85ED8E76430C8F1FFDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 381C7FF10616489AA719D246CBEE6BDE /* Pods-POND Magazine.release.xcconfig */;
+			baseConfigurationReference = E2B1A0F46F0CA790E9D42862F4F47E9E /* Kanna.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -304,17 +414,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-POND Magazine/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-POND Magazine/Pods-POND Magazine.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_POND_Magazine;
+				PRODUCT_NAME = Kanna;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,40 +430,9 @@
 			};
 			name = Release;
 		};
-		56D1C7C13ED158A040A70350D2E66B46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A015F530EC0CC3A732C1899267C4138A /* Pods-POND Magazine.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-POND Magazine/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-POND Magazine/Pods-POND Magazine.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_POND_Magazine;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		5D707BB77C20A6E36520F35725BD4CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179DCD8C16036259FD35A9C2333A8B8E /* Gloss.xcconfig */;
+			baseConfigurationReference = E883B47FD704C033CBEA5F26F6C25916 /* Gloss.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -373,6 +449,34 @@
 				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		638D1716083C66A3A746DFFB4FABBE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B1A0F46F0CA790E9D42862F4F47E9E /* Kanna.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kanna;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -455,9 +559,70 @@
 			};
 			name = Release;
 		};
+		D7DCAEDDE6287CFAF03C86A0D76F82CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381C7FF10616489AA719D246CBEE6BDE /* Pods-POND Magazine.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-POND Magazine/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-POND Magazine/Pods-POND Magazine.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_POND_Magazine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFD875A8424A56AD5E9E4E0395898F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A015F530EC0CC3A732C1899267C4138A /* Pods-POND Magazine.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-POND Magazine/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-POND Magazine/Pods-POND Magazine.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_POND_Magazine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FC51963E928748A2AAC384E87F3E5FDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179DCD8C16036259FD35A9C2333A8B8E /* Gloss.xcconfig */;
+			baseConfigurationReference = E883B47FD704C033CBEA5F26F6C25916 /* Gloss.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -494,11 +659,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82F3D34CBD866E3391431B08A15AE4A5 /* Build configuration list for PBXNativeTarget "Pods-POND Magazine" */ = {
+		50EBEFAD96929ADEC2AEFF4E59F5A927 /* Build configuration list for PBXNativeTarget "Pods-POND Magazine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56D1C7C13ED158A040A70350D2E66B46 /* Debug */,
-				3127B70BAB9B629D6E30F4B984B516C3 /* Release */,
+				DFD875A8424A56AD5E9E4E0395898F87 /* Debug */,
+				D7DCAEDDE6287CFAF03C86A0D76F82CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -508,6 +673,15 @@
 			buildConfigurations = (
 				5D707BB77C20A6E36520F35725BD4CFD /* Debug */,
 				FC51963E928748A2AAC384E87F3E5FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1992C45AE207CB55A07F55BA14D559 /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638D1716083C66A3A746DFFB4FABBE74 /* Debug */,
+				5D460BD5480AC85ED8E76430C8F1FFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

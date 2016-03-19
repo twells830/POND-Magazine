@@ -1,10 +1,13 @@
 PODS:
   - Gloss (0.6.2)
+  - Kanna (1.0.5)
 
 DEPENDENCIES:
   - Gloss (~> 0.6)
+  - Kanna (~> 1.0.0)
 
 SPEC CHECKSUMS:
   Gloss: 22fd970682b5449e08e2f41c5087eefe7d7d084b
+  Kanna: 1df5cd995dc1f3a282e3dcf7521cfef2f069ac4d
 
 COCOAPODS: 0.39.0
