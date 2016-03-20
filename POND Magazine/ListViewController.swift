@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Kanna
 
 extension UIImageView {
     public func imageFromUrl(urlString: String) {
@@ -155,28 +156,70 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             cell!.textLabel!.text = titles[indexPath.row]
             cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
-            //cell!.textLabel!.textColor = UIColor(red:0.22, green:0.22, blue:0.22, alpha:1.0)
-            //cell!.textLabel!.textColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1.0)
             let bgImg = images[indexPath.row]
             bgImg.frame = cell!.frame
             bgImg.alpha = 0.70
-            //cell!.addSubview(filter)
             cell!.backgroundView = bgImg
             return cell!
             
   
     }
+    //set all to resize to text 
+    //handle longer titles
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let toURL = NSURL(string: self.articleURLs[indexPath.row])
-        let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-        webV.loadRequest(NSURLRequest(URL: toURL!))
+        var x = 50
+        let articleView:UIView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        articleView.backgroundColor = UIColor(red:238, green:238, blue:238, alpha:1.0)
+        let scrollView:UIScrollView = UIScrollView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        do {
+            let html = try String(contentsOfURL: toURL!, encoding: NSUTF8StringEncoding)
+            if let doc = Kanna.HTML(html: html as String, encoding: NSUTF8StringEncoding) {
+                let label = UILabel(frame: CGRectMake(4, CGFloat(x), UIScreen.mainScreen().bounds.width-3, 50))
+                label.text = doc.title
+                label.font = UIFont(name:"Helvetica-bold", size: 20.0)
+                scrollView.addSubview(label)
+                x += Int(label.frame.size.height)
+                print(doc.title)
+                for authors in doc.css("h2, authors"){
+                    let spacing = CGFloat(x)
+                    let label = UILabel(frame: CGRectMake(4, spacing, UIScreen.mainScreen().bounds.width-3, 21))
+                    label.text = authors.text
+                    scrollView.addSubview(label)
+                    x += 21
+                }
+                var numItems = 0;
+                for content in doc.css("p, content") {
+                    if(content.text != "" && content.text != " "){
+                        let spacing = CGFloat(x)
+                        let label = UILabel()
+                        label.frame.origin = CGPoint(x: 4, y: spacing)
+                        label.frame.size.width = UIScreen.mainScreen().bounds.width-3
+                        label.text = content.text
+                        label.resizeToText()
+                        scrollView.addSubview(label)
+                        x += Int(label.frame.size.height)
+                        numItems++;
+                        print(content.text)
+                    }
+                    if(content.text == " "){
+                        x += 30
+                    }
+                }
+                if(numItems < 5){
+                    print("this is a photo article, open this page in webview to view it")
+                }
+            }
+        } catch {
+            print("Error : \(error)")
+        }
+        scrollView.contentSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: CGFloat(x))
+        articleView.addSubview(scrollView)
+        self.view.addSubview(articleView)
         self.navigationController!.navigationBarHidden = true
         self.navigationController!.hidesBarsOnSwipe = true
         self.navigationController!.navigationBar.translucent = true
-        self.view.addSubview(webV)
-        
-        //parse article here
     }
 
 }

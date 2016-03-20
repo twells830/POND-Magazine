@@ -18,6 +18,7 @@
 		442FC5DD1C83CD35002B6846 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5DC1C83CD35002B6846 /* SWRevealViewController.m */; };
 		442FC5DF1C840D1D002B6846 /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5DE1C840D1D002B6846 /* SpotifyLoginViewController.swift */; };
 		442FC5E11C840EAD002B6846 /* SubMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5E01C840EAD002B6846 /* SubMenuController.swift */; };
+		445D08081C9E3AA700DE17B7 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D08071C9E3AA700DE17B7 /* UILabel.swift */; };
 		4466307D1C643CEC00DDEF86 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307B1C6435EF00DDEF86 /* Spotify.framework */; };
 		4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307E1C643D0C00DDEF86 /* AVFoundation.framework */; };
 		446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446630801C643D1500DDEF86 /* SystemConfiguration.framework */; };
@@ -72,6 +73,7 @@
 		442FC5DC1C83CD35002B6846 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		442FC5DE1C840D1D002B6846 /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		442FC5E01C840EAD002B6846 /* SubMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuController.swift; sourceTree = "<group>"; };
+		445D08071C9E3AA700DE17B7 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		4466307B1C6435EF00DDEF86 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		4466307E1C643D0C00DDEF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		446630801C643D1500DDEF86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -180,6 +182,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		445D08061C9E3A8100DE17B7 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				445D08071C9E3AA700DE17B7 /* UILabel.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 		4466307A1C6435C900DDEF86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +263,7 @@
 		447969BB1C49DA78004E3CC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				445D08061C9E3A8100DE17B7 /* extensions */,
 				442139201C694EEF00286DE5 /* DataHandlers */,
 				441ECA1E1C82727200C3C98A /* ListViewController.swift */,
 				4479698A1C49D9DB004E3CC4 /* MenuController.swift */,
@@ -474,6 +485,7 @@
 			files = (
 				442FC5D31C83C68E002B6846 /* LoadViewController.swift in Sources */,
 				442FC5E11C840EAD002B6846 /* SubMenuController.swift in Sources */,
+				445D08081C9E3AA700DE17B7 /* UILabel.swift in Sources */,
 				4421391B1C69334600286DE5 /* DataManager.swift in Sources */,
 				442579271C67100000B5EE64 /* POND-Magazine.xcdatamodeld in Sources */,
 				44D6679F1C56F0270054F8B4 /* AboutViewController.swift in Sources */,
