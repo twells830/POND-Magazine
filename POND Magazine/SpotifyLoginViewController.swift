@@ -22,7 +22,7 @@ class SpotifyLoginViewController: UIViewController, SPTAuthViewDelegate{
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
             menuButton.target = revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             
             //revealViewController().rightViewRevealWidth = 200
             

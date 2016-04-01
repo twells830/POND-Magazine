@@ -10,25 +10,16 @@ import Foundation
 import CoreData
 import Kanna
 
-extension UIImageView {
-    public func imageFromUrl(urlString: String) {
-        if let url = NSURL(string: urlString) {
-            let request = NSURLRequest(URL: url)
-            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
-                (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-                if let imageData = data as NSData? {
-                    self.image = UIImage(data: imageData)
-                }
-            }
-        }
-    }
-}
+
 
 //featured needs the menu button but the rest shouldn't
 
-class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate{
+class FeaturedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate{
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var vTitle: UINavigationItem!
+    
     
     var url = " "
     var titles = [String]()
@@ -41,13 +32,24 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.automaticallyAdjustsScrollViewInsets = false
-
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        
+        
+        //menu code
+        if revealViewController() != nil {
+            revealViewController().rearViewRevealWidth = 150
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         tableView.delegate = self
         
         switch(vTitle.title){
-        
+            
         case "POND"?:
             url = "http://www.pond-mag.com/"
             break
@@ -131,28 +133,28 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     // MARK: UITableViewDataSource
     func tableView(tableView: UITableView,
-        numberOfRowsInSection section: Int) -> Int {
-            return titles.count
+                   numberOfRowsInSection section: Int) -> Int {
+        return titles.count
     }
     
     func tableView(tableView: UITableView,
-        cellForRowAtIndexPath
+                   cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
-            
-            tableView.rowHeight = 190
-            
-            let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
-            
-            cell!.textLabel!.text = titles[indexPath.row]
-            cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
-            cell!.textLabel!.resizeToText()
-            let bgImg = images[indexPath.row]
-            bgImg.frame = cell!.frame
-            bgImg.alpha = 0.70
-            cell!.backgroundView = bgImg
-            return cell!
-            
-  
+        
+        tableView.rowHeight = 190
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+        
+        cell!.textLabel!.text = titles[indexPath.row]
+        cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
+        cell!.textLabel!.resizeToText()
+        let bgImg = images[indexPath.row]
+        bgImg.frame = cell!.frame
+        bgImg.alpha = 0.70
+        cell!.backgroundView = bgImg
+        return cell!
+        
+        
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -163,6 +165,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let articleView:UIView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         articleView.backgroundColor = UIColor(red:238, green:238, blue:238, alpha:1.0)
         let scrollView:UIScrollView = UIScrollView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         do {
             let html = try String(contentsOfURL: toURL!, encoding: NSUTF8StringEncoding)
             if let doc = Kanna.HTML(html: html as String, encoding: NSUTF8StringEncoding) {
@@ -219,7 +222,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         scrollView.contentSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: CGFloat(y)) //after all the item heights are added to the y resize the scrollview apropriately
         articleView.addSubview(scrollView) //then add to article view
         self.view.addSubview(articleView) //display article view
+        //self.navigationController!.navigationBarHidden = true
         self.navigationController!.hidesBarsOnSwipe = true
     }
-
+    
 }

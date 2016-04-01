@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guV-gB-1zg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guV-gB-1zg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -186,7 +186,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJZ-pI-SfK">
-                                                    <rect key="frame" x="8" y="11" width="63" height="31"/>
+                                                    <rect key="frame" x="8" y="6" width="63" height="31"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playlists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GL-Fo-xrz">
-                                                    <rect key="frame" x="8" y="0.0" width="65" height="36"/>
+                                                    <rect key="frame" x="8" y="4" width="65" height="36"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -345,7 +345,7 @@
         <!--POND-->
         <scene sceneID="4rO-uW-8VQ">
             <objects>
-                <viewController id="K4H-lL-vp1" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K4H-lL-vp1" customClass="FeaturedViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jcx-qF-GtT"/>
                         <viewControllerLayoutGuide type="bottom" id="NyH-Wf-02v"/>
@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iet-6p-tmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2539" y="-1121"/>
+            <point key="canvasLocation" x="2415" y="-1929"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Be8-bt-cna">
@@ -419,7 +419,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-ue-iwM">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-ue-iwM">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editorials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-gY-dMO">
@@ -439,7 +439,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Qj5-sO-ZEa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="frv-a3-9zk"/>
+                                            <segue destination="Eil-um-sNY" kind="show" id="NPO-2V-nlT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="rEk-Vu-goo">
@@ -449,7 +449,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-pK-AA3">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-pK-AA3">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-qy-8LW">
@@ -469,7 +469,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="cbh-oW-z2j" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="GHW-e6-VeX"/>
+                                            <segue destination="s4F-oy-GQg" kind="show" id="o0v-QK-m4n"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -482,6 +482,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Fashion" id="eV7-KA-0Wh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Q62-gQ-KxT"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="G5g-rM-Kyk">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -493,7 +494,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PD4-Kd-6oV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="-395"/>
+            <point key="canvasLocation" x="2422" y="-1203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zdh-z0-J9y">
@@ -543,22 +544,6 @@
             </objects>
             <point key="canvasLocation" x="1455" y="1115"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cxc-wd-oke">
-            <objects>
-                <navigationController id="Qj5-sO-ZEa" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xGX-5M-69v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Eil-um-sNY" kind="relationship" relationship="rootViewController" id="gPa-Y6-Tie"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9qh-Ys-HTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3371" y="-3362"/>
-        </scene>
         <!--Editorials-->
         <scene sceneID="FYp-qp-kWq">
             <objects>
@@ -572,7 +557,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r7b-R3-JLE">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Eil-um-sNY" id="cbJ-7H-PYT"/>
@@ -588,19 +573,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editorials" id="fLC-yn-LFb">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="819-tc-bnV">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
+                        <barButtonItem key="backBarButtonItem" title="  " id="ov8-aJ-QGP"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="819-tc-bnV" id="ew1-sL-BQv"/>
                         <outlet property="tableView" destination="r7b-R3-JLE" id="bcR-Zm-QxV"/>
                         <outlet property="vTitle" destination="fLC-yn-LFb" id="uxC-QT-0FB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku4-La-3hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4599" y="-3362"/>
+            <point key="canvasLocation" x="4735" y="-2306"/>
         </scene>
         <!--About-->
         <scene sceneID="yW3-E6-YIx">
@@ -720,22 +702,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
             </objects>
             <point key="canvasLocation" x="2467" y="3430"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="IfL-N9-Tqz">
-            <objects>
-                <navigationController id="cbh-oW-z2j" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wlN-Ah-NSd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="s4F-oy-GQg" kind="relationship" relationship="rootViewController" id="Ixb-CO-WJP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aBY-yB-Ld9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3371" y="-2570"/>
-        </scene>
         <!--Spotlight-->
         <scene sceneID="mmi-wf-0tz">
             <objects>
@@ -749,7 +715,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lVR-rr-oyL">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="s4F-oy-GQg" id="YVk-uZ-ire"/>
@@ -764,20 +730,15 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstItem="lVR-rr-oyL" firstAttribute="leading" secondItem="lKn-Fr-PnG" secondAttribute="leadingMargin" constant="-20" id="vzQ-qs-oLR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Spotlight" id="GUw-ie-ulG">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="ov6-56-dUT">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Spotlight" id="GUw-ie-ulG"/>
                     <connections>
-                        <outlet property="menuButton" destination="ov6-56-dUT" id="hoF-fd-TD4"/>
                         <outlet property="tableView" destination="lVR-rr-oyL" id="XaE-eq-KvV"/>
                         <outlet property="vTitle" destination="GUw-ie-ulG" id="KaA-xp-dRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd6-Tw-YUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4599" y="-2570"/>
+            <point key="canvasLocation" x="4735" y="-1514"/>
         </scene>
         <!--Music-->
         <scene sceneID="6VN-nM-jqc">
@@ -797,7 +758,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InterviewsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yBU-Jm-d6e">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InterviewsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yBU-Jm-d6e">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asT-AI-eOx">
@@ -817,7 +778,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="0Ce-cM-lAN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="zVj-fY-fJB"/>
+                                            <segue destination="jq3-zO-0ay" kind="show" id="eE2-LL-hNk"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="Q1J-O0-iya">
@@ -827,7 +788,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReleasesThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-fl-HGb">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReleasesThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-fl-HGb">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diaries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Mb-zLH">
@@ -847,7 +808,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="X3h-no-vA4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="T3h-T1-ubB"/>
+                                            <segue destination="sbR-gV-ne6" kind="show" id="O4j-c5-dEl"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -860,6 +821,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Music" id="S9H-Dp-I6n">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ySD-Cn-VNM"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="2U8-xQ-JaW">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -871,7 +833,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWL-kN-CCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="351"/>
+            <point key="canvasLocation" x="2546" y="-443"/>
         </scene>
         <!--Art-->
         <scene sceneID="I0t-QP-fcQ">
@@ -891,7 +853,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotographyThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-G2-d9f">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotographyThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-G2-d9f">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-Oe-rpy">
@@ -911,7 +873,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lKX-BR-kmz" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Mxz-Os-MbB"/>
+                                            <segue destination="v9y-SV-Ccm" kind="show" id="cTU-hs-Idr"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="9Zt-qX-EDm">
@@ -921,7 +883,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FeaturedArtistsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d6Q-aX-0rw">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FeaturedArtistsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d6Q-aX-0rw">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-6E-cCb">
@@ -941,7 +903,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nEl-Gr-w4a" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4gW-Sq-vcM"/>
+                                            <segue destination="cp8-EM-Zy1" kind="show" id="dCV-ao-2CA"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -954,6 +916,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Art" id="mP6-Dh-L2a">
+                        <barButtonItem key="backBarButtonItem" title="  " id="UrB-cf-Zg0"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="rPc-Qn-C6R">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -965,7 +928,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJs-co-HW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="1115"/>
+            <point key="canvasLocation" x="2574" y="1045"/>
         </scene>
         <!--Culture-->
         <scene sceneID="geo-RW-ghU">
@@ -1010,22 +973,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
             </objects>
             <point key="canvasLocation" x="2467" y="1890"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Fm6-4Z-jcO">
-            <objects>
-                <navigationController id="X3h-no-vA4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D5S-gJ-Qbt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="sbR-gV-ne6" kind="relationship" relationship="rootViewController" id="KQ7-jk-Vx0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LTQ-9o-4by" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3507" y="-805"/>
-        </scene>
         <!--Diaries-->
         <scene sceneID="Ew2-fG-UKB">
             <objects>
@@ -1039,7 +986,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g0c-Ad-cOS">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="sbR-gV-ne6" id="1gI-tz-ZWo"/>
@@ -1054,36 +1001,15 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstAttribute="trailingMargin" secondItem="g0c-Ad-cOS" secondAttribute="trailing" constant="-20" id="uy6-Vs-o94"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Diaries" id="SWa-Nn-Ud7">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="fLT-KV-9uO">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Diaries" id="SWa-Nn-Ud7"/>
                     <connections>
-                        <outlet property="menuButton" destination="fLT-KV-9uO" id="i4X-si-fHe"/>
                         <outlet property="tableView" destination="g0c-Ad-cOS" id="fDm-FI-577"/>
                         <outlet property="vTitle" destination="SWa-Nn-Ud7" id="wW0-jz-JvW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLQ-fJ-wRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4631" y="-829"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XRo-kj-FOf">
-            <objects>
-                <navigationController id="0Ce-cM-lAN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9eO-kV-tg6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="jq3-zO-0ay" kind="relationship" relationship="rootViewController" id="KYc-HC-W5d"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YfY-9P-IXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3395" y="-61"/>
+            <point key="canvasLocation" x="4597" y="29"/>
         </scene>
         <!--Interviews-->
         <scene sceneID="cVf-Xy-21c">
@@ -1098,7 +1024,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RPk-IR-xs2">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="jq3-zO-0ay" id="NzO-gt-Zv1"/>
@@ -1113,36 +1039,15 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstItem="RPk-IR-xs2" firstAttribute="top" secondItem="AF9-d8-0pc" secondAttribute="bottom" id="mdV-Xa-Z9L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Interviews" id="b0u-Yg-DN8">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="eT6-dE-HQN">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Interviews" id="b0u-Yg-DN8"/>
                     <connections>
-                        <outlet property="menuButton" destination="eT6-dE-HQN" id="JIr-Sc-CoN"/>
                         <outlet property="tableView" destination="RPk-IR-xs2" id="GMr-M0-hhT"/>
                         <outlet property="vTitle" destination="b0u-Yg-DN8" id="UvD-RH-GIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWh-9P-jGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4623" y="-61"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="i7P-Uw-is1">
-            <objects>
-                <navigationController id="lKX-BR-kmz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5l-nu-aRq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="v9y-SV-Ccm" kind="relationship" relationship="rootViewController" id="Bml-bH-Uh4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nOA-vx-Muo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3387" y="702"/>
+            <point key="canvasLocation" x="4441" y="-693"/>
         </scene>
         <!--Photography-->
         <scene sceneID="DKn-TQ-W3Z">
@@ -1157,7 +1062,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A5z-Re-oG2">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="v9y-SV-Ccm" id="YkT-ej-Ht1"/>
@@ -1172,13 +1077,8 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstAttribute="trailingMargin" secondItem="A5z-Re-oG2" secondAttribute="trailing" constant="-20" id="coH-NW-r8N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Photography" id="KC6-Oi-eqI">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="Ys3-Ns-7eh">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Photography" id="KC6-Oi-eqI"/>
                     <connections>
-                        <outlet property="menuButton" destination="Ys3-Ns-7eh" id="z1x-6G-jp9"/>
                         <outlet property="tableView" destination="A5z-Re-oG2" id="low-1P-68Q"/>
                         <outlet property="vTitle" destination="KC6-Oi-eqI" id="p0u-b3-yPQ"/>
                     </connections>
@@ -1186,22 +1086,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-hK-gPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4615" y="702"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FmE-Qc-gRM">
-            <objects>
-                <navigationController id="nEl-Gr-w4a" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xhw-Kc-p4a">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="cp8-EM-Zy1" kind="relationship" relationship="rootViewController" id="1z1-E5-2f5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rdK-j4-0iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3387" y="1494"/>
         </scene>
         <!--Featured Artists-->
         <scene sceneID="H1G-gz-u8d">
@@ -1216,7 +1100,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l1o-Xz-AI5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="cp8-EM-Zy1" id="skR-lq-oFM"/>
@@ -1231,13 +1115,8 @@ Music Director Carl Pietrusinski // @car_roll519</string>
                             <constraint firstItem="l1o-Xz-AI5" firstAttribute="top" secondItem="wY8-Hi-8ev" secondAttribute="bottom" id="xV8-TE-8DK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Featured Artists" id="SH8-Oy-1OQ">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="QPw-HY-GaI">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Featured Artists" id="SH8-Oy-1OQ"/>
                     <connections>
-                        <outlet property="menuButton" destination="QPw-HY-GaI" id="4lL-MP-0zg"/>
                         <outlet property="tableView" destination="l1o-Xz-AI5" id="SX9-hU-JWK"/>
                         <outlet property="vTitle" destination="SH8-Oy-1OQ" id="7tl-HI-pbn"/>
                     </connections>
@@ -1258,6 +1137,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <image name="SpotlightThumb.jpg" width="1000" height="1508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bd1-v2-Xt3"/>
+        <segue reference="MQW-oc-B7Q"/>
     </inferredMetricsTieBreakers>
 </document>

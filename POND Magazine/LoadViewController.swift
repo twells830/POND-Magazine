@@ -100,7 +100,7 @@ class LoadViewController: UIViewController {
                     let bodyCount = newCount!
                     //LOOP TO SAVE ALL THE BODY ITEMS
                     print(bodyCount)
-                    for(var i = 0; i < bodyCount; i++){ //start at one to skip featured
+                    for(var i = 0; i < bodyCount; i += 1){ //start at one to skip featured
                         
                         //GET ALL THE DATA FOR THE CURRENT JSON BODY ITEM
                         let articleURL = list!.items![i].articleURL,
@@ -153,15 +153,7 @@ class LoadViewController: UIViewController {
         }
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         
     }

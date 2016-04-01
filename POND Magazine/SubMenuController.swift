@@ -18,7 +18,7 @@ class SubMenuController: UITableViewController {
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 200
             menuButton.target = revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
