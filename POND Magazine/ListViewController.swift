@@ -43,7 +43,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
 
         self.automaticallyAdjustsScrollViewInsets = false
-
+        
         tableView.delegate = self
         
         switch(vTitle.title){
@@ -139,16 +139,24 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
             
-            tableView.rowHeight = 190
-            
+            tableView.rowHeight = 200
+        
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
             
             cell!.textLabel!.text = titles[indexPath.row]
+            cell!.textLabel!.textColor = UIColor.whiteColor()
             cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
             cell!.textLabel!.resizeToText()
+        
+            cell!.textLabel!.layer.shadowColor = UIColor.blackColor().CGColor
+            cell!.textLabel!.layer.shadowOffset = CGSize(width: 2, height: 2)
+            cell!.textLabel!.layer.shadowOpacity = 1
+            cell!.textLabel!.layer.shadowRadius = 3
+        
+        
             let bgImg = images[indexPath.row]
             bgImg.frame = cell!.frame
-            bgImg.alpha = 0.70
+            bgImg.alpha = 0.60
             cell!.backgroundView = bgImg
             return cell!
             

@@ -218,26 +218,6 @@
                                             <segue destination="ROV-p8-a5X" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="kOJ-tt-ET4"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="seH-hO-eN4">
-                                        <rect key="frame" x="0.0" y="352" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="seH-hO-eN4" id="SuO-1b-6Dg">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Playlists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GL-Fo-xrz">
-                                                    <rect key="frame" x="8" y="4" width="65" height="36"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <segue destination="VFl-Pg-1kV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="rQW-Xd-1ZA"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -250,65 +230,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRJ-qz-owK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="351"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="p0e-Vl-dJu">
-            <objects>
-                <navigationController id="VFl-Pg-1kV" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="B7o-10-ar8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cm4-EN-9w6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Kn5-13-lK8" kind="relationship" relationship="rootViewController" id="mgC-rD-cJn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmb-nJ-rH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="509" y="1131"/>
-        </scene>
-        <!--Playlists-->
-        <scene sceneID="IRk-XM-Dsm">
-            <objects>
-                <viewController id="Kn5-13-lK8" customClass="SpotifyLoginViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hN9-aJ-FWN"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yrb-pU-03C"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hbH-5W-nJH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-7R-HnT">
-                                <rect key="frame" x="56" y="256" width="488" height="88"/>
-                                <state key="normal" image="LoginButton"/>
-                                <connections>
-                                    <action selector="loginSpotify:" destination="Kn5-13-lK8" eventType="touchUpInside" id="Obh-kJ-qWE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cAK-7R-HnT" firstAttribute="centerY" secondItem="hbH-5W-nJH" secondAttribute="centerY" id="0Oy-b2-NKl"/>
-                            <constraint firstItem="cAK-7R-HnT" firstAttribute="centerX" secondItem="hbH-5W-nJH" secondAttribute="centerX" id="1m4-Bu-czD"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Playlists" id="g54-CV-Xbn">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="0du-ie-Ie8">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="loginButton" destination="cAK-7R-HnT" id="DUG-Gn-Fhj"/>
-                        <outlet property="menuButton" destination="0du-ie-Ie8" id="izj-Gz-e7h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eUe-on-fWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="509" y="2064"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aq1-Cn-UgL">
@@ -345,7 +266,7 @@
         <!--POND-->
         <scene sceneID="4rO-uW-8VQ">
             <objects>
-                <viewController id="K4H-lL-vp1" customClass="FeaturedViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K4H-lL-vp1" customClass="ListMenuViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jcx-qF-GtT"/>
                         <viewControllerLayoutGuide type="bottom" id="NyH-Wf-02v"/>
@@ -933,7 +854,7 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <!--Culture-->
         <scene sceneID="geo-RW-ghU">
             <objects>
-                <viewController title="Culture" id="qrr-Ea-l8l" customClass="ListViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Culture" id="qrr-Ea-l8l" customClass="ListMenuViewController" customModule="POND_Magazine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="79t-Mo-Aa7"/>
                         <viewControllerLayoutGuide type="bottom" id="wD3-3W-8fy"/>
@@ -1130,7 +1051,6 @@ Music Director Carl Pietrusinski // @car_roll519</string>
         <image name="EditorialsThumb.jpg" width="978" height="1476"/>
         <image name="FeaturedArtistsThumb.jpg" width="500" height="332"/>
         <image name="InterviewsThumb.jpg" width="1000" height="750"/>
-        <image name="LoginButton" width="488" height="88"/>
         <image name="Menu" width="22" height="22"/>
         <image name="PhotographyThumb.jpg" width="500" height="750"/>
         <image name="ReleasesThumb.jpg" width="1000" height="663"/>
@@ -1139,4 +1059,5 @@ Music Director Carl Pietrusinski // @car_roll519</string>
     <inferredMetricsTieBreakers>
         <segue reference="MQW-oc-B7Q"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.083405057416786818" green="0.082245916712216927" blue="0.084931344696969724" alpha="1" colorSpace="calibratedRGB"/>
 </document>
