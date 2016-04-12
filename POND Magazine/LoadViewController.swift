@@ -9,6 +9,9 @@
 import Foundation
 import CoreData
 
+var featuredImgs = [String]()
+var cultureImgs = [String]()
+
 class LoadViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -27,7 +30,6 @@ class LoadViewController: UIViewController {
             }
             //MAKE A LIST AND SET THE DATA TO VAR TO GET NEW COUNT
             let list = listPage(json: json),
-            ver = list!.ver,
             newCount = list!.count
             
             //MAKE A FETCH REQUEST TO LISTPAGE
@@ -51,7 +53,6 @@ class LoadViewController: UIViewController {
                 let entity1 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
                 let newList = NSManagedObject(entity: entity1!, insertIntoManagedObjectContext: managedContext)
                 //FILL IN ENTITY
-                newList.setValue(ver, forKey: "ver")
                 newList.setValue(0, forKey: "count")
                 //SAVE
                 do {
@@ -86,7 +87,6 @@ class LoadViewController: UIViewController {
                     let entity2 =  NSEntityDescription.entityForName("ListPage", inManagedObjectContext:managedContext)
                     let newList = NSManagedObject(entity: entity2!, insertIntoManagedObjectContext: managedContext)
                     //FILL IN ENTITY
-                    newList.setValue(ver, forKey: "ver")
                     newList.setValue(newCount, forKey: "count")
                     //SAVE
                     do {
@@ -107,34 +107,29 @@ class LoadViewController: UIViewController {
                         title = list!.items![i].title,
                         url = list!.items![i].url,
                         index = list!.items![i].index,
-                        subTitle = list!.items![i].subTitle,
-                        imageURL = list!.items![i].imageURL,
-                        featured = list!.items![i].featured
-                        print("vars initialized")
-                        
-                        //not saving the data correctly everytime
+                        imageURL = list!.items![i].imageURL
                         //CREATE A NEW BITEM ENTITY
                         let appDelegate4 = UIApplication.sharedApplication().delegate as! AppDelegate
                         let managedContext4 = appDelegate4.managedObjectContext
                         let entity4 =  NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext4)
                         let newItem = NSManagedObject(entity: entity4!, insertIntoManagedObjectContext: managedContext4)
-                        print("new entity created")
+                        
+                        //NEW CODE
+                        if(url == "http://www.pond-mag.com/"){
+                            featuredImgs.append(imageURL!)
+                        }else if(url == "http://www.pond-mag.com/literature-/"){
+                            cultureImgs.append(imageURL!)
+                        }
+                        //NEW CODE
+                        
+                        
                         //FILL IN ENTITY
                         print(i)
                         newItem.setValue(articleURL, forKey: "articleURL")
-                        print("articleURL")
                         newItem.setValue(title, forKey: "title")
-                        print("title")
                         newItem.setValue(url, forKey: "url")
-                        print("url")
                         newItem.setValue(index, forKey: "index")
-                        print("index")
-                        newItem.setValue(subTitle, forKey: "subTitle")
-                        print("subTitle")
                         newItem.setValue(imageURL, forKey: "imageURL")
-                        print("imageURL")
-                        newItem.setValue(featured, forKey: "featured")
-                        print("featured")
                         //SAVE
                         do {
                             try managedContext4.save()

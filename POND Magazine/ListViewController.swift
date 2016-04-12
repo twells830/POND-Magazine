@@ -10,19 +10,6 @@ import Foundation
 import CoreData
 import Kanna
 
-extension UIImageView {
-    public func imageFromUrl(urlString: String) {
-        if let url = NSURL(string: urlString) {
-            let request = NSURLRequest(URL: url)
-            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
-                (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-                if let imageData = data as NSData? {
-                    self.image = UIImage(data: imageData)
-                }
-            }
-        }
-    }
-}
 
 //featured needs the menu button but the rest shouldn't
 
@@ -33,6 +20,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var url = " "
     var titles = [String]()
     var images = [UIImageView]()
+    var imgUrls = [String]()
     var articleURLs = [String]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -98,7 +86,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let results1 = try managedContext.executeFetchRequest(fetchRequest1)
             let x = results1[0] as! NSManagedObject
             let y = x.valueForKey("count") as? Int
-            print("ListPage count =  \(y)")
             
             let results2 = try managedContext.executeFetchRequest(fetchRequest2)
             for(var i = 0; i < y; i+=1){
@@ -145,7 +132,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             cell!.textLabel!.text = titles[indexPath.row]
             cell!.textLabel!.textColor = UIColor.whiteColor()
-            cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
+            cell!.textLabel!.font = UIFont(name: "Avenir-heavy", size: 20.0)
             cell!.textLabel!.resizeToText()
         
             cell!.textLabel!.layer.shadowColor = UIColor.blackColor().CGColor
@@ -156,7 +143,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
             let bgImg = images[indexPath.row]
             bgImg.frame = cell!.frame
-            bgImg.alpha = 0.60
+            bgImg.alpha = 0.66
             cell!.backgroundView = bgImg
             return cell!
             
@@ -181,7 +168,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 label.text = formattedTitle
                 label.frame.origin = CGPoint(x: leftPadding, y: spacing)
                 label.frame.size.width = UIScreen.mainScreen().bounds.width-10
-                label.font = UIFont(name:"Helvetica-bold", size: 50.0)
+                label.font = UIFont(name:"Helvetica-bold", size: 40.0)
                 label.resizeToText()
                 y += Int(label.frame.size.height) + 5
                 scrollView.addSubview(label)

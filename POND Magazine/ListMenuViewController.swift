@@ -24,6 +24,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     var url = " "
     var titles = [String]()
     var images = [UIImageView]()
+    var imgUrls = [String]()
     var articleURLs = [String]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -40,7 +41,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         
         //menu code
         if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = 150
+            revealViewController().rearViewRevealWidth = 180
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -107,6 +108,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 let z = results2[i] as! NSManagedObject
                 let itemURL = z.valueForKey("url") as? String
                 if(itemURL == self.url){
+                    //SORT EVERYTHING INTO SEPERATE ENTITIES IN LOADVC THEN IN HERE CHECK THE CURRENT URL AND JUST FILL THE ARRAYS WITH EVERYTHING FROM THE ONE ENTITY INSTEAD OF CHECKING THE WHOLE DATABASE EVERY TIME
                     let b = z.valueForKey("title") as? String
                     let c = z.valueForKey("imageURL") as? String
                     var d : String
@@ -147,7 +149,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         
         cell!.textLabel!.text = titles[indexPath.row]
         cell!.textLabel!.textColor = UIColor.whiteColor()
-        cell!.textLabel!.font = UIFont(name: "Geeza Pro", size: 20.0)
+        cell!.textLabel!.font = UIFont(name: "Avenir-heavy", size: 20.0)
         cell!.textLabel!.resizeToText()
         
         cell!.textLabel!.layer.shadowColor = UIColor.blackColor().CGColor
@@ -158,7 +160,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let bgImg = images[indexPath.row]
         bgImg.frame = cell!.frame
-        bgImg.alpha = 0.60
+        bgImg.alpha = 0.66
         cell!.backgroundView = bgImg
         return cell!
         
@@ -184,7 +186,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 label.text = formattedTitle
                 label.frame.origin = CGPoint(x: leftPadding, y: spacing)
                 label.frame.size.width = UIScreen.mainScreen().bounds.width-10
-                label.font = UIFont(name:"Helvetica-bold", size: 50.0)
+                label.font = UIFont(name:"Helvetica-bold", size: 40.0)
                 label.resizeToText()
                 y += Int(label.frame.size.height) + 5
                 scrollView.addSubview(label)
@@ -204,7 +206,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 //maybe use a background image behind title and authors
                 //then add a bit of padding in between
                 var numItems = 0;
-                for content in doc.css("p, content") {
+                for content in doc.css("p, content"){
                     if(content.text != "" && content.text != " "){
                         let spacing = CGFloat(y)
                         let label = UILabel()

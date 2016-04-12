@@ -17,6 +17,8 @@
 		442FC5D31C83C68E002B6846 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5D21C83C68E002B6846 /* LoadViewController.swift */; };
 		442FC5DD1C83CD35002B6846 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5DC1C83CD35002B6846 /* SWRevealViewController.m */; };
 		442FC5E11C840EAD002B6846 /* SubMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC5E01C840EAD002B6846 /* SubMenuController.swift */; };
+		445469E61CBC3E61005FD3B5 /* loadBg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 445469E51CBC3E61005FD3B5 /* loadBg.jpeg */; };
+		445469E81CBC6745005FD3B5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445469E71CBC6745005FD3B5 /* UIImageView.swift */; };
 		445D08081C9E3AA700DE17B7 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D08071C9E3AA700DE17B7 /* UILabel.swift */; };
 		4466307F1C643D0C00DDEF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4466307E1C643D0C00DDEF86 /* AVFoundation.framework */; };
 		446630811C643D1500DDEF86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446630801C643D1500DDEF86 /* SystemConfiguration.framework */; };
@@ -70,6 +72,8 @@
 		442FC5DB1C83CD35002B6846 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		442FC5DC1C83CD35002B6846 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		442FC5E01C840EAD002B6846 /* SubMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuController.swift; sourceTree = "<group>"; };
+		445469E51CBC3E61005FD3B5 /* loadBg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loadBg.jpeg; sourceTree = "<group>"; };
+		445469E71CBC6745005FD3B5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		445D08071C9E3AA700DE17B7 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		4466307E1C643D0C00DDEF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		446630801C643D1500DDEF86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -162,6 +166,7 @@
 		444B0E5F1C4D83410094F28F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				445469E51CBC3E61005FD3B5 /* loadBg.jpeg */,
 				44D667B91C5894720054F8B4 /* EditorialsThumb.jpg */,
 				44D667BA1C5894720054F8B4 /* EntertainmentThumb.jpg */,
 				44D667BB1C5894720054F8B4 /* FeaturedArtistsThumb.jpg */,
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				445D08071C9E3AA700DE17B7 /* UILabel.swift */,
+				445469E71CBC6745005FD3B5 /* UIImageView.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 				44D667CD1C5894720054F8B4 /* SpotlightThumb.jpg in Resources */,
 				44D667C91C5894720054F8B4 /* PhotographyThumb.jpg in Resources */,
 				44D667CA1C5894720054F8B4 /* PlaylistsThumb.jpg in Resources */,
+				445469E61CBC3E61005FD3B5 /* loadBg.jpeg in Resources */,
 				44D667C61C5894720054F8B4 /* FeaturedArtistsThumb.jpg in Resources */,
 				44D667CC1C5894720054F8B4 /* ReviewsThumb.jpg in Resources */,
 				44D667C81C5894720054F8B4 /* LitZineThumb.jpg in Resources */,
@@ -476,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442FC5D31C83C68E002B6846 /* LoadViewController.swift in Sources */,
+				445469E81CBC6745005FD3B5 /* UIImageView.swift in Sources */,
 				442FC5E11C840EAD002B6846 /* SubMenuController.swift in Sources */,
 				445D08081C9E3AA700DE17B7 /* UILabel.swift in Sources */,
 				4421391B1C69334600286DE5 /* DataManager.swift in Sources */,

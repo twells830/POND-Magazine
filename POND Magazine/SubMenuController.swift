@@ -16,7 +16,7 @@ class SubMenuController: UITableViewController {
         super.viewDidLoad()
 
         if revealViewController() != nil {
-            revealViewController().rearViewRevealWidth = 200
+            revealViewController().rearViewRevealWidth = 180
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             
