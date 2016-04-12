@@ -13,7 +13,6 @@ import Kanna
 
 
 //featured needs the menu button but the rest shouldn't
-
 class ListMenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -24,7 +23,6 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     var url = " "
     var titles = [String]()
     var images = [UIImageView]()
-    var imgUrls = [String]()
     var articleURLs = [String]()
     
     @IBOutlet weak var tableView: UITableView!
@@ -108,7 +106,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 let z = results2[i] as! NSManagedObject
                 let itemURL = z.valueForKey("url") as? String
                 if(itemURL == self.url){
-                    //SORT EVERYTHING INTO SEPERATE ENTITIES IN LOADVC THEN IN HERE CHECK THE CURRENT URL AND JUST FILL THE ARRAYS WITH EVERYTHING FROM THE ONE ENTITY INSTEAD OF CHECKING THE WHOLE DATABASE EVERY TIME
+                //SORT EVERYTHING INTO SEPERATE ENTITIES IN LOADVC THEN IN HERE CHECK THE CURRENT URL AND JUST FILL THE ARRAYS WITH EVERYTHING FROM THE ONE ENTITY INSTEAD OF CHECKING THE WHOLE DATABASE EVERY TIME
                     let b = z.valueForKey("title") as? String
                     let c = z.valueForKey("imageURL") as? String
                     var d : String
@@ -119,7 +117,6 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                     }
                     self.titles.append(b!)
                     self.articleURLs.append(d)
-                    //self.imageURLs.append(c!)
                     let imageView = UIImageView()
                     imageView.imageFromUrl(c!)
                     images.append(imageView)
