@@ -203,20 +203,46 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 //maybe use a background image behind title and authors
                 //then add a bit of padding in between
                 var numItems = 0;
-                for content in doc.css("p, content"){
-                    if(content.text != "" && content.text != " "){
+                //for x in doc.
+                for content in doc.css(".sqs-block-content"){
+                    if(content.css("p").text != "" && content.css("p").text != " "){
                         let spacing = CGFloat(y)
                         let label = UILabel()
                         label.frame.origin = CGPoint(x: leftPadding, y: spacing)
                         label.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
-                        label.text = content.text
+                        label.text = content.css("p").text
+                        //print(content.text)
                         label.resizeToText()
                         scrollView.addSubview(label)
                         y += Int(label.frame.size.height)
                         numItems += 1;
                     }
-                    if(content.text == " "){
+                    if(content.css("p").text == " "){
                         y += 30 //add some extra space for blank <p>s
+                    }
+                    let img = content.at_css("img")
+                    //get image link
+                    //load it in a UIVIEW
+                    //determine the size
+                    //  if image width > screen width
+                    //  scale image to screen width -10 (how to adjust height for proper scale?)
+                    
+                    //how to add constraints programatically?
+                    //want to add so that each new label should be x amount of pixels from closest item on top
+                    //this should leave some space for the imgs and will resize when the image loads
+                    
+                    if(img?["src"] != nil){
+                        let spacing = CGFloat(y)
+                        let label = UILabel()
+                        label.frame.origin = CGPoint(x: leftPadding, y: spacing)
+                        label.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
+                        label.text = img!["src"]
+                        //print(img!["src"])
+                        label.resizeToText()
+                        scrollView.addSubview(label)
+                        y += Int(label.frame.size.height)
+                        numItems += 1;
+                        y+=100
                     }
                 }
                 if(numItems < 5){ //determine if it's a photo article or not
