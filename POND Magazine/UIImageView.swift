@@ -7,6 +7,14 @@
 //
 
 import Foundation
+//maybe add a doneloading boolean variable
+//that becomes true after self.image
+//then could base the height adjustment on the boolean
+
+
+
+//but where would the conditional go that checks the true?
+
 
 extension UIImageView {
     public func imageFromUrl(urlString: String) {

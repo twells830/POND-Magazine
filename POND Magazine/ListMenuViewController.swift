@@ -169,6 +169,11 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         let leftPadding = CGFloat(10)
         let rightPadding = CGFloat(25)
         var y = 75
+        //THINK THERE NEEDS TO BE A NEW VIEW CONTROLLER
+        //ADD THE VIEWS TO THE VC AND THEN PUSH THE VC
+        //THIS SHOULD CREATE A NEW BACK BUTTON THAT JUST GOES BACK ONE SCREEN
+        let newViewController:UIViewController = UIViewController()
+        
         let articleView:UIView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         articleView.backgroundColor = UIColor(red:238, green:238, blue:238, alpha:1.0)
         let scrollView:UIScrollView = UIScrollView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
@@ -230,21 +235,34 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                     //how to add constraints programatically?
                     //want to add so that each new label should be x amount of pixels from closest item on top
                     //this should leave some space for the imgs and will resize when the image loads
-                    
                     if(img?["src"] != nil){
+                        y+=20
+                        let newImg = UIImageView()
+                        newImg.imageFromUrl(img!["src"]!)
                         let spacing = CGFloat(y)
-                        let label = UILabel()
-                        label.frame.origin = CGPoint(x: leftPadding, y: spacing)
-                        label.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
-                        label.text = img!["src"]
-                        //print(img!["src"])
-                        label.resizeToText()
-                        scrollView.addSubview(label)
-                        y += Int(label.frame.size.height)
+                        newImg.frame.origin = CGPoint(x: leftPadding, y:spacing)
+                        //let imgHeight = newImg.image?.size.height //need to get this after the image is finsihed loading
+                        newImg.frame.size.height = 430 //this should be the original height of the image
+                                                        //scaled down by whatever the width has to be scaled
+                        
+                        //NEW CODE
+                        //this kind of works but it leaves white space on the sides of portrait images
+                        newImg.contentMode = UIViewContentMode.ScaleAspectFit
+                        //WEFBWIWEONEWONEWOFNIEWFEWOIFNEWOFINDSLDMC;SKX
+                        
+                        
+                        //maybe have 200 hundred as a placeholder
+                        //then when the screen loads get the height of the image
+                        //and adjust y according to the new height?
+                        newImg.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
+                        scrollView.addSubview(newImg)
+                        y += Int(newImg.frame.size.height)
                         numItems += 1;
-                        y+=100
+                        y+=20
                     }
                 }
+                //spacing between the last item and the bottom of the screen
+                y+=20
                 if(numItems < 5){ //determine if it's a photo article or not
                     print("this is a photo article, open this page in webview to view it")
                 }

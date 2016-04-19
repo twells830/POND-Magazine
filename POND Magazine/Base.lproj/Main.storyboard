@@ -52,10 +52,10 @@
                                 <exclude reference="wjH-eU-GxP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="RtP-7B-WYL"/>
                                 <exclude reference="GP4-81-jd2"/>
                                 <exclude reference="KaP-fl-AJs"/>
                                 <exclude reference="n7o-4U-Bci"/>
+                                <exclude reference="RtP-7B-WYL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -65,10 +65,10 @@
                                 <include reference="wjH-eU-GxP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="RtP-7B-WYL"/>
                                 <include reference="GP4-81-jd2"/>
                                 <include reference="KaP-fl-AJs"/>
                                 <include reference="n7o-4U-Bci"/>
+                                <include reference="RtP-7B-WYL"/>
                             </mask>
                         </variation>
                     </view>

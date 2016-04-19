@@ -158,6 +158,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let articleView:UIView = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         articleView.backgroundColor = UIColor(red:238, green:238, blue:238, alpha:1.0)
         let scrollView:UIScrollView = UIScrollView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         do {
             let html = try String(contentsOfURL: toURL!, encoding: NSUTF8StringEncoding)
             if let doc = Kanna.HTML(html: html as String, encoding: NSUTF8StringEncoding) {
@@ -188,20 +189,53 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 //maybe use a background image behind title and authors
                 //then add a bit of padding in between
                 var numItems = 0;
-                for content in doc.css("p, content") {
-                    if(content.text != "" && content.text != " "){
+                //for x in doc.
+                for content in doc.css(".sqs-block-content"){
+                    if(content.css("p").text != "" && content.css("p").text != " "){
                         let spacing = CGFloat(y)
                         let label = UILabel()
                         label.frame.origin = CGPoint(x: leftPadding, y: spacing)
                         label.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
-                        label.text = content.text
+                        label.text = content.css("p").text
+                        //print(content.text)
                         label.resizeToText()
                         scrollView.addSubview(label)
                         y += Int(label.frame.size.height)
                         numItems += 1;
                     }
-                    if(content.text == " "){
+                    if(content.css("p").text == " "){
                         y += 30 //add some extra space for blank <p>s
+                    }
+                    let img = content.at_css("img")
+                    //get image link
+                    //load it in a UIVIEW
+                    //determine the size
+                    //  if image width > screen width
+                    //  scale image to screen width -10 (how to adjust height for proper scale?)
+                    
+                    //how to add constraints programatically?
+                    //want to add so that each new label should be x amount of pixels from closest item on top
+                    //this should leave some space for the imgs and will resize when the image loads
+                    if(img?["src"] != nil){
+                        y+=20
+                        let newImg = UIImageView()
+                        newImg.imageFromUrl(img!["src"]!)
+                        //newImg.backgroundColor = UIColor.blackColor()
+                        //newImg.tintColor = UIColor.blackColor()
+                        let spacing = CGFloat(y)
+                        //let label = UILabel()
+                        //label.frame.origin = CGPoint(x: leftPadding, y: spacing)
+                        //label.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
+                        newImg.frame.origin = CGPoint(x: leftPadding, y:spacing)
+                        newImg.frame.size.height = 200
+                        newImg.frame.size.width = UIScreen.mainScreen().bounds.width-rightPadding
+                        //label.text = img!["src"]
+                        print(img!["src"])
+                        //label.resizeToText()
+                        scrollView.addSubview(newImg)
+                        y += Int(newImg.frame.size.height)
+                        numItems += 1;
+                        y+=20
                     }
                 }
                 if(numItems < 5){ //determine if it's a photo article or not
@@ -214,6 +248,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         scrollView.contentSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: CGFloat(y)) //after all the item heights are added to the y resize the scrollview apropriately
         articleView.addSubview(scrollView) //then add to article view
         self.view.addSubview(articleView) //display article view
+        //self.navigationController!.navigationBarHidden = true
         self.navigationController!.hidesBarsOnSwipe = true
     }
 
