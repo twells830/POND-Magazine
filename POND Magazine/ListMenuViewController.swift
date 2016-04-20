@@ -274,11 +274,12 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         } catch {
             print("Error : \(error)")
         }
+        
         scrollView.contentSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: CGFloat(y)) //after all the item heights are added to the y resize the scrollview apropriately
         articleView.addSubview(scrollView) //then add to article view
         self.view.addSubview(articleView) //display article view //this might be replaced with the push/show segue
         newViewController.view = articleView //put the newViewcontroller under everything else
-
+        newViewController.automaticallyAdjustsScrollViewInsets = false
         self.navigationController?.pushViewController(newViewController, animated: true) // this will push the new controller
         newViewController.title = self.vTitle.title
         //make sure the title carries over to the new view controller
