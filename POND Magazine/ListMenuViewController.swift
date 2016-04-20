@@ -169,6 +169,12 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         let leftPadding = CGFloat(10)
         let rightPadding = CGFloat(25)
         var y = 75
+        
+        //set up the view controller and the views here adding them the same way but with the view controller at the root
+        //for the view controller give it an identifier. then at the bottom after the view has been set up perform 
+        //show/push segue to the new viewcontroller from this one
+        
+        
         //THINK THERE NEEDS TO BE A NEW VIEW CONTROLLER
         //ADD THE VIEWS TO THE VC AND THEN PUSH THE VC
         //THIS SHOULD CREATE A NEW BACK BUTTON THAT JUST GOES BACK ONE SCREEN
@@ -178,6 +184,8 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         articleView.backgroundColor = UIColor(red:238, green:238, blue:238, alpha:1.0)
         let scrollView:UIScrollView = UIScrollView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        
+        
         do {
             let html = try String(contentsOfURL: toURL!, encoding: NSUTF8StringEncoding)
             if let doc = Kanna.HTML(html: html as String, encoding: NSUTF8StringEncoding) {
@@ -250,7 +258,6 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                         newImg.contentMode = UIViewContentMode.ScaleAspectFit
                         //WEFBWIWEONEWONEWOFNIEWFEWOIFNEWOFINDSLDMC;SKX
                         
-                        
                         //maybe have 200 hundred as a placeholder
                         //then when the screen loads get the height of the image
                         //and adjust y according to the new height?
@@ -263,17 +270,18 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 //spacing between the last item and the bottom of the screen
                 y+=20
-                if(numItems < 5){ //determine if it's a photo article or not
-                    print("this is a photo article, open this page in webview to view it")
-                }
             }
         } catch {
             print("Error : \(error)")
         }
         scrollView.contentSize = CGSize(width: UIScreen.mainScreen().bounds.width, height: CGFloat(y)) //after all the item heights are added to the y resize the scrollview apropriately
         articleView.addSubview(scrollView) //then add to article view
-        self.view.addSubview(articleView) //display article view
-        //self.navigationController!.navigationBarHidden = true
+        self.view.addSubview(articleView) //display article view //this might be replaced with the push/show segue
+        newViewController.view = articleView //put the newViewcontroller under everything else
+
+        self.navigationController?.pushViewController(newViewController, animated: true) // this will push the new controller
+        newViewController.title = self.vTitle.title
+        //make sure the title carries over to the new view controller
         self.navigationController!.hidesBarsOnSwipe = true
     }
     

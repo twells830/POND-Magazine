@@ -24,6 +24,7 @@ extension UIImageView {
                 (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
                 if let imageData = data as NSData? {
                     self.image = UIImage(data: imageData)
+
                 }
             }
         }
