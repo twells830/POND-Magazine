@@ -231,7 +231,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                         numItems += 1;
                     }
                     if(content.css("p").text == " "){
-                        y += 30 //add some extra space for blank <p>s
+                        y += 50 //add some extra space for blank <p>s
                     }
                     let img = content.at_css("img")
                     //get image link
@@ -244,19 +244,37 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                     //want to add so that each new label should be x amount of pixels from closest item on top
                     //this should leave some space for the imgs and will resize when the image loads
                     if(img?["src"] != nil){
-                        y+=20
+                        y+=10
+                        //maybe put these images into a new array 
+                        //then you can search for the images based on a chronological index
+                        //with a loop checking for all the correct sizes 
+    
                         let newImg = UIImageView()
                         newImg.imageFromUrl(img!["src"]!)
                         let spacing = CGFloat(y)
                         newImg.frame.origin = CGPoint(x: leftPadding, y:spacing)
                         //let imgHeight = newImg.image?.size.height //need to get this after the image is finsihed loading
-                        newImg.frame.size.height = 430 //this should be the original height of the image
+                        newImg.frame.size.height = 200 //this should be the original height of the image
                                                         //scaled down by whatever the width has to be scaled
+
+                        //on touch send image to new view controlelr
+                        //set the image width/height to the bounds of the screen by aspect fit
+                        //then on touch it should go back
+                        
+                        //how to find the images outside of the condition?
+                            //maybe can find them by matching their sources
+                            //loop that runs checks --
+                                //if sources are equal and bool done loading == true then resize
+                                
                         
                         //NEW CODE
                         //this kind of works but it leaves white space on the sides of portrait images
                         newImg.contentMode = UIViewContentMode.ScaleAspectFit
                         //WEFBWIWEONEWONEWOFNIEWFEWOIFNEWOFINDSLDMC;SKX
+                        
+                        
+                        //the page keeps loading images even
+                        //after the user leaves the page, slows down loading time for the current page
                         
                         //maybe have 200 hundred as a placeholder
                         //then when the screen loads get the height of the image
@@ -265,7 +283,7 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
                         scrollView.addSubview(newImg)
                         y += Int(newImg.frame.size.height)
                         numItems += 1;
-                        y+=20
+                        y+=10
                     }
                 }
                 //spacing between the last item and the bottom of the screen
@@ -286,4 +304,6 @@ class ListMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         self.navigationController!.hidesBarsOnSwipe = true
     }
     
+    func resizeImage(sender:UITapGestureRecognizer){
+    }
 }

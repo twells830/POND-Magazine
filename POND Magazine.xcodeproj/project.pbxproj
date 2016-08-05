@@ -264,13 +264,13 @@
 			children = (
 				445D08061C9E3A8100DE17B7 /* extensions */,
 				442139201C694EEF00286DE5 /* DataHandlers */,
-				441ECA1E1C82727200C3C98A /* ListViewController.swift */,
 				4479698A1C49D9DB004E3CC4 /* MenuController.swift */,
 				442FC5E01C840EAD002B6846 /* SubMenuController.swift */,
 				44D6679E1C56F0270054F8B4 /* AboutViewController.swift */,
 				44D667A01C56F0960054F8B4 /* SubmissionsViewController.swift */,
 				442FC5D21C83C68E002B6846 /* LoadViewController.swift */,
 				448708781CADE43500225FCF /* ListMenuViewController.swift */,
+				441ECA1E1C82727200C3C98A /* ListViewController.swift */,
 			);
 			name = "Supporting Files";
 			path = "POND Magazine";

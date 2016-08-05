@@ -24,10 +24,10 @@ class SubmissionsViewController: UIViewController, MFMailComposeViewControllerDe
         super.viewDidLoad()
         decription.resizeToText()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SubmissionsViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SubmissionsViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SubmissionsViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         if revealViewController() != nil {
@@ -67,7 +67,7 @@ class SubmissionsViewController: UIViewController, MFMailComposeViewControllerDe
     }
     
     // MARK: MFMailComposeViewControllerDelegate Method
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
 

@@ -121,44 +121,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="POND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DID-tp-PM2">
-                                                    <rect key="frame" x="8" y="16" width="58" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="37V-PK-HZz"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DID-tp-PM2">
+                                                    <rect key="frame" x="8" y="16" width="77" height="36"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="37V-PK-HZz"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="37V-PK-HZz"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="DID-tp-PM2" firstAttribute="leading" secondItem="zQh-Kx-D0Y" secondAttribute="leadingMargin" id="P7L-vh-zF0"/>
-                                                <constraint firstItem="DID-tp-PM2" firstAttribute="top" secondItem="zQh-Kx-D0Y" secondAttribute="topMargin" constant="8" id="Seu-fe-P7n"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="P7L-vh-zF0"/>
-                                                    <exclude reference="Seu-fe-P7n"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="P7L-vh-zF0"/>
-                                                    <include reference="Seu-fe-P7n"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="DID-tp-PM2" firstAttribute="top" secondItem="F8t-2N-tdg" secondAttribute="top" constant="16" id="85J-mC-5us"/>
+                                            <constraint firstItem="DID-tp-PM2" firstAttribute="leading" secondItem="F8t-2N-tdg" secondAttribute="leading" constant="8" id="LO9-sS-eBk"/>
+                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="B5w-Pd-JUI">
                                         <rect key="frame" x="0.0" y="44" width="600" height="44"/>
@@ -167,44 +142,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Feature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-tw-CtR">
-                                                    <rect key="frame" x="8" y="8" width="63" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="87" id="okE-hr-GJ5"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-tw-CtR">
+                                                    <rect key="frame" x="8" y="6" width="75" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="okE-hr-GJ5"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="okE-hr-GJ5"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="6B0-tw-CtR" firstAttribute="leading" secondItem="PZE-WS-suW" secondAttribute="leadingMargin" id="0L8-UP-hDO"/>
-                                                <constraint firstItem="6B0-tw-CtR" firstAttribute="top" secondItem="PZE-WS-suW" secondAttribute="topMargin" id="nkl-ng-sNc"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="0L8-UP-hDO"/>
-                                                    <exclude reference="nkl-ng-sNc"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="0L8-UP-hDO"/>
-                                                    <include reference="nkl-ng-sNc"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="6B0-tw-CtR" firstAttribute="leading" secondItem="B5w-Pd-JUI" secondAttribute="leading" constant="8" id="KC8-v9-HEX"/>
+                                            <constraint firstItem="6B0-tw-CtR" firstAttribute="centerY" secondItem="B5w-Pd-JUI" secondAttribute="centerY" id="Zaa-It-TbB"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="bgo-vh-h1F" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MQW-oc-B7Q"/>
                                         </connections>
@@ -216,44 +166,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fashion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-EB-BU4">
-                                                    <rect key="frame" x="8" y="8" width="62" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="81" id="Cnb-S2-J3o"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fashion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-EB-BU4">
+                                                    <rect key="frame" x="8" y="7" width="76" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="Cnb-S2-J3o"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="Cnb-S2-J3o"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="XN0-EB-BU4" firstAttribute="leading" secondItem="bUB-71-fOD" secondAttribute="leadingMargin" id="awt-aH-gxm"/>
-                                                <constraint firstItem="XN0-EB-BU4" firstAttribute="top" secondItem="bUB-71-fOD" secondAttribute="topMargin" id="sIt-h7-f8s"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="awt-aH-gxm"/>
-                                                    <exclude reference="sIt-h7-f8s"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="awt-aH-gxm"/>
-                                                    <include reference="sIt-h7-f8s"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="XN0-EB-BU4" firstAttribute="leading" secondItem="y93-oo-cYy" secondAttribute="leading" constant="8" id="oo5-OB-BgS"/>
+                                            <constraint firstItem="XN0-EB-BU4" firstAttribute="centerY" secondItem="y93-oo-cYy" secondAttribute="centerY" id="zpH-WR-Ca0"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="fpp-CD-B9K" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="0h1-ge-dLC"/>
                                         </connections>
@@ -265,44 +190,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttg-CM-Bgl">
-                                                    <rect key="frame" x="8" y="8" width="48" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="63" id="Ucm-ql-3IC"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttg-CM-Bgl">
+                                                    <rect key="frame" x="8" y="7" width="58" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="Ucm-ql-3IC"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="Ucm-ql-3IC"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ttg-CM-Bgl" firstAttribute="leading" secondItem="cIg-m9-M4F" secondAttribute="leadingMargin" id="8px-53-CWW"/>
-                                                <constraint firstItem="ttg-CM-Bgl" firstAttribute="top" secondItem="cIg-m9-M4F" secondAttribute="topMargin" id="fqN-dA-zD0"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="8px-53-CWW"/>
-                                                    <exclude reference="fqN-dA-zD0"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="8px-53-CWW"/>
-                                                    <include reference="fqN-dA-zD0"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ttg-CM-Bgl" firstAttribute="centerY" secondItem="cOG-HF-IOd" secondAttribute="centerY" id="7MP-aY-d3b"/>
+                                            <constraint firstItem="ttg-CM-Bgl" firstAttribute="leading" secondItem="cOG-HF-IOd" secondAttribute="leading" constant="8" id="JR1-Ar-0jj"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="68m-jl-77c" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="dau-63-vVt"/>
                                         </connections>
@@ -314,44 +214,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Art" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLY-c7-uHc">
-                                                    <rect key="frame" x="8" y="8" width="31" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="38" id="c5H-gJ-8Xu"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLY-c7-uHc">
+                                                    <rect key="frame" x="8" y="7" width="30" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="c5H-gJ-8Xu"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="c5H-gJ-8Xu"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="nLY-c7-uHc" firstAttribute="leading" secondItem="Epc-Bx-7d7" secondAttribute="leadingMargin" id="kuo-L6-7XZ"/>
-                                                <constraint firstItem="nLY-c7-uHc" firstAttribute="top" secondItem="Epc-Bx-7d7" secondAttribute="topMargin" id="o7u-fo-aVC"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="kuo-L6-7XZ"/>
-                                                    <exclude reference="o7u-fo-aVC"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="kuo-L6-7XZ"/>
-                                                    <include reference="o7u-fo-aVC"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="nLY-c7-uHc" firstAttribute="centerY" secondItem="uYp-f3-bkk" secondAttribute="centerY" id="dsd-VU-1V2"/>
+                                            <constraint firstItem="nLY-c7-uHc" firstAttribute="leading" secondItem="uYp-f3-bkk" secondAttribute="leading" constant="8" id="eND-PM-BbQ"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="am4-ME-OpP" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="rMs-qh-UT5"/>
                                         </connections>
@@ -363,44 +238,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Culture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-zR-tNn">
-                                                    <rect key="frame" x="8" y="8" width="63" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="77" id="nF8-c7-lgV"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Culture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-zR-tNn">
+                                                    <rect key="frame" x="8" y="7" width="72" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="nF8-c7-lgV"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="nF8-c7-lgV"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="QrZ-zR-tNn" firstAttribute="top" secondItem="ae9-Xd-k5O" secondAttribute="topMargin" id="B3o-Wy-z0P"/>
-                                                <constraint firstItem="QrZ-zR-tNn" firstAttribute="leading" secondItem="ae9-Xd-k5O" secondAttribute="leadingMargin" id="tve-gh-kv9"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="B3o-Wy-z0P"/>
-                                                    <exclude reference="tve-gh-kv9"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="B3o-Wy-z0P"/>
-                                                    <include reference="tve-gh-kv9"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="QrZ-zR-tNn" firstAttribute="centerY" secondItem="jqG-GB-aVI" secondAttribute="centerY" id="Hip-ER-LCe"/>
+                                            <constraint firstItem="QrZ-zR-tNn" firstAttribute="leading" secondItem="jqG-GB-aVI" secondAttribute="leading" constant="8" id="Zta-YK-7fZ"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="7qQ-hM-ZsM" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="uvz-PB-fzB"/>
                                         </connections>
@@ -412,44 +262,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJZ-pI-SfK">
-                                                    <rect key="frame" x="8" y="8" width="63" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="68" id="Q3P-DY-AmG"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJZ-pI-SfK">
+                                                    <rect key="frame" x="8" y="7" width="62" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="Q3P-DY-AmG"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="Q3P-DY-AmG"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="UJZ-pI-SfK" firstAttribute="leading" secondItem="cY4-FQ-qSC" secondAttribute="leadingMargin" id="cRE-sr-J6o"/>
-                                                <constraint firstItem="UJZ-pI-SfK" firstAttribute="top" secondItem="cY4-FQ-qSC" secondAttribute="topMargin" id="uQf-Ia-QKi"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="cRE-sr-J6o"/>
-                                                    <exclude reference="uQf-Ia-QKi"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="cRE-sr-J6o"/>
-                                                    <include reference="uQf-Ia-QKi"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UJZ-pI-SfK" firstAttribute="centerY" secondItem="7SD-B7-bLp" secondAttribute="centerY" id="KeK-6a-KOC"/>
+                                            <constraint firstItem="UJZ-pI-SfK" firstAttribute="leading" secondItem="7SD-B7-bLp" secondAttribute="leading" constant="8" id="a0h-s8-3ih"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="6oX-2S-mW6" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5eR-ql-3aw"/>
                                         </connections>
@@ -461,44 +286,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Submissions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-BU-mBt">
-                                                    <rect key="frame" x="8" y="8" width="101" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="124" id="pwM-IO-T7O"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submissions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-BU-mBt">
+                                                    <rect key="frame" x="8" y="7" width="121" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="pwM-IO-T7O"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="pwM-IO-T7O"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="FBj-BU-mBt" firstAttribute="top" secondItem="60t-JA-HJm" secondAttribute="topMargin" id="9Nj-im-s4e"/>
-                                                <constraint firstItem="FBj-BU-mBt" firstAttribute="leading" secondItem="60t-JA-HJm" secondAttribute="leadingMargin" id="pTY-RP-1do"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="9Nj-im-s4e"/>
-                                                    <exclude reference="pTY-RP-1do"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="9Nj-im-s4e"/>
-                                                    <include reference="pTY-RP-1do"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="FBj-BU-mBt" firstAttribute="leading" secondItem="JPf-fL-Nhx" secondAttribute="leading" constant="8" id="itc-k5-wlq"/>
+                                            <constraint firstItem="FBj-BU-mBt" firstAttribute="centerY" secondItem="JPf-fL-Nhx" secondAttribute="centerY" id="upt-Ut-EfA"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="ROV-p8-a5X" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="kOJ-tt-ET4"/>
                                         </connections>
@@ -628,8 +428,8 @@
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EditorialsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-ue-iwM">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Editorials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-gY-dMO">
-                                                    <rect key="frame" x="230" y="79" width="141" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Editorials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-gY-dMO">
+                                                    <rect key="frame" x="223" y="76" width="155" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -662,8 +462,8 @@
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotlightThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-pK-AA3">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-qy-8LW">
-                                                    <rect key="frame" x="231" y="79" width="139" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-qy-8LW">
+                                                    <rect key="frame" x="224" y="76" width="153" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -808,11 +608,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-q9-jlV">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-q9-jlV">
+                                <rect key="frame" x="5" y="64" width="590" height="536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-Cx-XqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
                                         <string key="text">POND Magazine is an online publication for young and emerging artists, musicians and other creatives. Working in collaboration with photographers, designers, artists, writers and musicians, the POND Mag team aims to provide a source of inspiration for our readers while also building a strong community that celebrates one another's creative endeavors. 
 
 We are always looking to collaborate, please get in touch!
@@ -847,9 +647,9 @@ Literary Director Katie Heins // @cougarfreak7</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vzW-q9-jlV" firstAttribute="leading" secondItem="w7N-5l-6zz" secondAttribute="leadingMargin" constant="-20" id="7Eh-tY-xDs"/>
+                            <constraint firstItem="vzW-q9-jlV" firstAttribute="leading" secondItem="w7N-5l-6zz" secondAttribute="leadingMargin" constant="-15" id="7Eh-tY-xDs"/>
                             <constraint firstItem="HFT-NZ-wd7" firstAttribute="top" secondItem="vzW-q9-jlV" secondAttribute="bottom" id="Ali-x1-5v8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vzW-q9-jlV" secondAttribute="trailing" constant="-20" id="PSe-ap-xB4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzW-q9-jlV" secondAttribute="trailing" constant="-15" id="PSe-ap-xB4"/>
                             <constraint firstItem="vzW-q9-jlV" firstAttribute="top" secondItem="Gw1-fQ-jrx" secondAttribute="bottom" id="hUv-Qp-6hx"/>
                             <constraint firstItem="ixl-Cx-XqS" firstAttribute="width" secondItem="w7N-5l-6zz" secondAttribute="width" id="v7w-8P-2eR">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-16"/>
@@ -1337,7 +1137,7 @@ Literary Director Katie Heins // @cougarfreak7</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyg-eo-PPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2643" y="3403.5"/>
+            <point key="canvasLocation" x="2667" y="3391"/>
         </scene>
         <!--Spotlight-->
         <scene sceneID="mmi-wf-0tz">
@@ -1398,8 +1198,8 @@ Literary Director Katie Heins // @cougarfreak7</string>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InterviewsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yBU-Jm-d6e">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Interviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asT-AI-eOx">
-                                                    <rect key="frame" x="222" y="79" width="157" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asT-AI-eOx">
+                                                    <rect key="frame" x="216" y="76" width="169" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1430,8 +1230,8 @@ Literary Director Katie Heins // @cougarfreak7</string>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReleasesThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-fl-HGb">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Diaries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Mb-zLH">
-                                                    <rect key="frame" x="247" y="79" width="106" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diaries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Mb-zLH">
+                                                    <rect key="frame" x="243" y="76" width="114" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1497,8 +1297,8 @@ Literary Director Katie Heins // @cougarfreak7</string>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotographyThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-G2-d9f">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Photography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-Oe-rpy">
-                                                    <rect key="frame" x="201" y="79" width="199" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-Oe-rpy">
+                                                    <rect key="frame" x="193" y="76" width="214" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1529,8 +1329,8 @@ Literary Director Katie Heins // @cougarfreak7</string>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FeaturedArtistsThumb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d6Q-aX-0rw">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Featured Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-6E-cCb">
-                                                    <rect key="frame" x="178" y="79" width="244" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-6E-cCb">
+                                                    <rect key="frame" x="167" y="76" width="266" height="49"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
